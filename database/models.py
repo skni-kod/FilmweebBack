@@ -15,22 +15,17 @@ class Movie(models.Model):
         else:
             return self.title
     
-class Links(models.Model):
-    link_type = models.CharField(max_length=20)
-    address = models.URLField(max_length=500)
-    movie = models.ForeignKey('Movie', on_delete=models.CASCADE)
-
 class User(models.Model):
     email = models.EmailField()
     passwd = models.CharField(max_length=50)
     birth_date = models.DateField()
-    nick = models.ForeignKey('Profile',on_delete=models.CASCADE)
+    profile = models.OneToOneField('Profile', on_delete=models.CASCADE)
     is_admin = models.BooleanField()
 
 class Profile(models.Model):
+    nick = models.CharField(max_length=32)
     first_name = models.CharField(max_length=100, null=True, blank=True)
     last_name = models.CharField(max_length=100, null=True, blank=True)
-    user_id = models.ForeignKey('User',on_delete=models.CASCADE)
     avatar = models.URLField(max_length=1000, null=True, blank=True)
 
 class List(models.Model): 
@@ -38,8 +33,8 @@ class List(models.Model):
     nick = models.ForeignKey('User',on_delete=models.CASCADE)
 
 class MovieList(models.Model):
-    movie_id = models.ForeignKey('Movie',on_delete=models.CASCADE)
-    list_id = models.ForeignKey('List',on_delete=models.CASCADE)
+    movie = models.ForeignKey('Movie',on_delete=models.CASCADE)
+    list = models.ForeignKey('List',on_delete=models.CASCADE)
 
 class Mark(models.Model):
     mark = models.PositiveSmallIntegerField()
@@ -58,4 +53,34 @@ class Review(models.Model):
     creation_date = models.TextField()
     movie = models.ForeignKey('Movie',on_delete=models.CASCADE)
     user = models.ForeignKey('User',on_delete=models.CASCADE)
+
+class Links(models.Model):
+    link_type = models.CharField(max_length=20)
+    address = models.URLField(max_length=500)
+    movie = models.ForeignKey('Movie', on_delete=models.CASCADE)
+
+
+class Relation(models.Model):
+    rel_type = models.CharField(max_length=20)
+    movie = models.ForeignKey('Movie', on_delete=models.CASCADE)
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=30)
+    movie = models.ManyToManyField('Movie')
+
+class Role(models.Model):
+    name = models.CharField(max_length=30)
+    movie = models.ForeignKey('Movie', on_delete=models.CASCADE)
+    actor = models.ForeignKey('Person', on_delete=models.CASCADE)
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    bio = models.TextField(null=True, blank=True)
+    birth_date = models.DateField(null=True, blank=True)
+    birth_place = models.CharField(max_length=100, null=True, blank=True)
+
+
+
 
