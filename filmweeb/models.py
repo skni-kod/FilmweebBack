@@ -18,7 +18,7 @@ class Movie(models.Model):
 class Links(models.Model):
     link_type = models.CharField(max_length=20)
     address = models.URLField(max_length=500)
-    movie_id = models.ForeignKey('Movie', on_delete=models.CASCADE)
+    movie = models.ForeignKey('Movie', on_delete=models.CASCADE)
 
 class User(models.Model):
     email = models.EmailField()
@@ -43,19 +43,19 @@ class MovieList(models.Model):
 
 class Mark(models.Model):
     mark = models.PositiveSmallIntegerField()
-    movie_id = models.ForeignKey('Movie',on_delete=models.CASCADE)
-    user_id = models.ForeignKey('User',on_delete=models.CASCADE)
+    movie = models.ForeignKey('Movie',on_delete=models.CASCADE)
+    user = models.ForeignKey('User',on_delete=models.CASCADE)
 
 class Comment(models.Model):
     comment = models.TextField()
-    movie_id = models.ForeignKey('Movie',on_delete=models.CASCADE)
-    review_id = models.ForeignKey('Review', on_delete=models.CASCADE)
-    user_id = models.ForeignKey('User',on_delete=models.CASCADE)
+    movie = models.ForeignKey('Movie',on_delete=models.CASCADE)
+    review = models.ForeignKey('Review', on_delete=models.CASCADE)
+    user = models.ForeignKey('User',on_delete=models.CASCADE)
 
 class Review(models.Model):
     review = models.TextField()
     review_type = models.CharField(max_length=20)
     creation_date = models.TextField()
-    movie_id = models.ForeignKey('Movie',on_delete=models.CASCADE)
-    user_id = models.ForeignKey('User',on_delete=models.CASCADE)
+    movie = models.ForeignKey('Movie',on_delete=models.CASCADE)
+    user = models.ForeignKey('User',on_delete=models.CASCADE)
 
