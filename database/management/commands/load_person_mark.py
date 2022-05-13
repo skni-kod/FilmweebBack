@@ -1,19 +1,18 @@
 from csv import DictReader
 from django.core.management import BaseCommand
 
-from database.models import Appointment,Movie,Person
-
+from database.models import PersonMark,Person,User
 class Command(BaseCommand):
     help = "Load data into model"
 
     def handle(self, *args, **options):
     
-        if Appointment.objects.exists():
+        if PersonMark.objects.exists():
             print("Import error")
             return
             
         print("Importing data...")
 
-        for row in DictReader(open('./dataImport/Appointment.csv')):
-            tmp=Appointment(name=row['Nname'],movie=Movie.objects.get(id=row['movie_id']),actor=Person.objects.get(id=row['person_id']))  
+        for row in DictReader(open('./dataImport/PersonMark.csv')):
+            tmp=PersonMark(mark=row['Mmark'],person=Person.objects.get(id=row['person_id']),user=User.objects.get(id=row['user_id']))
             tmp.save()
