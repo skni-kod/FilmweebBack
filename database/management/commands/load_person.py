@@ -15,5 +15,5 @@ class Command(BaseCommand):
         print("Importing data...")
 
         for row in DictReader(open('./dataImport/Person.csv')):
-            tmp_person=Person(first_name=row['Name'], last_name=row['LastName'], bio=row['Bio'], birth_date=row['Date'], birth_place=row['Country'])  
+            tmp_person=Person(first_name=row['Ffirst_name'], last_name=row['last_name'], bio=row['bio'], birth_date=row['birth_date'], birth_place=row['birth_place'])  
             tmp_person.save()
