@@ -14,6 +14,6 @@ class Command(BaseCommand):
             
         print("Importing data...")
 
-        for row in DictReader(open('./dataImport/Movie.csv')):
+        for row in DictReader(open('./dataImport2/Movie.csv')):
             tmp=Movie(original_title=row['Ooryginal_title'], production_year=row['production_year'], production_country=row['production_country'], airing_date=row['airing_date'], duration=row['duration'],description=row['description'], title=row['title'])  
             tmp.save()
