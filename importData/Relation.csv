@@ -1,0 +1,11 @@
+Rrel_type,src_movie_id,dst_movie_id
+sequel,3,2
+prequel,2,1
+sequel,4,3
+prequel,2,3
+sequel,5,4
+prequel,3,4
+sequel,6,5
+prequel,4,5
+sequel,7,6
+prequel,5,6
