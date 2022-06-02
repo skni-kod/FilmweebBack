@@ -11,13 +11,10 @@ class MovieSerializer(serializers.ModelSerializer):
         model = Movie
         fields = ['original_title', 'production_year', 'production_country','airing_date', 'duration', 'description', 'title']
 
-
-
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['email', 'passwd', 'birth_date', 'is_admin']
-
 
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
@@ -51,7 +48,7 @@ class ReviewCommentSerializer(serializers.ModelSerializer):
 
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ReviewComment
+        model = Review
         fields = ['review', 'review_type', 'creation_date', 'movie', 'user']
 
 class LinkSerializer(serializers.ModelSerializer):
