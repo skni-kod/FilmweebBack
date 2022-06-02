@@ -19,7 +19,10 @@ from database import views
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register(r'movies', views.MovieViewSet)
+router.register(r'movies', views.MovieViewSet, basename='movie')
+router.register(r'reviews', views.MovieReviewViewSet, basename='review')
+router.register(r'marks', views.MovieMarkViewSet, basename='mark')
+router.register(r'moviecomments', views.MovieCommentViewSet, basename='moviecomment')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
