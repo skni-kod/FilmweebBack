@@ -1,5 +1,4 @@
 import imp
-import django_filters
 from django import views
 from django.http import HttpResponse
 from django.shortcuts import render, redirect, get_list_or_404, get_object_or_404
