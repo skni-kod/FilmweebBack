@@ -1,4 +1,6 @@
 from django.contrib import admin
-from .models import Movie
+from django.apps import apps
 
-admin.site.register(Movie)
+database = apps.get_app_config('database')
+for model in database.get_models():
+    admin.site.register(model)
