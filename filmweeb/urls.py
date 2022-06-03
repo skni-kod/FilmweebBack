@@ -20,6 +20,7 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register(r'movies', views.MovieViewSet, basename='movie')
+router.register(r'profiles', views.ProfileViewSet, basename='profile')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
