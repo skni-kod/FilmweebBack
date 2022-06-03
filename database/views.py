@@ -56,7 +56,16 @@ class MovieViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 class ProfileViewSet(viewsets.ModelViewSet):
-    def get(self, request, pk=None, format=None):
-        queryset = self.get_object(pk)
-        serializer_class = ProfileSerializer
-        return Response(serializer_class.data)
+    serializer_class = ProfileSerializer
+    queryset = Profile.objects.all()
+
+    def list(self, request):
+        queryset = Profile.objects.all()
+        serializer = ProfileSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = Profile.objects.all()
+        user = get_object_or_404(queryset, pk=pk)
+        serializer = ProfileSerializer(user)
+        return Response(serializer.data)
