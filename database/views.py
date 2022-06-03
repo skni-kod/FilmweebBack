@@ -31,20 +31,28 @@ class MovieViewSet(viewsets.ModelViewSet):
         serializer = MovieSerializer(user)
         return Response(serializer.data)
 
-
-class MovieReviewViewSet(viewsets.ModelViewSet):
-    serializer_class = ReviewSerializer
-    queryset = Review.objects.all()
-
-    def list(self, request):
-        queryset = Review.objects.all()
-        serializer = ReviewSerializer(queryset, many=True)
+    @action(detail=True, methods=['get'])
+    def reviews(self, request, pk=None):
+        movie = Movie.objects.get(id=pk)
+        serializer = ReviewSerializer(
+            movie.review_set, many=True, context={"request": request}
+        )
         return Response(serializer.data)
 
-    def retrieve(self, request, pk=None):
-        queryset = Review.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = ReviewSerializer(user)
+    @action(detail=True, methods=['get'])
+    def comments(self, request, pk=None):
+        movie = Movie.objects.get(id=pk)
+        serializer = MovieCommentSerializer(
+            movie.moviecomment_set, many=True, context={"request": request}
+        )
+        return Response(serializer.data)
+
+    @action(detail=True, methods=['get'])
+    def marks(self, request, pk=None):
+        movie = Movie.objects.get(id=pk)
+        serializer = MovieMarkSerializer(
+            movie.moviemark_set, many=True, context={"request": request}
+        )
         return Response(serializer.data)
 
 class MovieMarkViewSet(viewsets.ModelViewSet):
@@ -61,20 +69,6 @@ class MovieMarkViewSet(viewsets.ModelViewSet):
         user = get_object_or_404(queryset, pk=pk)
         serializer = MovieMarkSerializer(user)
         return Response(serializer.data)
-
-class MovieCommentViewSet(viewsets.ModelViewSet):
-    serializer_class = MovieCommentSerializer
-    queryset = MovieComment.objects.all()
-
-    def list(self, request):
-        queryset = MovieComment.objects.all()
-        serializer = MovieCommentSerializer(queryset, many=True)
-        return Response(serializer.data)
-
-    def retrieve(self, request, pk=None):
-        queryset = MovieComment.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = MovieCommentSerializer(user)
         return Response(serializer.data)
 
 class ProfileViewSet(viewsets.ModelViewSet):
