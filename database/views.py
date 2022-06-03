@@ -55,22 +55,6 @@ class MovieViewSet(viewsets.ModelViewSet):
         )
         return Response(serializer.data)
 
-class MovieMarkViewSet(viewsets.ModelViewSet):
-    serializer_class = MovieMarkSerializer
-    queryset = MovieMark.objects.all()
-
-    def list(self, request):
-        queryset = MovieMark.objects.all()
-        serializer = MovieMarkSerializer(queryset, many=True)
-        return Response(serializer.data)
-
-    def retrieve(self, request, pk=None):
-        queryset = MovieMark.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = MovieMarkSerializer(user)
-        return Response(serializer.data)
-        return Response(serializer.data)
-
 class ProfileViewSet(viewsets.ModelViewSet):
     def get(self, request, pk=None, format=None):
         queryset = self.get_object(pk)
