@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect, get_list_or_404, get_object_or_40
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.decorators import action
+from rest_framework.views import APIView
 
 from .models import *
 from .serializers import *
@@ -68,7 +69,6 @@ class MovieViewSet(viewsets.ModelViewSet):
         movie = Movie.objects.order_by('?')[:4]
         serializer = RandomMovieSerializer(movie,many=True,context={"request": request})
         return Response(serializer.data)
-    
 
     @action(detail=True, methods=['get'])
     def actors(self, request, pk=None):
@@ -158,4 +158,20 @@ class ReviewViewSet(viewsets.ModelViewSet):
         serializer = ReviewCommentSerializer(
             user.reviewcomment_set, many=True, context={"request": request}
         )
+        return Response(serializer.data)
+
+#view actors by last_name
+class ActorViewPerLastNameDetail(APIView):
+
+    def get(self, request, last_name):
+        queryset = Person.objects.raw('SELECT * FROM database_person p JOIN database_appointment a ON p.id = a.actor_id WHERE a.name = %s AND p.last_name = %s', ['actor', last_name])
+        serializer = PersonSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+#view actor by actor_id
+class ActorViewPerIdDetail(APIView):
+
+    def get(self, request, actor_id):
+        queryset = Person.objects.raw('SELECT * FROM database_person p JOIN database_appointment a ON p.id = a.actor_id WHERE a.name = %s AND p.id = %s', ['actor', actor_id])
+        serializer = PersonSerializer(queryset, many=True)
         return Response(serializer.data)

@@ -28,5 +28,7 @@ router.register(r'reviews', views.ReviewViewSet, basename='review')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('database/', include('database.urls')),
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('actor/last_name/<str:last_name>/', views.ActorViewPerLastNameDetail.as_view()),
+    path('actor/id/<int:actor_id>/', views.ActorViewPerIdDetail.as_view())
 ]
