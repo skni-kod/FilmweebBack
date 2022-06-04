@@ -128,6 +128,14 @@ class PersonViewSet(viewsets.ModelViewSet):
         person = get_object_or_404(queryset, pk=pk)
         serializer = PersonSerializer(person)
         return Response(serializer.data)
+    
+    @action(detail=True, methods=['get'])
+    def mark(self, request, pk=None):
+        person_mark = Person.objects.get(id=pk)
+        serializer = PersonMarkSerializer(
+            person_mark.personmark_set, many=True, context={"request": request}
+        )
+        return Response(serializer.data)
 
 class ReviewViewSet(viewsets.ModelViewSet):
     serializer_class = ReviewSerializer
