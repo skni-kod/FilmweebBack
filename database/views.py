@@ -77,3 +77,26 @@ class ProfileViewSet(viewsets.ModelViewSet):
         user = get_object_or_404(queryset, pk=pk)
         serializer = ProfileSerializer(user)
         return Response(serializer.data)
+
+class UserViewSet(viewsets.ModelViewSet):
+    serializer_class = UserSerializer
+    queryset = User.objects.all()    
+    
+    def list(self, request):
+        queryset = User.objects.all()
+        serializer = UserSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = User.objects.all()
+        user = get_object_or_404(queryset, pk=pk)
+        serializer = UserSerializer(user)
+        return Response(serializer.data)
+
+    @action(detail=True, methods=['get'])
+    def reviews(self, request, pk=None):
+        user = User.objects.get(id=pk)
+        serializer = ReviewSerializer(
+            user.review_set, many=True, context={"request": request}
+        )
+        return Response(serializer.data)
