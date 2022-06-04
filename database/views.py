@@ -54,6 +54,14 @@ class MovieViewSet(viewsets.ModelViewSet):
             movie.moviemark_set, many=True, context={"request": request}
         )
         return Response(serializer.data)
+    
+    @action(detail=True, methods=['get'])
+    def links(self, request, pk=None):
+        movie = Movie.objects.get(id=pk)
+        serializer = LinkSerializer(
+            movie.link_set, many=True, context={"request": request}
+        )
+        return Response(serializer.data)
 
 class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
