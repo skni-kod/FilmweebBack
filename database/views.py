@@ -68,7 +68,14 @@ class MovieViewSet(viewsets.ModelViewSet):
         movie = Movie.objects.order_by('?')[:4]
         serializer = RandomMovieSerializer(movie,many=True,context={"request": request})
         return Response(serializer.data)
+    
 
+    @action(detail=True, methods=['get'])
+    def actors(self, request, pk=None):
+        movie = Movie.objects.raw('SELECT * FROM database_person p JOIN database_appointment a ON p.id = a.actor_id WHERE a.name = %s', ['actor'])
+        serializer = PersonSerializer(movie,many=True,context={"request": request})
+        return Response(serializer.data)
+    
 class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
     queryset = Profile.objects.all()
@@ -105,4 +112,19 @@ class UserViewSet(viewsets.ModelViewSet):
         serializer = ReviewSerializer(
             user.review_set, many=True, context={"request": request}
         )
+        return Response(serializer.data)
+
+class PersonViewSet(viewsets.ModelViewSet):
+    serializer_class = PersonSerializer
+    queryset = Person.objects.all()
+
+    def list(self, request):
+        queryset = Person.objects.all()
+        serializer = PersonSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = Person.objects.all()
+        person = get_object_or_404(queryset, pk=pk)
+        serializer = PersonSerializer(person)
         return Response(serializer.data)
