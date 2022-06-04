@@ -23,6 +23,7 @@ router.register(r'movies', views.MovieViewSet, basename='movie')
 router.register(r'profiles', views.ProfileViewSet, basename='profile')
 router.register(r'users', views.UserViewSet, basename='user')
 router.register(r'people', views.PersonViewSet, basename='person')
+router.register(r'reviews', views.ReviewViewSet, basename='review')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

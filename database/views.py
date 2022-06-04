@@ -128,3 +128,26 @@ class PersonViewSet(viewsets.ModelViewSet):
         person = get_object_or_404(queryset, pk=pk)
         serializer = PersonSerializer(person)
         return Response(serializer.data)
+
+class ReviewViewSet(viewsets.ModelViewSet):
+    serializer_class = ReviewSerializer
+    queryset = Review.objects.all()
+
+    def list(self, request):
+        queryset = Review.objects.all()
+        serializer = ReviewSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = Review.objects.all()
+        person = get_object_or_404(queryset, pk=pk)
+        serializer = ReviewSerializer(person)
+        return Response(serializer.data)
+    
+    @action(detail=True, methods=['get'])
+    def comments(self, request, pk=None):
+        user = Review.objects.get(id=pk)
+        serializer = ReviewCommentSerializer(
+            user.reviewcomment_set, many=True, context={"request": request}
+        )
+        return Response(serializer.data)
