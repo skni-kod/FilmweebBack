@@ -8,6 +8,7 @@ class Movie(models.Model):
     duration = models.IntegerField(null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     title = models.CharField(max_length=100, null=True, blank=True)
+    poster = models.URLField(max_length=500,default='https://example.com/')
 
     def __str__(self):
         if self.title is None:

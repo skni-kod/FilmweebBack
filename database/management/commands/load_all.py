@@ -14,18 +14,19 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing Movie...")
 
         for row in DictReader(open('./importData/Movie.csv')):
             tmp = Movie(original_title=row['Ooryginal_title'], production_year=row['production_year'], production_country=row['production_country'],
-                         airing_date=row['airing_date'], duration=row['duration'], description=row['description'], title=row['title'])
+                         airing_date=row['airing_date'], duration=row['duration'], description=row['description'], title=row['title'],poster=row['poster'])
+
             tmp.save()
 
         if Category.objects.exists():
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing Category...")
 
         for row in DictReader(open('./importData/Category.csv')):
             tmp = Category(name=row['Nname'])
@@ -35,7 +36,7 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing Link...")
 
         for row in DictReader(open('./importData/Link.csv')):
             tmp = Link(link_type=row['Llink_type'], address=row['address'],
@@ -46,7 +47,7 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing Person...")
 
         for row in DictReader(open('./importData/Person.csv')):
             tmp_person = Person(first_name=row['Ffirst_name'], last_name=row['last_name'],
@@ -57,8 +58,6 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
-
         for row in DictReader(open('./importData/User.csv')):
             tmp = User(email=row['Eemail'], passwd=row['passwd'],
                        birth_date=row['birth_date'], is_admin=row['is_admin'])
@@ -68,8 +67,6 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
-
         for row in DictReader(open('./importData/List.csv')):
             tmp=List(list_name=row['Llist_name'],nick=User.objects.get(id=row['nick_id']))
             tmp.save()
@@ -78,19 +75,18 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing Review...")
+
 
         for row in DictReader(open('./importData/Review.csv')):
             tmp=Review(review=row['Rreview'],review_type=row['review_type'],creation_date=row['creation_date'],movie=Movie.objects.get(id=row['movie_id']),user=User.objects.get(id=row['user_id']))
             tmp.save()
 
-
-
         if Appointment.objects.exists():
             print("Import error")
             return
-
-        print("Importing data...")
+          
+        print("Importing Appointment...")
 
         for row in DictReader(open('./importData/Appointment.csv')):
             tmp=Appointment(name=row['Nname'],movie=Movie.objects.get(id=row['movie_id']),actor=Person.objects.get(id=row['person_id']))  
@@ -101,7 +97,7 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing MovieComment...")
 
         for row in DictReader(open('./importData/MovieComment.csv')):
             tmp=MovieComment(comment=row['Ccomment'],user=User.objects.get(id=row['user_id']),movie=Movie.objects.get(id=row['movie_id']))
@@ -110,8 +106,8 @@ class Command(BaseCommand):
         if MovieMark.objects.exists():
             print("Import error")
             return
-
-        print("Importing data...")
+          
+        print("Importing MovieMark...")
 
         for row in DictReader(open('./importData/MovieMark.csv')):
             tmp=MovieMark(mark=row['Mmark'],movie=Movie.objects.get(id=row['movie_id']),user=User.objects.get(id=row['user_id']))
@@ -122,18 +118,17 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing PersonMark...")
 
         for row in DictReader(open('./importData/PersonMark.csv')):
             tmp=PersonMark(mark=row['Mmark'],person=Person.objects.get(id=row['person_id']),user=User.objects.get(id=row['user_id']))
             tmp.save()
 
-
         if Profile.objects.exists():
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing Profile...")
 
         for row in DictReader(open('./importData/Profile.csv')):
             tmp=Profile(nick=row['Nnick'],first_name=row['last_name'],last_name=row['last_name'],avatar=row['avatar'],user=User.objects.get(id=row['user_id']))
@@ -142,7 +137,7 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing Relation...")
 
         for row in DictReader(open('./importData/Relation.csv')):
             tmp=Relation(rel_type=row['Rrel_type'],src_movie=Movie.objects.get(id=row['src_movie_id']),dst_movie=Movie.objects.get(id=row['dst_movie_id']))
@@ -151,7 +146,7 @@ class Command(BaseCommand):
             print("Import error")
             return
 
-        print("Importing data...")
+        print("Importing ReviewComment...")
 
         for row in DictReader(open('./importData/ReviewComment.csv')):
             tmp=ReviewComment(comment=row['Ccomment'],review=Review.objects.get(id=row['review_id']),user=User.objects.get(id=row['user_id']))
