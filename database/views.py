@@ -63,6 +63,12 @@ class MovieViewSet(viewsets.ModelViewSet):
         )
         return Response(serializer.data)
 
+    @action(detail=True, methods=['get'])
+    def random(self, request, pk=None):
+        movie = Movie.objects.order_by('?')[:4]
+        serializer = RandomMovieSerializer(movie,many=True,context={"request": request})
+        return Response(serializer.data)
+
 class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
     queryset = Profile.objects.all()

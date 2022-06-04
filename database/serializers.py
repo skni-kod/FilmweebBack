@@ -75,3 +75,8 @@ class PersonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Person
         fields = ['first_name', 'last_name', 'bio', 'birth_date', 'birth_place']
+
+class RandomMovieSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=Movie
+        fields = ['id','title','original_title','production_year','poster']

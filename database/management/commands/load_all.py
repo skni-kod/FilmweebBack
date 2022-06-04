@@ -18,7 +18,7 @@ class Command(BaseCommand):
 
         for row in DictReader(open('./importData/Movie.csv')):
             tmp = Movie(original_title=row['Ooryginal_title'], production_year=row['production_year'], production_country=row['production_country'],
-                         airing_date=row['airing_date'], duration=row['duration'], description=row['description'], title=row['title'])
+                         airing_date=row['airing_date'], duration=row['duration'], description=row['description'], title=row['title'],poster=row['poster'])
             tmp.save()
 
         if Category.objects.exists():
