@@ -31,5 +31,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('actor/last_name/<str:last_name>/', views.ActorViewPerLastNameDetail.as_view()),
     path('actor/id/<int:actor_id>/', views.ActorViewPerIdDetail.as_view()),
-    path('movies/<int:movie_id>/marks/avgmark/', views.AverageMovieMark.as_view())
+    path('movies/<int:movie_id>/marks/avgmark/', views.AverageMovieMarkView.as_view()),
+    path('actors/<int:person_id>/marks/avgmark/', views.AverageActorMarkView.as_view())
 ]

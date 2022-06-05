@@ -52,6 +52,21 @@ class PersonMarkSerializer(serializers.ModelSerializer):
         model = PersonMark
         fields = ['mark', 'person', 'user']
 
+class AveragePersonMarkSerializer(serializers.ModelSerializer):
+    average_mark = serializers.SerializerMethodField()
+    class Meta:
+
+        fields = ['average_mark']
+        model = PersonMark
+
+    def get_average_mark(self, obj):
+        person_id = self.context.get("person_id")
+        average = PersonMark.objects.filter(person_id = person_id).aggregate(Avg('mark')).get('mark__avg')
+
+        if average == None:
+            return 0
+        return average
+
 class MovieCommentSerializer(serializers.ModelSerializer):
     class Meta: 
         model = MovieComment

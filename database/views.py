@@ -176,9 +176,16 @@ class ActorViewPerIdDetail(APIView):
         serializer = PersonSerializer(queryset, many=True)
         return Response(serializer.data)
 
-class AverageMovieMark(APIView):
+class AverageMovieMarkView(APIView):
 
     def get(self, request, movie_id):
         queryset = MovieMark.objects.raw('SELECT id, AVG(mark) FROM database_moviemark mm WHERE mm.movie_id = %s', [movie_id])
         serializer = AverageMovieMarkSerializer(queryset, many=True, context={'movie_id': movie_id})
+        return Response(serializer.data)
+
+class AverageActorMarkView(APIView):
+
+    def get(self, request, person_id):
+        queryset = PersonMark.objects.raw('SELECT id, AVG(mark) FROM database_personmark pm WHERE pm.person_id = %s', [person_id])
+        serializer = AveragePersonMarkSerializer(queryset, many=True, context={'person_id': person_id})
         return Response(serializer.data)
