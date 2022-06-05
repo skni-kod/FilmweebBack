@@ -2,6 +2,7 @@ from typing import List
 from rest_framework import serializers
 import database
 from database.models import *
+from django.db.models import Avg
 
 #These serializers as-is only provide one with basic access to the database.
 #Any updating/addidion lies in the hands of person implementing given functionality
@@ -30,6 +31,21 @@ class MovieMarkSerializer(serializers.ModelSerializer):
     class Meta:
         model = MovieMark
         fields = ['mark', 'movie', 'user']
+
+class AverageMovieMarkSerializer(serializers.ModelSerializer):
+    average_mark = serializers.SerializerMethodField()
+    class Meta:
+
+        fields = ['average_mark']
+        model = MovieMark
+
+    def get_average_mark(self, obj):
+        movie_id = self.context.get("movie_id")
+        average = MovieMark.objects.filter(movie_id = movie_id).aggregate(Avg('mark')).get('mark__avg')
+
+        if average == None:
+            return 0
+        return average
 
 class PersonMarkSerializer(serializers.ModelSerializer):
     class Meta:
