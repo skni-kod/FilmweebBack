@@ -32,6 +32,11 @@ class MovieViewSet(viewsets.ModelViewSet):
         serializer = MovieSerializer(user)
         return Response(serializer.data)
 
+    def destroy(self, request, pk=None):
+        movie = Movie.objects.get(id=pk)
+        movie.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
     @action(detail=True, methods=['get'])
     def reviews(self, request, pk=None):
         movie = Movie.objects.get(id=pk)
@@ -106,6 +111,11 @@ class UserViewSet(viewsets.ModelViewSet):
         serializer = UserSerializer(user)
         return Response(serializer.data)
 
+    def destroy(self, request, pk=None):
+        user = User.objects.get(id=pk)
+        user.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
     @action(detail=True, methods=['get'])
     def reviews(self, request, pk=None):
         user = User.objects.get(id=pk)
@@ -128,7 +138,12 @@ class PersonViewSet(viewsets.ModelViewSet):
         person = get_object_or_404(queryset, pk=pk)
         serializer = PersonSerializer(person)
         return Response(serializer.data)
-    
+
+    def destroy(self, request, pk=None):
+        person = Person.objects.get(id=pk)
+        person.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
     @action(detail=True, methods=['get'])
     def mark(self, request, pk=None):
         person_mark = Person.objects.get(id=pk)
@@ -152,6 +167,11 @@ class ReviewViewSet(viewsets.ModelViewSet):
         serializer = ReviewSerializer(person)
         return Response(serializer.data)
     
+    def destroy(self, request, pk=None):
+        review = Review.objects.get(id=pk)
+        review.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
         user = Review.objects.get(id=pk)
