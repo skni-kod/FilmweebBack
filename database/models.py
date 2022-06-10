@@ -109,6 +109,7 @@ class Appointment(models.Model):
     name = models.CharField(max_length=30)
     movie = models.ForeignKey('Movie', on_delete=models.CASCADE)
     actor = models.ForeignKey('Person', on_delete=models.CASCADE)
+    role = models.CharField(max_length=30, null=True, blank=True)
     def __str__(self):
         return self.name
 

@@ -1,5 +1,9 @@
-Nname,movie_id,person_id
-actor,1,1
+Nname,movie_id,person_id,role
+actor,1,1,Batman
+actor,2,5,Willy Wonka
+actor,3,6,Catwoman
+actor,7,9,Alice
+actor,7,8,Cat number 1
 director,2,2
 screenwriter,3,3
 cameraman,4,4
