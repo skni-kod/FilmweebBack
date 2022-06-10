@@ -116,6 +116,16 @@ class UserViewSet(viewsets.ModelViewSet):
         user.delete()
         return Response(status.HTTP_204_NO_CONTENT)
 
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+
+    def perform_create(self, serializer):
+        serializer.save()
+
     @action(detail=True, methods=['get'])
     def reviews(self, request, pk=None):
         user = User.objects.get(id=pk)
