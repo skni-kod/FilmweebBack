@@ -107,6 +107,17 @@ class PersonSerializer(serializers.ModelSerializer):
         model = Person
         fields = ['first_name', 'last_name', 'bio', 'birth_date', 'birth_place']
 
+class ActorSerializer(serializers.ModelSerializer):
+    appointment = serializers.SerializerMethodField()
+    class Meta:
+        model = Person
+        fields = ['appointment','first_name', 'last_name', 'bio', 'birth_date', 'birth_place']
+
+    def get_appointment(self, obj):
+        actor_id = self.context.get("actor_id")
+        appointment = Appointment.objects.filter(actor_id = actor_id).values('name')
+        return appointment
+
 class RandomMovieSerializer(serializers.ModelSerializer):
     class Meta:
         model=Movie

@@ -1,6 +1,7 @@
 import imp
 from django import views
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_list_or_404, get_object_or_404
 from rest_framework import viewsets
 from rest_framework.response import Response
@@ -160,6 +161,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
         )
         return Response(serializer.data)
 
+
 #view actors by last_name
 class ActorViewPerLastNameDetail(APIView):
 
@@ -173,7 +175,7 @@ class ActorViewPerIdDetail(APIView):
 
     def get(self, request, actor_id):
         queryset = Person.objects.raw('SELECT * FROM database_person p JOIN database_appointment a ON p.id = a.actor_id WHERE a.name = %s AND p.id = %s', ['actor', actor_id])
-        serializer = PersonSerializer(queryset, many=True)
+        serializer = ActorSerializer(queryset, many=True, context={'actor_id': actor_id})
         return Response(serializer.data)
 
 class AverageMovieMarkView(APIView):
