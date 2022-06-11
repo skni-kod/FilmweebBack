@@ -72,6 +72,22 @@ class MovieCommentSerializer(serializers.ModelSerializer):
         model = MovieComment
         fields = ['comment', 'movie', 'user']
 
+class MovieCommentSerializer2(serializers.ModelSerializer):
+    nick = serializers.SerializerMethodField()
+    avatar = serializers.SerializerMethodField()
+
+    class Meta:
+        model = MovieComment
+        fields = ['comment', 'movie', 'user', 'nick', 'avatar']
+    
+    def get_nick(self, obj):
+        nick = Profile.objects.filter(user_id = obj.user_id).values('nick')
+        return nick
+
+    def get_avatar(self, obj):
+        avatar = Profile.objects.filter(user_id = obj.user_id).values('avatar')
+        return avatar
+
 class ReviewCommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewComment
@@ -97,7 +113,7 @@ class ReviewSerializer2(serializers.ModelSerializer):
     def get_avatar(self, obj):
         avatar = Profile.objects.filter(user_id = obj.user_id).values('avatar')
         return avatar
-    
+
 class LinkSerializer(serializers.ModelSerializer):
     class Meta:
         model = Link

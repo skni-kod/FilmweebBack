@@ -43,7 +43,7 @@ class MovieViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
         movie = Movie.objects.get(id=pk)
-        serializer = MovieCommentSerializer(
+        serializer = MovieCommentSerializer2(
             movie.moviecomment_set, many=True, context={"request": request}
         )
         return Response(serializer.data)
