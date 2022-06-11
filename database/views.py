@@ -36,7 +36,7 @@ class MovieViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def reviews(self, request, pk=None):
         movie = Movie.objects.get(id=pk)
-        serializer = ReviewSerializer(
+        serializer = ReviewSerializer2(
             movie.review_set, many=True, context={"request": request}
         )
         return Response(serializer.data)
@@ -44,7 +44,7 @@ class MovieViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
         movie = Movie.objects.get(id=pk)
-        serializer = MovieCommentSerializer(
+        serializer = MovieCommentSerializer2(
             movie.moviecomment_set, many=True, context={"request": request}
         )
         return Response(serializer.data)
@@ -156,13 +156,11 @@ class ReviewViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
         user = Review.objects.get(id=pk)
-        serializer = ReviewCommentSerializer(
+        serializer = ReviewCommentSerializer2(
             user.reviewcomment_set, many=True, context={"request": request}
         )
         return Response(serializer.data)
 
-
-#view actors by last_name
 class ActorViewPerLastNameDetail(APIView):
 
     def get(self, request, last_name):
@@ -170,7 +168,6 @@ class ActorViewPerLastNameDetail(APIView):
         serializer = PersonSerializer(queryset, many=True)
         return Response(serializer.data)
 
-#view actor by actor_id
 class ActorViewPerIdDetail(APIView):
 
     def get(self, request, actor_id):
@@ -191,3 +188,4 @@ class AverageActorMarkView(APIView):
         queryset = PersonMark.objects.raw('SELECT id, AVG(mark) FROM database_personmark pm WHERE pm.person_id = %s', [person_id])
         serializer = AveragePersonMarkSerializer(queryset, many=True, context={'person_id': person_id})
         return Response(serializer.data)
+
