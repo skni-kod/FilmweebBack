@@ -33,5 +33,4 @@ urlpatterns = [
     path('actor/id/<int:actor_id>/', views.ActorViewPerIdDetail.as_view()),
     path('movies/<int:movie_id>/marks/avgmark/', views.AverageMovieMarkView.as_view()),
     path('actors/<int:person_id>/marks/avgmark/', views.AverageActorMarkView.as_view()),
-    path('movies/id/<int:movie_id>/reviews', views.ReviewView.as_view())
 ]

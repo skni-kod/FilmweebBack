@@ -35,7 +35,7 @@ class MovieViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def reviews(self, request, pk=None):
         movie = Movie.objects.get(id=pk)
-        serializer = ReviewSerializer(
+        serializer = ReviewSerializer2(
             movie.review_set, many=True, context={"request": request}
         )
         return Response(serializer.data)
@@ -188,9 +188,3 @@ class AverageActorMarkView(APIView):
         serializer = AveragePersonMarkSerializer(queryset, many=True, context={'person_id': person_id})
         return Response(serializer.data)
 
-class ReviewView(APIView):
-
-    def get(self, _, movie_id):
-        queryset = Review.objects.raw('SELECT * FROM database_review r WHERE r.movie_id = %s', [movie_id])
-        serializer = ReviewSerializer2(queryset, many=True)
-        return Response(serializer.data)
