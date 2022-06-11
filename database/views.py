@@ -29,7 +29,7 @@ class MovieViewSet(viewsets.ModelViewSet):
     def retrieve(self, request, pk=None):
         queryset = Movie.objects.all()
         user = get_object_or_404(queryset, pk=pk)
-        serializer = MovieSerializer(user)
+        serializer = MovieSerializer2(user)
         return Response(serializer.data)
 
     @action(detail=True, methods=['get'])
