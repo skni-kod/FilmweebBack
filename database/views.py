@@ -155,7 +155,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
         user = Review.objects.get(id=pk)
-        serializer = ReviewCommentSerializer(
+        serializer = ReviewCommentSerializer2(
             user.reviewcomment_set, many=True, context={"request": request}
         )
         return Response(serializer.data)

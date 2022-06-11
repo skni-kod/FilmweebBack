@@ -93,6 +93,22 @@ class ReviewCommentSerializer(serializers.ModelSerializer):
         model = ReviewComment
         fields = ['comment', 'review', 'user']
 
+class ReviewCommentSerializer2(serializers.ModelSerializer):
+    nick = serializers.SerializerMethodField()
+    avatar = serializers.SerializerMethodField()
+
+    class Meta:
+        model = ReviewComment
+        fields = ['comment', 'review', 'user', 'nick', 'avatar']
+
+    def get_nick(self, obj):
+        nick = Profile.objects.filter(user_id = obj.user_id).values('nick')
+        return nick
+
+    def get_avatar(self, obj):
+        avatar = Profile.objects.filter(user_id = obj.user_id).values('avatar')
+        return avatar
+
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
