@@ -89,7 +89,7 @@ class Command(BaseCommand):
         print("Importing Appointment...")
 
         for row in DictReader(open('./importData/Appointment.csv')):
-            tmp=Appointment(name=row['Nname'],movie=Movie.objects.get(id=row['movie_id']),actor=Person.objects.get(id=row['person_id']))  
+            tmp=Appointment(name=row['Nname'],movie=Movie.objects.get(id=row['movie_id']),actor=Person.objects.get(id=row['person_id']),role=row['role'])  
             tmp.save()
 
 
