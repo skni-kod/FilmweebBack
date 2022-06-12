@@ -1,7 +1,6 @@
 import imp
 from django import views
 from django.http import HttpResponse
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_list_or_404, get_object_or_404
 from rest_framework import viewsets
 from rest_framework.response import Response
@@ -73,10 +72,10 @@ class MovieViewSet(viewsets.ModelViewSet):
 
     @action(detail=True, methods=['get'])
     def actors(self, request, pk=None):
-        movie = Movie.objects.raw('SELECT * FROM database_person p JOIN database_appointment a ON p.id = a.actor_id WHERE a.name = %s', ['actor'])
-        serializer = PersonSerializer(movie,many=True,context={"request": request})
+        movie = Movie.objects.raw('SELECT * FROM database_person p JOIN database_appointment a ON p.id = a.actor_id WHERE a.name = %s AND a.movie_id = %s', ['actor', pk])
+        serializer = ActorSerializer(movie,many=True,context={"request": request})
         return Response(serializer.data)
-    
+
 class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
     queryset = Profile.objects.all()
@@ -172,7 +171,7 @@ class ActorViewPerIdDetail(APIView):
 
     def get(self, request, actor_id):
         queryset = Person.objects.raw('SELECT * FROM database_person p JOIN database_appointment a ON p.id = a.actor_id WHERE a.name = %s AND p.id = %s', ['actor', actor_id])
-        serializer = ActorSerializer(queryset, many=True, context={'actor_id': actor_id})
+        serializer = PersonSerializer(queryset, many=True)
         return Response(serializer.data)
 
 class AverageMovieMarkView(APIView):
@@ -188,4 +187,3 @@ class AverageActorMarkView(APIView):
         queryset = PersonMark.objects.raw('SELECT id, AVG(mark) FROM database_personmark pm WHERE pm.person_id = %s', [person_id])
         serializer = AveragePersonMarkSerializer(queryset, many=True, context={'person_id': person_id})
         return Response(serializer.data)
-

@@ -1,9 +1,9 @@
 Nname,movie_id,person_id,role
 actor,1,1,Batman
+director,2,2,
+screenwriter,3,3,
+cameraman,4,4,
 actor,2,5,Willy Wonka
-actor,3,6,Catwoman
-actor,7,9,Alice
-actor,7,8,Cat number 1
-director,2,2
-screenwriter,3,3
-cameraman,4,4
+actor,3,6,Alice
+actor,4,7,Cat nr 1
+actor,5,8,Catwoman
