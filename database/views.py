@@ -76,6 +76,14 @@ class MovieViewSet(viewsets.ModelViewSet):
         serializer = ActorSerializer(movie,many=True,context={"request": request})
         return Response(serializer.data)
 
+    @action(detail=True, methods=['get'])
+    def genre(self, request, pk=None):
+        movie = Category.objects.raw('SELECT * FROM database_category c INNER JOIN database_category_movie cm ON c.id=cm.category_id WHERE cm.movie_id = %s',[pk])
+        serializer = CategorySerializer2(movie,many=True,context={"request": request})
+
+        return Response(serializer.data)
+        
+
 class ProfileViewSet(viewsets.ModelViewSet):
     serializer_class = ProfileSerializer
     queryset = Profile.objects.all()
@@ -112,6 +120,12 @@ class UserViewSet(viewsets.ModelViewSet):
         serializer = ReviewSerializer(
             user.review_set, many=True, context={"request": request}
         )
+        return Response(serializer.data)
+    
+    @action(detail=True, methods=['get'])
+    def profile(self, request, pk=None):
+        profile = Profile.objects.raw('SELECT * FROM database_profile p INNER JOIN database_user u on u.id=p.user_id WHERE u.id= %s',[pk])
+        serializer = ProfileSerializer(profile, many=True, context={"request": request})
         return Response(serializer.data)
 
 class PersonViewSet(viewsets.ModelViewSet):

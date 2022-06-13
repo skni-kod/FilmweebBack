@@ -150,6 +150,11 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = ['id','name', 'movies']
 
+class CategorySerializer2(serializers.ModelSerializer):
+    class Meta: 
+        model = Category
+        fields = ['name']
+
 class AppointmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Appointment
