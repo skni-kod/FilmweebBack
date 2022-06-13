@@ -128,6 +128,12 @@ class UserViewSet(viewsets.ModelViewSet):
         serializer = ProfileSerializer(profile, many=True, context={"request": request})
         return Response(serializer.data)
 
+    @action(detail=True, methods=['get'])
+    def lists(self, request, pk=None):
+        profile = List.objects.raw('SELECT * FROM database_list l INNER JOIN database_user u on l.nick_id=u.id WHERE u.id= %s',[pk])
+        serializer = ListSerializer(profile, many=True, context={"request": request})
+        return Response(serializer.data)
+
 class PersonViewSet(viewsets.ModelViewSet):
     serializer_class = PersonSerializer
     queryset = Person.objects.all()
