@@ -133,6 +133,12 @@ class UserViewSet(viewsets.ModelViewSet):
         profile = List.objects.raw('SELECT * FROM database_list l INNER JOIN database_user u on l.nick_id=u.id WHERE u.id= %s',[pk])
         serializer = ListSerializer(profile, many=True, context={"request": request})
         return Response(serializer.data)
+        
+    @action(detail=True, methods=['get'])
+    def comments(self, request, pk=None):
+        profile = User.objects.get(id=pk)
+        serializer = MovieCommentSerializer(profile.moviecomment_set, many=True, context={"request": request})
+        return Response(serializer.data)
 
 class PersonViewSet(viewsets.ModelViewSet):
     serializer_class = PersonSerializer
