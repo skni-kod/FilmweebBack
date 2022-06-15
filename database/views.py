@@ -177,6 +177,11 @@ class ReviewViewSet(viewsets.ModelViewSet):
         person = get_object_or_404(queryset, pk=pk)
         serializer = ReviewSerializer(person)
         return Response(serializer.data)
+
+    def delete(self,request,pk=None):
+        tmp = Review.objects.get(id=pk)
+        tmp.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
     
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
