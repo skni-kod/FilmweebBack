@@ -108,6 +108,11 @@ class ProfileViewSet(viewsets.ModelViewSet):
         serializer = ProfileSerializer(user)
         return Response(serializer.data)
 
+    def destroy(self, request, pk=None):
+        profile = Profile.objects.get(id=pk)
+        profile.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
