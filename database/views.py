@@ -288,3 +288,8 @@ class MovieCommentViewSet(viewsets.ModelViewSet):
             "message": "Movie comment successfully created"
         }
         return Response(res, status.HTTP_201_CREATED, headers=headers)
+
+    def destroy(self, request,pk=None):
+        tmp = MovieComment.objects.get(id=pk)
+        tmp.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
