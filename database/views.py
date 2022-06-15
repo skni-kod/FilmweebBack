@@ -32,6 +32,23 @@ class MovieViewSet(viewsets.ModelViewSet):
         serializer = MovieSerializer2(user)
         return Response(serializer.data)
 
+    def destroy(self, request, pk=None):
+        movie = Movie.objects.get(id=pk)
+        movie.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+    
+        res = {
+            "message": "Details Successfully created"
+        }
+    
+        return Response(res, status=status.HTTP_201_CREATED, headers=headers)
+
     @action(detail=True, methods=['get'])
     def reviews(self, request, pk=None):
         movie = Movie.objects.get(id=pk)
@@ -91,6 +108,18 @@ class ProfileViewSet(viewsets.ModelViewSet):
         serializer = ProfileSerializer(user)
         return Response(serializer.data)
 
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+    
+        res = {
+            "message": "Details Successfully created"
+        }
+    
+        return Response(res, status=status.HTTP_201_CREATED, headers=headers)
+
 class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     queryset = User.objects.all()    
@@ -105,6 +134,23 @@ class UserViewSet(viewsets.ModelViewSet):
         user = get_object_or_404(queryset, pk=pk)
         serializer = UserSerializer(user)
         return Response(serializer.data)
+
+    def destroy(self, request, pk=None):
+        user = User.objects.get(id=pk)
+        user.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+    
+        res = {
+            "message": "Details Successfully created"
+        }
+    
+        return Response(res, status=status.HTTP_201_CREATED, headers=headers)
 
     @action(detail=True, methods=['get'])
     def reviews(self, request, pk=None):
@@ -128,7 +174,24 @@ class PersonViewSet(viewsets.ModelViewSet):
         person = get_object_or_404(queryset, pk=pk)
         serializer = PersonSerializer(person)
         return Response(serializer.data)
+
+    def destroy(self, request, pk=None):
+        person = Person.objects.get(id=pk)
+        person.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
     
+        res = {
+            "message": "Details Successfully created"
+        }
+    
+        return Response(res, status=status.HTTP_201_CREATED, headers=headers)
+
     @action(detail=True, methods=['get'])
     def mark(self, request, pk=None):
         person_mark = Person.objects.get(id=pk)
@@ -152,6 +215,23 @@ class ReviewViewSet(viewsets.ModelViewSet):
         serializer = ReviewSerializer(person)
         return Response(serializer.data)
     
+    def destroy(self, request, pk=None):
+        review = Review.objects.get(id=pk)
+        review.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+    
+        res = {
+            "message": "Details Successfully created"
+        }
+    
+        return Response(res, status=status.HTTP_201_CREATED, headers=headers)
+
     @action(detail=True, methods=['get'])
     def comments(self, request, pk=None):
         user = Review.objects.get(id=pk)
