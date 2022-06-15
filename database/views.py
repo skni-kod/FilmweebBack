@@ -263,3 +263,28 @@ class PersonMarkViewSet(viewsets.ModelViewSet):
             "message": "Person mark successfully created"
         }
         return Response(res, status.HTTP_201_CREATED, headers=headers)
+
+class MovieCommentViewSet(viewsets.ModelViewSet):
+    serializer_class = MovieCommentSerializer
+    queryset = MovieComment.objects.all()
+
+    def list(self, request):
+        queryset = MovieComment.objects.all()
+        serializer = MovieCommentSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = MovieComment.objects.all()
+        person = get_object_or_404(queryset, pk=pk)
+        serializer = MovieCommentSerializer(person)
+        return Response(serializer.data)
+
+    def create(self, request,*args,**kwargs):
+        serializer=MovieCommentSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        res = {
+            "message": "Movie comment successfully created"
+        }
+        return Response(res, status.HTTP_201_CREATED, headers=headers)

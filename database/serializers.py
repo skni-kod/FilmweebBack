@@ -75,7 +75,7 @@ class AveragePersonMarkSerializer(serializers.ModelSerializer):
 class MovieCommentSerializer(serializers.ModelSerializer):
     class Meta: 
         model = MovieComment
-        fields = ['id','comment', 'user']
+        fields = ['id','comment', 'user','movie_id']
 
 class MovieCommentSerializer2(serializers.ModelSerializer):
     nick = serializers.SerializerMethodField()
@@ -83,7 +83,7 @@ class MovieCommentSerializer2(serializers.ModelSerializer):
 
     class Meta:
         model = MovieComment
-        fields = ['id','comment', 'user', 'nick', 'avatar']
+        fields = ['id','comment','movie_id', 'user', 'nick', 'avatar']
     
     def get_nick(self, obj):
         nick = Profile.objects.filter(user_id = obj.user_id).values('nick')
