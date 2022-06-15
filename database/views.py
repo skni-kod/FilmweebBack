@@ -298,3 +298,33 @@ class MovieCommentViewSet(viewsets.ModelViewSet):
         tmp = MovieComment.objects.get(id=pk)
         tmp.delete()
         return Response(status.HTTP_204_NO_CONTENT)
+
+class ReviewCommentViewSet(viewsets.ModelViewSet):
+    serializer_class = ReviewCommentSerializer
+    queryset = ReviewComment.objects.all()
+
+    def list(self, request):
+        queryset = ReviewComment.objects.all()
+        serializer = ReviewCommentSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = ReviewComment.objects.all()
+        person = get_object_or_404(queryset, pk=pk)
+        serializer = ReviewCommentSerializer(person)
+        return Response(serializer.data)
+
+    def create(self, request,*args,**kwargs):
+        serializer=ReviewCommentSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        res = {
+            "message": "Movie comment successfully created"
+        }
+        return Response(res, status.HTTP_201_CREATED, headers=headers)
+
+    def destroy(self, request,pk=None):
+        tmp = ReviewComment.objects.get(id=pk)
+        tmp.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
