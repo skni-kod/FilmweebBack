@@ -213,3 +213,53 @@ class AverageActorMarkView(APIView):
         queryset = PersonMark.objects.raw('SELECT id, AVG(mark) FROM database_personmark pm WHERE pm.person_id = %s', [person_id])
         serializer = AveragePersonMarkSerializer(queryset, many=True, context={'person_id': person_id})
         return Response(serializer.data)
+
+class MovieMarkViewSet(viewsets.ModelViewSet):
+    serializer_class = MovieMarkSerializer
+    queryset = MovieMark.objects.all()
+
+    def list(self, request):
+        queryset = MovieMark.objects.all()
+        serializer = MovieMarkSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = MovieMark.objects.all()
+        person = get_object_or_404(queryset, pk=pk)
+        serializer = MovieMarkSerializer(person)
+        return Response(serializer.data)
+
+    def create(self, request,*args,**kwargs):
+        serializer=self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        res = {
+            "message": "Movie mark successfully created"
+        }
+        return Response(res, status.HTTP_201_CREATED, headers=headers)
+
+class PersonMarkViewSet(viewsets.ModelViewSet):
+    serializer_class = PersonMarkSerializer
+    queryset = PersonMark.objects.all()
+
+    def list(self, request):
+        queryset = PersonMark.objects.all()
+        serializer = PersonMarkSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = PersonMark.objects.all()
+        person = get_object_or_404(queryset, pk=pk)
+        serializer = PersonMarkSerializer(person)
+        return Response(serializer.data)
+
+    def create(self, request,*args,**kwargs):
+        serializer=self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        res = {
+            "message": "Person mark successfully created"
+        }
+        return Response(res, status.HTTP_201_CREATED, headers=headers)
