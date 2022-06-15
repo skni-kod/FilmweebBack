@@ -328,3 +328,33 @@ class ReviewCommentViewSet(viewsets.ModelViewSet):
         tmp = ReviewComment.objects.get(id=pk)
         tmp.delete()
         return Response(status.HTTP_204_NO_CONTENT)
+
+class ListViewSet(viewsets.ModelViewSet):
+    serializer_class = ListSerializer
+    queryset = List.objects.all()
+
+    def list(self, request):
+        queryset = List.objects.all()
+        serializer = ListSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        queryset = List.objects.all()
+        person = get_object_or_404(queryset, pk=pk)
+        serializer = ListSerializer(person)
+        return Response(serializer.data)
+
+    def create(self, request,*args,**kwargs):
+        serializer=self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        headers = self.get_success_headers(serializer.data)
+        res = {
+            "message": "List successfully created"
+        }
+        return Response(res, status.HTTP_201_CREATED, headers=headers)
+
+    def destroy(self, request,pk=None):
+        tmp = List.objects.get(id=pk)
+        tmp.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
