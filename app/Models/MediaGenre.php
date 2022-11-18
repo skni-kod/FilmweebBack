@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Season extends Model
+class MediaGenre extends Model
 {
     use HasFactory;
 
@@ -13,7 +13,7 @@ class Season extends Model
         return $this->belongsTo(Media::class);
     }
 
-    public function episode(){
-        return $this->hasMany(Episode::class);
+    public function genre(){
+        $this->belongsTo(Genre::class);
     }
 }
