@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('episode', function (Blueprint $table){
             $table->increments('id');
             $table->integer('value');
-            $table->string('64');
+            $table->string('title', '64');
             $table->integer('season_id');
 
             $table->foreign('season_id')->references('id')->on('season')->onDelete('cascade');

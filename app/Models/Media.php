@@ -9,6 +9,8 @@ class Media extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['title', 'original_title', 'release_date', 'overview', ' duration', 'type'];
+
     public function mediaGenre(){
         return $this->hasMany(MediaGenre::class);
     }

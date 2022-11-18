@@ -9,6 +9,8 @@ class Genre extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name'];
+
     public function mediaGenre(){
         return $this->hasMany(Genre::class);
     }

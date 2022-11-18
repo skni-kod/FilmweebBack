@@ -9,6 +9,8 @@ class Episode extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['value', 'title', 'season_id'];
+
     public function season(){
         return $this->belongsTo(Season::class);
     }
