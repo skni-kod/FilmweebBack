@@ -9,7 +9,7 @@ class Season extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['media_id', 'value', 'title'];
+    protected $fillable = ['medium_id', 'value', 'title'];
 
     public function media(){
         return $this->belongsTo(Medium::class);

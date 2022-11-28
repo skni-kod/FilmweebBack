@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('genre_medium', function (Blueprint $table){
             $table->id();
-            $table->unsignedBigInteger('media_id');
+            $table->unsignedBigInteger('medium_id');
             $table->unsignedBigInteger('genre_id');
             $table->timestamps();
 
-            $table->foreign('media_id')->references('id')->on('medium')->onDelete('cascade');
+            $table->foreign('medium_id')->references('id')->on('media')->onDelete('cascade');
             $table->foreign('genre_id')->references('id')->on('genres')->onDelete('cascade');
         });
     }
