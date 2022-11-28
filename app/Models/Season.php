@@ -12,10 +12,10 @@ class Season extends Model
     protected $fillable = ['media_id', 'value', 'title'];
 
     public function media(){
-        return $this->belongsTo(Media::class);
+        return $this->belongsTo(Medium::class);
     }
 
-    public function episode(){
+    public function episodes(){
         return $this->hasMany(Episode::class);
     }
 }

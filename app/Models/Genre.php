@@ -11,7 +11,7 @@ class Genre extends Model
 
     protected $fillable = ['name'];
 
-    public function mediaGenre(){
-        return $this->hasMany(Genre::class);
+    public function media(){
+        return $this->belongsToMany(Medium::class);
     }
 }

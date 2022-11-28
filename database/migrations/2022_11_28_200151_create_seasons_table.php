@@ -13,13 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('episode', function (Blueprint $table){
-            $table->increments('id');
+        Schema::create('seasons', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('media_id');
             $table->integer('value');
-            $table->string('title', '64');
-            $table->integer('season_id');
+            $table->string('title', 64);
+            $table->timestamps();
 
-            $table->foreign('season_id')->references('id')->on('season')->onDelete('cascade');
+            $table->foreign('media_id')->references('id')->on('medium')->onDelete('cascade');
         });
     }
 
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('episode');
+        Schema::dropIfExists('seasons');
     }
 };

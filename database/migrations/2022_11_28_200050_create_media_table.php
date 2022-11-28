@@ -13,14 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('media', function (Blueprint $table){
-           $table->increments('id');
-           $table->string('title', 64);
-           $table->string('original_title', 64);
-           $table->date('release_date');
-           $table->string('overview', 64);
-           $table->double('duration');
-           $table->enum('type', ['movie', 'serie']);
+        Schema::create('media', function (Blueprint $table) {
+            $table->id();
+            $table->string('title', 64);
+            $table->string('original_title', 64);
+            $table->date('release_date');
+            $table->string('overview', 64);
+            $table->double('duration');
+            $table->enum('type', ['movie', 'serie']);
+            $table->timestamps();
         });
     }
 
