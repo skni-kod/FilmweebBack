@@ -18,6 +18,6 @@ class Language extends Model
 
     public function languageRoles()
     {
-        return $this->belongsToMany(Medium::class);
+        return $this->belongsToMany(LanguageRole::class);
     }
 }

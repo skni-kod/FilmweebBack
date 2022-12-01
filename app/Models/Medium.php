@@ -24,7 +24,7 @@ class Medium extends Model
     }
     
     public function keywords(){
-        return $this->belongsToMany(Country::class);
+        return $this->belongsToMany(Keyword::class);
     }
 
     public function languages(){
