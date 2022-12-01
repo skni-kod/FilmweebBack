@@ -12,7 +12,7 @@ class Gender extends Model
     protected $fillable = ['name','list_id'];
 
     public function list(){
-        return $this->belongsTo(List::class);
+        return $this->belongsTo(Medium_list::class);
     }
     
     public function casts(){

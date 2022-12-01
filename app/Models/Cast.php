@@ -15,11 +15,11 @@ class Cast extends Model
         return $this->belongsTo(Medium::class);
     }
 
-    public function people(){
-        return $this->hasMany(Person::class);
+    public function person(){
+        return $this->belongsTo(Person::class);
     }
 
-    public function genders(){
-        return $this->hasMany(Gender::class);
+    public function gender(){
+        return $this->belongsTo(Gender::class);
     }
 }

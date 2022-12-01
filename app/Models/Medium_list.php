@@ -18,4 +18,8 @@ class Medium_list extends Model
     public function media(){
         return $this->belongsToMany(Medium::class);
     }
+
+    public function genders(){
+        return $this->hasMany(Gender::class);
+    }
 }

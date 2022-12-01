@@ -10,6 +10,7 @@ class Crew extends Model
     use HasFactory;
 
     protected $fillable=['medium_id','person_id','department_id','job'];
+
     public function medium(){
         return $this->belongsTo(Media::class);
     }
