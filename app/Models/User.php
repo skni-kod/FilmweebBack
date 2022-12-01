@@ -45,4 +45,24 @@ class User extends Authenticatable
     public function lists(){
         return $this->hasMany(Medium_list::class);
     }
+
+    public function reviews(){
+        return $this->hasMany(Review::class);
+    }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
+
+    public function grades(){
+        return $this->hasMany(Grade::class);
+    }
+
+    public function roles(){
+        return $this->belongsToMany(Role::class);
+    }
+
+    public function friends(){
+        return $this->belongsToMany(User::class, 'friend_user', 'user_id', 'friend_id');
+    }
 }
