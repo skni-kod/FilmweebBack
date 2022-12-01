@@ -33,5 +33,16 @@ class Medium extends Model
 
     public function languageRoles(){
         return $this->belongsToMany(LanguageRole::class);
+        
+    public function casts(){
+        return $this->hasMany(Cast::class);
+    }
+
+    public function crews(){
+        return $this->hasMany(Crew::class);
+    }
+    
+    public function lists(){
+        return $this->belongsToMany(Medium_list::class);
     }
 }
