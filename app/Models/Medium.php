@@ -19,6 +19,21 @@ class Medium extends Model
         return $this->belongsToMany(Genre::class);
     }
 
+    public function countries(){
+        return $this->belongsToMany(Country::class);
+    }
+    
+    public function keywords(){
+        return $this->belongsToMany(Keyword::class);
+    }
+
+    public function languages(){
+        return $this->belongsToMany(Language::class);
+    }
+
+    public function languageRoles(){
+        return $this->belongsToMany(LanguageRole::class);
+        
     public function casts(){
         return $this->hasMany(Cast::class);
     }
@@ -26,6 +41,7 @@ class Medium extends Model
     public function crews(){
         return $this->hasMany(Crew::class);
     }
+    
     public function lists(){
         return $this->belongsToMany(Medium_list::class);
     }
