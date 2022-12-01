@@ -18,4 +18,20 @@ class Medium extends Model
     public function genres(){
         return $this->belongsToMany(Genre::class);
     }
+
+    public function countries(){
+        return $this->belongsToMany(Country::class);
+    }
+    
+    public function keywords(){
+        return $this->belongsToMany(Country::class);
+    }
+
+    public function languages(){
+        return $this->belongsToMany(Language::class);
+    }
+
+    public function languageRoles(){
+        return $this->belongsToMany(LanguageRole::class);
+    }
 }
