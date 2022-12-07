@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('medium_id');
             $table->unsignedBigInteger('person_id');
             $table->unsignedBigInteger('department_id');
-            $table->string('job',100);
+            $table->string('job',100)->nullable();
             $table->timestamps();
 
             $table->foreign('medium_id')->references('id')->on('media')->onDelete('cascade');
