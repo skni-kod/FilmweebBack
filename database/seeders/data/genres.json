@@ -1,0 +1,22 @@
+{
+    "genres":
+        [
+            {"name": "Przygodowy"},
+            {"name": "Niemy"},
+            {"name": "Melodramat"},
+            {"name": "Fantasy"},
+            {"name": "Biograficzny"},
+            {"name": "Kryminał"},
+            {"name": "Krótkometrażowy"},
+            {"name": "Komedia"},
+            {"name": "Familijny"},
+            {"name": "Animacja"},
+            {"name": "Akcji"},
+            {"name": "Thriller"},
+            {"name": "Sci-Fi"},
+            {"name": "Romans"},
+            {"name": "Horror"},
+            {"name": "Dramat"},
+            {"name": "Dokumentalny"}
+        ]
+}
