@@ -17,13 +17,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             DepartmentSeeder::class,
             LanguageSeeder::class,
-            GenderSeeder::class
+            GenderSeeder::class,
+            CountrySeeder::class,
+            GenreSeeder::class,
+            // MainSeeder::class
         ]);
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }

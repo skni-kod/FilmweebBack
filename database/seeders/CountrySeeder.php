@@ -20,7 +20,7 @@ class CountrySeeder extends Seeder
         foreach ($data->countries as $value){
             Country::create([
                 'name' => $value->name,
-                'iso_code' => $value->iso_code
+                'code' => $value->code
             ]);
         }
     }

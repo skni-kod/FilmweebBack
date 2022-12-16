@@ -22,11 +22,9 @@
         },
         "countries":[
             {
-                "iso_code": "AUS",
                 "name": "Australia"
             },
             {
-                "iso_code": "USA",
                 "name": "Stany Zjednoczone"
             }
         ],
@@ -38,7 +36,7 @@
                     "first_name": "Keanu",
                     "last_name": "Reeves"
                 },
-                "gender": "man"
+                "gender": "male"
             },
             {
                 "character": "Trinity",
@@ -47,7 +45,7 @@
                     "first_name": "Carrie-Anne",
                     "last_name": "Moss"
                 },
-                "gender": "woman"
+                "gender": "female"
             },
             {
                 "character": "Morfeusz",
@@ -56,7 +54,7 @@
                     "first_name": "Laurence",
                     "last_name": "Fishburne"
                 },
-                "gender": "man"
+                "gender": "male"
             },
             {
                 "character": "Agent Smith",
@@ -65,7 +63,7 @@
                     "first_name": "Hugo",
                     "last_name": "Weaving"
                 },
-                "gender": "man"
+                "gender": "male"
             },
             {
                 "character": "Wyrocznia",
@@ -74,7 +72,7 @@
                     "first_name": "Gloria",
                     "last_name": "Foster"
                 },
-                "gender": "woman"
+                "gender": "female"
             }
         ],
         "crews":[
@@ -83,56 +81,64 @@
                 "person":{
                     "first_name": "Lilly",
                     "last_name": "Wachowski"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Reżyser",
                 "person":{
                     "first_name": "Lana",
                     "last_name": "Wachowski"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Scenariusz",
                 "person":{
                     "first_name": "Lilly",
                     "last_name": "Wachowski"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Scenariusz",
                 "person":{
                     "first_name": "Lana",
                     "last_name": "Wachowski"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Zdjęcia",
                 "person":{
                     "first_name": "Bill",
                     "last_name": "Pope"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Muzyka",
                 "person":{
                     "first_name": "Don",
                     "last_name": "Davis"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Montaż",
                 "person":{
                     "first_name": "Zach",
                     "last_name": "Staenberg"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Scenariusz",
                 "person":{
                     "first_name": "Lana",
                     "last_name": "Wachowski"
-                }
+                },
+                "job": null
             },
             {
                 "department": "Scenografia",
