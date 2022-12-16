@@ -46,4 +46,8 @@ class Medium extends Model
     public function lists(){
         return $this->belongsToMany(Medium_list::class);
     }
+
+    public function porduction_companies(){
+        return $this->belongsToMany(ProductionCompany::class);
+    }
 }
