@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('company_medium', function (Blueprint $table) {
+        Schema::create('medium_production_company', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('medium_id');
-            $table->unsignedBigInteger('company_id');
+            $table->unsignedBigInteger('production_company_id');
             $table->timestamps();
 
             $table->foreign('medium_id')->references('id')->on('media')->onDelete('cascade');
-            $table->foreign('company_id')->references('id')->on('production_companies')->onDelete('cascade');
+            $table->foreign('production_company_id')->references('id')->on('production_companies')->onDelete('cascade');
         });
     }
 
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('company_medium');
+        Schema::dropIfExists('medium_production_company');
     }
 };
