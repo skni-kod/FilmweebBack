@@ -22,10 +22,12 @@
         },
         "countries":[
             {
-                "name": "Australia"
+                "name": "Australia",
+                "code": "AU"
             },
             {
-                "name": "Stany Zjednoczone"
+                "name": "Stany Zjednoczone",
+                "code": "US"
             }
         ],
         "casts":[

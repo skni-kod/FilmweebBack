@@ -31,23 +31,26 @@ class MainSeeder extends Seeder
             $mediumData = get_object_vars($x->medium);
             $mediumModel = Medium::firstOrCreate($mediumData);
 
-            //genre
+            //genre and genre_medium
             $genreData = $x->genre;
             foreach ($genreData as $genre){
                 $genreModel = Genre::firstOrCreate(['name' => $genre->name]);
+                $mediumModel->genres()->attach($genreModel->id);
             }
 
-            //production companies
+            //production companies and company_medium
             $productionCompanyData = get_object_vars($x->production_companies);
             $productionCompanyModel = ProductionCompany::firstOrCreate($productionCompanyData);
+            $mediumModel->porduction_companies()->attach($productionCompanyModel->id);
 
-            //countries
+            //countries and country_medium
             $countriesData = $x->countries;
             foreach ($countriesData as $country){
                 $countryModel = Country::firstOrCreate([
                     'code'=> 'abc',
-                    'name'=>$country->name
+                    'name'=> $country->name
                 ]);
+                $mediumModel->countries()->attach($countryModel->id);
             }
 
             //casts
@@ -80,7 +83,6 @@ class MainSeeder extends Seeder
                 );
                 $crewModel = Crew::create($crewData);
             }
-
         }
     }
 }
