@@ -47,7 +47,7 @@ class MainSeeder extends Seeder
             $countriesData = $x->countries;
             foreach ($countriesData as $country){
                 $countryModel = Country::firstOrCreate([
-                    'code'=> 'abc',
+                    'code'=> $country->code,
                     'name'=> $country->name
                 ]);
                 $mediumModel->countries()->attach($countryModel->id);
