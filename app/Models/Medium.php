@@ -39,7 +39,15 @@ class Medium extends Model
         return $this->belongsToMany(Medium_list::class);
     }
 
-    public function porduction_companies(){
+    public function production_companies(){
         return $this->belongsToMany(ProductionCompany::class);
+    }
+
+    /**
+     * Get the images for the medium.
+     */
+    public function images()
+    {
+        return $this->hasMany(MediumImage::class);
     }
 }

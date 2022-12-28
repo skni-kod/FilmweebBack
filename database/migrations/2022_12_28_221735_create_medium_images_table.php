@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('people', function (Blueprint $table) {
+        Schema::create('medium_images', function (Blueprint $table) {
             $table->id();
-            $table->string('first_name',64);
-            $table->string('last_name',64);
+            $table->unsignedBigInteger('medium_id');
             $table->string('image_path', 64)->nullable();
             $table->timestamps();
+
+            $table->foreign('medium_id')->references('id')->on('media')->onDelete('cascade');
         });
     }
 
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('people');
+        Schema::dropIfExists('medium_images');
     }
 };
