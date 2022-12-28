@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             GenderSeeder::class,
             CountrySeeder::class,
             GenreSeeder::class,
-            // MainSeeder::class
+            MainSeeder::class
         ]);
     }
 }
