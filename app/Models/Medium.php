@@ -27,14 +27,6 @@ class Medium extends Model
         return $this->belongsToMany(Keyword::class);
     }
 
-    public function languages(){
-        return $this->belongsToMany(Language::class);
-    }
-
-    public function languageRoles(){
-        return $this->belongsToMany(LanguageRole::class);
-    }
-
     public function casts(){
         return $this->hasMany(Cast::class);
     }
