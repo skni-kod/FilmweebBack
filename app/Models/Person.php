@@ -9,7 +9,7 @@ class Person extends Model
 {
     use HasFactory;
 
-    protected $fillable=['first_name','last_name'];
+    protected $fillable=['first_name','last_name', 'image_path'];
     
     public function casts(){
         return $this->hasMany(Cast::class);
