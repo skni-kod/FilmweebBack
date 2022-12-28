@@ -27,14 +27,6 @@ class Medium extends Model
         return $this->belongsToMany(Keyword::class);
     }
 
-    public function languages(){
-        return $this->belongsToMany(Language::class);
-    }
-
-    public function languageRoles(){
-        return $this->belongsToMany(LanguageRole::class);
-    }
-
     public function casts(){
         return $this->hasMany(Cast::class);
     }
@@ -47,7 +39,15 @@ class Medium extends Model
         return $this->belongsToMany(Medium_list::class);
     }
 
-    public function porduction_companies(){
+    public function production_companies(){
         return $this->belongsToMany(ProductionCompany::class);
+    }
+
+    /**
+     * Get the images for the medium.
+     */
+    public function images()
+    {
+        return $this->hasMany(MediumImage::class);
     }
 }

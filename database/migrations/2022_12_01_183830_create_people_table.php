@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('first_name',64);
             $table->string('last_name',64);
-            $table->string('image_path')->nullable();
+            $table->string('image_path', 64)->nullable();
+
             $table->timestamps();
         });
     }

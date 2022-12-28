@@ -41,7 +41,7 @@ class MainSeeder extends Seeder
             //production companies and company_medium
             $productionCompanyData = get_object_vars($x->production_companies);
             $productionCompanyModel = ProductionCompany::firstOrCreate($productionCompanyData);
-            $mediumModel->porduction_companies()->attach($productionCompanyModel->id);
+            $mediumModel->production_companies()->attach($productionCompanyModel->id);
 
             //countries and country_medium
             $countriesData = $x->countries;
