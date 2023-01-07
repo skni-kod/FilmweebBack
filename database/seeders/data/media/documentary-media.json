@@ -1,0 +1,958 @@
+[
+    {
+        "medium": {
+            "title": "Sugar Man",
+            "original_title": "Searching for Sugar Man",
+            "release_date": "2012-1-19",
+            "overview": "Historia muzyka Sixto Rodrigueza, któremu wróżono karierę większą niż Bobowi Dylanowi. Po drugiej płycie piosenkarz zapadł się pod ziemię. ",
+            "duration": 85,
+            "type": "movie",
+            "image_path": "/media/sugar_man.jpg"
+        },
+        "genre": [
+            {
+                "name": "Biograficzny"
+            },
+            {
+                "name": "Dokumentalny"
+            },
+            {
+                "name": "Muzyczny"
+            }
+        ],
+        "production_companies": {
+            "name": "Canfield Pictures (współudział)"
+        },
+        "countries": [
+            {
+                "name": "Szwecja",
+                "code": "SE"
+            },
+            {
+                "name": "Wielka Brytania",
+                "code": "GB"
+            }
+        ],
+        "casts": [],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Malik",
+                    "last_name": "Bendjelloul"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Malik",
+                    "last_name": "Bendjelloul"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Camilla",
+                    "last_name": "Skagerström"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Rodriguez",
+                    "last_name": "Rodriguez"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Malik",
+                    "last_name": "Bendjelloul"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Simon",
+                    "last_name": "Chinn"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Sheryl",
+                    "last_name": "Crown"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Andrew",
+                    "last_name": "Ruhemann"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Battsek"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Maggie",
+                    "last_name": "Monteith"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Malik",
+                    "last_name": "Bendjelloul"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Hjalmar",
+                    "last_name": "Palmgren"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Malla",
+                    "last_name": "Grapengiesser"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Nicole",
+                    "last_name": "Stott"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "George",
+                    "last_name": "Chignell"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Per",
+                    "last_name": "Nyström"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Malik",
+                    "last_name": "Bendjelloul"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Senna",
+            "original_title": "Senna",
+            "release_date": "2010-10-7",
+            "overview": "Oparta na faktach historia o brazylijskiej legendzie Formuły 1, który przez wielu fanów wyścigów samochodowych uważany jest za najlepszego kierowcę wszech czasów. ",
+            "duration": 106,
+            "type": "movie",
+            "image_path": "/media/senna.jpg"
+        },
+        "genre": [
+            {
+                "name": "Biograficzny"
+            },
+            {
+                "name": "Dokumentalny"
+            },
+            {
+                "name": "Sportowy"
+            }
+        ],
+        "production_companies": {
+            "name": "Universal Pictures (przedstawia)"
+        },
+        "countries": [
+            {
+                "name": "Wielka Brytania",
+                "code": "GB"
+            },
+            {
+                "name": "Francja",
+                "code": "FR"
+            },
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Asif",
+                    "last_name": "Kapadia"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Manish",
+                    "last_name": "Pandey"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Jake",
+                    "last_name": "Polonsky"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Antonio",
+                    "last_name": "Pinto"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Gregers",
+                    "last_name": "Sall"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Chris",
+                    "last_name": "King"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Eric",
+                    "last_name": "Fellner"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Liza",
+                    "last_name": "Chasin"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Tim",
+                    "last_name": "Bevan"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Kevin",
+                    "last_name": "Macdonald"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Gay-Rees"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Debra",
+                    "last_name": "Hayward"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Victoria",
+                    "last_name": "Gregory"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Manish",
+                    "last_name": "Pandey"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Andy",
+                    "last_name": "Shelley"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Tim",
+                    "last_name": "Cavagin"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Steve",
+                    "last_name": "Single"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Stephen",
+                    "last_name": "Griffiths"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Ayrton",
+                    "last_name": "Senna"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Bussunda",
+                    "last_name": "Bussunda"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Rainier",
+                    "last_name": "Monako"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Księżniczka",
+                    "last_name": "Monako"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Sól ziemi",
+            "original_title": "Le sel de la terre",
+            "release_date": "2014-5-20",
+            "overview": "Sebastiao Salgado przez 40 lat podróżował po świecie dokumentując ludzkość w okresie dramatycznych zmian.",
+            "duration": 110,
+            "type": "movie",
+            "image_path": "/media/sól_ziemi.jpg"
+        },
+        "genre": [
+            {
+                "name": "Dokumentalny"
+            }
+        ],
+        "production_companies": {
+            "name": "Maison Européenne de la Photographie (wsparcie)"
+        },
+        "countries": [
+            {
+                "name": "Francja",
+                "code": "FR"
+            },
+            {
+                "name": "Włochy",
+                "code": "IT"
+            },
+            {
+                "name": "Brazylia",
+                "code": "BR"
+            }
+        ],
+        "casts": [],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Juliano",
+                    "last_name": "Salgado"
+                },
+                "job": null
+            },
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Wim",
+                    "last_name": "Wenders"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Rosier"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Juliano",
+                    "last_name": "Salgado"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Wim",
+                    "last_name": "Wenders"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Juliano",
+                    "last_name": "Salgado"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Hugo",
+                    "last_name": "Barbier"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Laurent",
+                    "last_name": "Petitgand"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Maxine",
+                    "last_name": "Goedicke"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Rob",
+                    "last_name": "Myers"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Wim",
+                    "last_name": "Wenders"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Andrea",
+                    "last_name": "Gambetta"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Rosier"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Julia",
+                    "last_name": "Abreu"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Christine",
+                    "last_name": "Ponelle"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Lélia",
+                    "last_name": "Salgado"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Jean-Paul",
+                    "last_name": "Hurier"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Aymeric",
+                    "last_name": "Devoldère"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Régis",
+                    "last_name": "Muller"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Walc z Baszirem",
+            "original_title": "Vals im Bashir",
+            "release_date": "2008-5-15",
+            "overview": "Bohater filmu próbuje sobie przypomnieć traumatyczne przeżycia związane z wojną w Libanie w 1982 roku. O swoich wspomnieniach opowiada staremu znajomemu spotkanemu w barze.",
+            "duration": 90,
+            "type": "movie",
+            "image_path": "/media/walc_z_baszirem.jpg"
+        },
+        "genre": [
+            {
+                "name": "Biograficzny"
+            },
+            {
+                "name": "Dokumentalny"
+            },
+            {
+                "name": "Wojenny"
+            },
+            {
+                "name": "Animacja dla dorosłych"
+            }
+        ],
+        "production_companies": {
+            "name": "Bridgit Folman Film Gang"
+        },
+        "countries": [
+            {
+                "name": "Izrael",
+                "code": "IL"
+            },
+            {
+                "name": "Niemcy",
+                "code": "DE"
+            },
+            {
+                "name": "Francja",
+                "code": "FR"
+            },
+            {
+                "name": "USA",
+                "code": "US"
+            },
+            {
+                "name": "Finlandia",
+                "code": "FI"
+            },
+            {
+                "name": "Belgia",
+                "code": "BE"
+            },
+            {
+                "name": "Szwajcaria",
+                "code": "CH"
+            },
+            {
+                "name": "Australia",
+                "code": "AU"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Carmi Cna'an",
+                "person": {
+                    "first_name": "Yehezkel",
+                    "last_name": "Lazarov",
+                    "image_path": "/actors/385392.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Boaz Rein-Buskila",
+                "person": {
+                    "first_name": "Mickey",
+                    "last_name": "Leon",
+                    "image_path": "/actors/352714.2.jpg"
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Ari",
+                    "last_name": "Folman"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Ari",
+                    "last_name": "Folman"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Max",
+                    "last_name": "Richter"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Nili",
+                    "last_name": "Feller"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Polonsky"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Gerhard",
+                    "last_name": "Meixner"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Ari",
+                    "last_name": "Folman"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Serge",
+                    "last_name": "Lalou"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Roman",
+                    "last_name": "Paul"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Yael",
+                    "last_name": "Nahlieli"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Aviv",
+                    "last_name": "Aldema"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Meir",
+                    "last_name": "Alfassi"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Oded",
+                    "last_name": "Ringel"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Tylko nie mów nikomu",
+            "original_title": "Tylko nie mów nikomu",
+            "release_date": "2019-5-11",
+            "overview": "Dziennikarz śledczy rozmawia z dziewięcioma księżmi katolickimi, którzy dopuścili się zbrodni pedofilii i molestowania nieletnich, a także ich ofiarami.",
+            "duration": 121,
+            "type": "movie",
+            "image_path": "/media/tylko_nie_mów_nikomu.jpg"
+        },
+        "genre": [
+            {
+                "name": "Dokumentalny"
+            }
+        ],
+        "production_companies": {
+            "name": "Sekielski Brothers"
+        },
+        "countries": [
+            {
+                "name": "Polska",
+                "code": "PL"
+            }
+        ],
+        "casts": [],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Tomasz",
+                    "last_name": "Sekielski"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Tomasz",
+                    "last_name": "Sekielski"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Piotr",
+                    "last_name": "Suzin"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Wojciech",
+                    "last_name": "Jakubczak"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Adam",
+                    "last_name": "Galica"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Dariusz",
+                    "last_name": "Mandes"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Marek",
+                    "last_name": "Sekielski"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Mieszko",
+                    "last_name": "Mahboob"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Lech",
+                    "last_name": "Wałęsa"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Dziennikarz",
+                    "last_name": "Dziennikarz"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Krzysztof",
+                    "last_name": "Ziemiec"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Mazurek"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Biskup",
+                    "last_name": "toruński"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Wiesław",
+                    "last_name": "Śmigel"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Marek",
+                    "last_name": "Jędraszewski"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Prymas",
+                    "last_name": "Polski"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Wojciech",
+                    "last_name": "Polak"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Kazimierz",
+                    "last_name": "Nycz"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Dziennikarka",
+                    "last_name": "Dziennikarka"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały archiwalne",
+                "person": {
+                    "first_name": "Beata",
+                    "last_name": "Lubecka"
+                },
+                "job": null
+            }
+        ]
+    }
+]
