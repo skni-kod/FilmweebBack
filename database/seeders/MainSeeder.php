@@ -24,64 +24,66 @@ class MainSeeder extends Seeder
      */
     public function run()
     {
-        $jsonFile = file_get_contents(__DIR__.'/data/action-media.json');
-        $data = json_decode($jsonFile);
-        foreach ($data as $x){
-            //medium
-            $mediumData = get_object_vars($x->medium);
-            $mediumModel = Medium::firstOrCreate($mediumData);
+        $jsonFiles = ['/data/drama-media.json', '/data/romance-media.json', '/data/thriller-media.json'];
+        foreach ($jsonFiles as $path) {
+            $jsonFile = file_get_contents(__DIR__ . $path);
+            $data = json_decode($jsonFile);
+            foreach ($data as $x) {
+                //medium
+                $mediumData = get_object_vars($x->medium);
+                $mediumModel = Medium::firstOrCreate($mediumData);
 
-            //genre and genre_medium
-            $genreData = $x->genre;
-            foreach ($genreData as $genre){
-                $genreModel = Genre::firstOrCreate(['name' => $genre->name]);
-                $mediumModel->genres()->attach($genreModel->id);
-            }
+                //genre and genre_medium
+                $genreData = $x->genre;
+                foreach ($genreData as $genre) {
+                    $genreModel = Genre::firstOrCreate(['name' => $genre->name]);
+                    $mediumModel->genres()->attach($genreModel->id);
+                }
 
-            //production companies and company_medium
-            $productionCompanyData = get_object_vars($x->production_companies);
-            $productionCompanyModel = ProductionCompany::firstOrCreate($productionCompanyData);
-            $mediumModel->production_companies()->attach($productionCompanyModel->id);
+                //production companies and company_medium
+                $productionCompanyData = get_object_vars($x->production_companies);
+                $productionCompanyModel = ProductionCompany::firstOrCreate($productionCompanyData);
+                $mediumModel->production_companies()->attach($productionCompanyModel->id);
 
-            //countries and country_medium
-            $countriesData = $x->countries;
-            foreach ($countriesData as $country){
-                $countryModel = Country::firstOrCreate([
-                    'code'=> $country->code,
-                    'name'=> $country->name
-                ]);
-                $mediumModel->countries()->attach($countryModel->id);
-            }
+                //countries and country_medium
+                $countriesData = $x->countries;
+                foreach ($countriesData as $country) {
+                    $countryModel = Country::firstOrCreate([
+                        'code' => $country->code,
+                        'name' => $country->name
+                    ]);
+                    $mediumModel->countries()->attach($countryModel->id);
+                }
 
-            //casts
-            $castsData = $x->casts;
-            foreach($castsData as $cast){
-                $genderModel = Gender::where('name', $cast->gender)->first();
-                $personData = get_object_vars($cast->person);
-                $personModel = Person::firstOrCreate($personData);
-                $castData = array(
-                    'medium_id' => $mediumModel->id,
-                    'gender_id' => $genderModel->id,
-                    'person_id' => $personModel->id,
-                    'character' => $cast->character,
-                    'priority' => $cast->priority
-                );
-                $castModel = Cast::create($castData);
-            }
+                //casts
+                $castsData = $x->casts;
+                foreach ($castsData as $cast) {
+                    $genderModel = Gender::where('name', $cast->gender)->first();
+                    $personData = get_object_vars($cast->person);
+                    $personModel = Person::firstOrCreate($personData);
+                    $castData = array(
+                        'medium_id' => $mediumModel->id,
+                        'gender_id' => $genderModel->id,
+                        'person_id' => $personModel->id,
+                        'character' => $cast->character,
+                    );
+                    $castModel = Cast::create($castData);
+                }
 
-            //crews
-            $crewsData = $x->crews;
-            foreach($crewsData as $crew){
-                $personData = get_object_vars($crew->person);
-                $personModel = Person::firstOrCreate($personData);
-                $departmentModel = Department::firstOrCreate(['name' => $crew->department]);
-                $crewData = array(
-                    'medium_id' => $mediumModel->id,
-                    'person_id' => $personModel->id,
-                    'department_id' => $departmentModel->id,
-                    'job' => $crew->job
-                );
-                $crewModel = Crew::create($crewData);
+                //crews
+                $crewsData = $x->crews;
+                foreach ($crewsData as $crew) {
+                    $personData = get_object_vars($crew->person);
+                    $personModel = Person::firstOrCreate($personData);
+                    $departmentModel = Department::firstOrCreate(['name' => $crew->department]);
+                    $crewData = array(
+                        'medium_id' => $mediumModel->id,
+                        'person_id' => $personModel->id,
+                        'department_id' => $departmentModel->id,
+                        'job' => $crew->job
+                    );
+                    $crewModel = Crew::create($crewData);
+                }
             }
         }
     }
