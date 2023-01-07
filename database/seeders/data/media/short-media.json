@@ -1,0 +1,1290 @@
+[
+    {
+        "medium": {
+            "title": "Katedra",
+            "original_title": "Katedra",
+            "release_date": "2002-3-24",
+            "overview": "Wędrowiec, który trafia do ogromnej katedry, próbuje zgłębić jej tajemnice. ",
+            "duration": 7,
+            "type": "movie",
+            "image_path": "/media/katedra.jpg"
+        },
+        "genre": [
+            {
+                "name": "Animacja"
+            },
+            {
+                "name": "Krótkometrażowy"
+            }
+        ],
+        "production_companies": {
+            "name": "Platige Image"
+        },
+        "countries": [
+            {
+                "name": "Polska",
+                "code": "PL"
+            }
+        ],
+        "casts": [],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Tomasz",
+                    "last_name": "Bagiński"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Tomasz",
+                    "last_name": "Bagiński"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Adam",
+                    "last_name": "Rosiak"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "\"Katedra\"",
+                    "last_name": "\"Katedra\""
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "Jacek",
+                    "last_name": "Dukaj"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Marcin",
+                    "last_name": "Kobylecki"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Jarosław",
+                    "last_name": "Sawko"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Piotr",
+                    "last_name": "Sikora"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Cyrk motyli",
+            "original_title": "The Butterfly Circus",
+            "release_date": "2009-8-31",
+            "overview": "Pan Mendez podróżuje po Ameryce wraz ze swoim \"Cyrkiem motyli\". Za namową małego chłopca udaje się na pokaz konkurencyjnej trupy, gdzie jego uwagę zwraca Will, młody mężczyzna pozbawiony kończyn.",
+            "duration": 20,
+            "type": "movie",
+            "image_path": "/media/cyrk_motyli.jpg"
+        },
+        "genre": [
+            {
+                "name": "Dramat"
+            },
+            {
+                "name": "Krótkometrażowy"
+            }
+        ],
+        "production_companies": {
+            "name": "Joshua & Rebekah Weigel"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Pan Mendez",
+                "person": {
+                    "first_name": "Eduardo",
+                    "last_name": "Verástegui",
+                    "image_path": "/actors/393182.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Will",
+                "person": {
+                    "first_name": "Nick",
+                    "last_name": "Vujicic",
+                    "image_path": "/actors/264073.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Otto",
+                "person": {
+                    "first_name": "Doug",
+                    "last_name": "Jones",
+                    "image_path": "/actors/451951.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "George",
+                "person": {
+                    "first_name": "Matt",
+                    "last_name": "Allmen",
+                    "image_path": "/actors/411889.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sammy",
+                "person": {
+                    "first_name": "Connor",
+                    "last_name": "Rosen",
+                    "image_path": "/actors/280701.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Anna",
+                "person": {
+                    "first_name": "Lexi",
+                    "last_name": "Pearl",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Poppy",
+                "person": {
+                    "first_name": "Bob",
+                    "last_name": "Yerkes",
+                    "image_path": "/actors/213660.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pan Haley, przewodnik po cyrku",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Atteberry",
+                    "image_path": "/actors/464693.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Jimmy, człowiek z tatuażami",
+                "person": {
+                    "first_name": "Kirk",
+                    "last_name": "Bovill",
+                    "image_path": "/actors/454389.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bliźniaczka syjamska",
+                "person": {
+                    "first_name": "Madison",
+                    "last_name": "Hargrove",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ojciec zafascynowanego chłopca",
+                "person": {
+                    "first_name": "Dion",
+                    "last_name": "Slider",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Akrobatka",
+                "person": {
+                    "first_name": "Elisabeth",
+                    "last_name": "Carpenter",
+                    "image_path": "/actors/368220.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta w barze",
+                "person": {
+                    "first_name": "Lisa",
+                    "last_name": "Steinmetz",
+                    "image_path": "/actors/280615.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Wdzięczna matka",
+                "person": {
+                    "first_name": "Natalie",
+                    "last_name": "Foster",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Wróżka",
+                "person": {
+                    "first_name": "Michelle",
+                    "last_name": "Caudel",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Wdzięczna matka",
+                "person": {
+                    "first_name": "Natalie",
+                    "last_name": "Foster",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Baby Lulu",
+                "person": {
+                    "first_name": "Jackie",
+                    "last_name": "Zane",
+                    "image_path": "/actors/296968.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mężczyzna zachęcajacy do odwiedzenia cyrku",
+                "person": {
+                    "first_name": "Paul",
+                    "last_name": "Maniaci",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szczudlarz",
+                "person": {
+                    "first_name": "B.J.",
+                    "last_name": "Macias",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ubogi ojciec",
+                "person": {
+                    "first_name": "Dan",
+                    "last_name": "Amos",
+                    "image_path": "/actors/429984.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Uboga matka",
+                "person": {
+                    "first_name": "Erin",
+                    "last_name": "Amos",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Zafascynowany chłopiec",
+                "person": {
+                    "first_name": "Christian",
+                    "last_name": "Pikes",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lalkarz",
+                "person": {
+                    "first_name": "Corey",
+                    "last_name": "Thomas",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Chłopiec z pomidorem",
+                "person": {
+                    "first_name": "Judah",
+                    "last_name": "Weigel",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna oglądający przedstawienie",
+                "person": {
+                    "first_name": "Gary",
+                    "last_name": "Hargrove",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta oglądająca przedstawienie",
+                "person": {
+                    "first_name": "Priscila",
+                    "last_name": "Netto",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Uczestnik bójki",
+                "person": {
+                    "first_name": "Aaron",
+                    "last_name": "Moore",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Uczestnik bójki",
+                "person": {
+                    "first_name": "Ken",
+                    "last_name": "Ward",
+                    "image_path": "/actors/238306.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Uczestnik bójki",
+                "person": {
+                    "first_name": "Justin",
+                    "last_name": "Kent",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ubogie dziecko",
+                "person": {
+                    "first_name": "Jordan",
+                    "last_name": "Swenson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Prostytutka",
+                "person": {
+                    "first_name": "Lisa",
+                    "last_name": "Miosi",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta oglądająca przedstawienie",
+                "person": {
+                    "first_name": "Abigail",
+                    "last_name": "Hargrove",
+                    "image_path": "/actors/423734.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Klaun",
+                "person": {
+                    "first_name": "Max",
+                    "last_name": "Daniels",
+                    "image_path": "/actors/415992.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szczudlarz",
+                "person": {
+                    "first_name": "Eros",
+                    "last_name": "Biox",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Magik",
+                "person": {
+                    "first_name": "Jared",
+                    "last_name": "Day",
+                    "image_path": "/actors/211281.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Uczestnik bójki",
+                "person": {
+                    "first_name": "Joshua",
+                    "last_name": "Weigel",
+                    "image_path": "/actors/283187.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Chłopiec z polio",
+                "person": {
+                    "first_name": "Ezra",
+                    "last_name": "Moore",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Brat chłopca z polio",
+                "person": {
+                    "first_name": "Brady",
+                    "last_name": "Ecklund",
+                    "image_path": "/actors/289762.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pijany mężczyzna",
+                "person": {
+                    "first_name": "Brad",
+                    "last_name": "Abrell",
+                    "image_path": "/actors/348080.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Chłopiec z pomidorem",
+                "person": {
+                    "first_name": "Sylas",
+                    "last_name": "Weigel",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bliźniaczka syjamska",
+                "person": {
+                    "first_name": "Mallory",
+                    "last_name": "Hargrove",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta w barze",
+                "person": {
+                    "first_name": "Sheri",
+                    "last_name": "Pedigo",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta z brodą",
+                "person": {
+                    "first_name": "Mahoganie",
+                    "last_name": "LaFranks",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Matka chłopca z polio",
+                "person": {
+                    "first_name": "Holly",
+                    "last_name": "Martin",
+                    "image_path": "/actors/305266.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Połykacz ognia",
+                "person": {
+                    "first_name": "Ted",
+                    "last_name": "Shred",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lalkarka",
+                "person": {
+                    "first_name": "Daniella",
+                    "last_name": "Lopez",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Dziewczynka ze slumsów",
+                "person": {
+                    "first_name": "Noelle",
+                    "last_name": "Baugh",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Matka ze slumsów",
+                "person": {
+                    "first_name": "Rebekah",
+                    "last_name": "Weigel",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mała dziewczynka ze slumsów",
+                "person": {
+                    "first_name": "Sydney",
+                    "last_name": "Weigel",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Matka ze slumsów",
+                "person": {
+                    "first_name": "Melissa",
+                    "last_name": "Disney",
+                    "image_path": "/actors/240818.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Występujący na scenie",
+                "person": {
+                    "first_name": "Nathan",
+                    "last_name": "Haase",
+                    "image_path": "/actors/283020.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zafascynowany mężczyzna",
+                "person": {
+                    "first_name": "Jon",
+                    "last_name": "Phelps",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zafascynowana kobieta",
+                "person": {
+                    "first_name": "Esther",
+                    "last_name": "Phelps",
+                    "image_path": null
+                },
+                "gender": "female"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Joshua",
+                    "last_name": "Weigel"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Joshua",
+                    "last_name": "Weigel"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Rebekah",
+                    "last_name": "Weigel"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Brian",
+                    "last_name": "Baugh"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Tim",
+                    "last_name": "Williams"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Chris",
+                    "last_name": "Witt"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Nathan",
+                    "last_name": "Haase"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Yeva",
+                    "last_name": "McCloskey"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Kiyomi",
+                    "last_name": "Hara"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Bob",
+                    "last_name": "Yerkes"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Nathan",
+                    "last_name": "Haase"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Angie",
+                    "last_name": "Alvarez"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Joshua",
+                    "last_name": "Weigel"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Nathan",
+                    "last_name": "Elliott"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Brian",
+                    "last_name": "Jerin"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Rebekah",
+                    "last_name": "Weigel"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Jason",
+                    "last_name": "Atkins"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Ed",
+                    "last_name": "Vizenor"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Esther",
+                    "last_name": "Phelps"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Jon",
+                    "last_name": "Phelps"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Martin",
+                    "last_name": "Kittappa"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Brandon",
+                    "last_name": "Griffith"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Pies andaluzyjski",
+            "original_title": "Un chien andalou",
+            "release_date": "1929-6-6",
+            "overview": "Początki kina surrealistycznego. Oniryczna opowieść - składająca się z kilku niepowiązanych tematycznie scen - mająca na celu zaszokowanie widza.",
+            "duration": 16,
+            "type": "movie",
+            "image_path": "/media/pies_andaluzyjski.jpg"
+        },
+        "genre": [
+            {
+                "name": "Surrealistyczny"
+            },
+            {
+                "name": "Krótkometrażowy"
+            },
+            {
+                "name": "Niemy"
+            }
+        ],
+        "production_companies": {
+            "name": "Studio des Ursulines"
+        },
+        "countries": [
+            {
+                "name": "Francja",
+                "code": "FR"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Mężczyzna",
+                "person": {
+                    "first_name": "Pierre",
+                    "last_name": "Batcheff",
+                    "image_path": "/actors/329587_1.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młoda dziewczyna",
+                "person": {
+                    "first_name": "Simone",
+                    "last_name": "Mareuil",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mężczyzna w prologu",
+                "person": {
+                    "first_name": "Luis",
+                    "last_name": "Buñuel",
+                    "image_path": "/actors/454674.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Seminarzysta",
+                "person": {
+                    "first_name": "Salvador",
+                    "last_name": "Dali",
+                    "image_path": "/actors/328354.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gruby seminarzysta",
+                "person": {
+                    "first_name": "Jaume",
+                    "last_name": "Miravitlles",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Hermafrodyta",
+                "person": {
+                    "first_name": "Fano",
+                    "last_name": "Messan",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Seminarzysta",
+                "person": {
+                    "first_name": "Marval",
+                    "last_name": "Marval",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody mężczyzna",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Hommet",
+                    "image_path": null
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Luis",
+                    "last_name": "Buñuel"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Luis",
+                    "last_name": "Buñuel"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Salvador",
+                    "last_name": "Dali"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Jimmy",
+                    "last_name": "Berliet"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Albert",
+                    "last_name": "Duverger"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Wagner"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Luis",
+                    "last_name": "Buñuel"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Pierre",
+                    "last_name": "Schild"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Luis",
+                    "last_name": "Buñuel"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Vincent",
+            "original_title": "Vincent",
+            "release_date": "1982-10-1",
+            "overview": "Siedmioletni Vincent Malloy śni o tym, by być jak Vincent Price. Snując makabryczne marzenia, całkowicie zatraca siebie.",
+            "duration": 6,
+            "type": "movie",
+            "image_path": "/media/vincent.jpg"
+        },
+        "genre": [
+            {
+                "name": "Animacja"
+            },
+            {
+                "name": "Dramat"
+            },
+            {
+                "name": "Krótkometrażowy"
+            }
+        ],
+        "production_companies": {
+            "name": "Walt Disney Productions"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Tim",
+                    "last_name": "Burton"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Tim",
+                    "last_name": "Burton"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Victor",
+                    "last_name": "Abdalov"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Ken",
+                    "last_name": "Hilton"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Tim",
+                    "last_name": "Burton"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Rick",
+                    "last_name": "Heinrichs"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Twardowsky 2.0",
+            "original_title": "Twardowsky 2.0",
+            "release_date": "2016-9-16",
+            "overview": "Diablica ściga Twardowsky'ego, który próbuje uciec z Układu Słonecznego.",
+            "duration": 21,
+            "type": "movie",
+            "image_path": "/media/twardowsky_2.0.jpg"
+        },
+        "genre": [
+            {
+                "name": "Sci-Fi"
+            },
+            {
+                "name": "Krótkometrażowy"
+            }
+        ],
+        "production_companies": {
+            "name": "Allegro"
+        },
+        "countries": [
+            {
+                "name": "Polska",
+                "code": "PL"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Twardowsky",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Więckiewicz",
+                    "image_path": "/actors/450021.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Diablica",
+                "person": {
+                    "first_name": "Aleksandra",
+                    "last_name": "Kasprzyk",
+                    "image_path": "/actors/402597_1.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Boruta",
+                "person": {
+                    "first_name": "Tomasz",
+                    "last_name": "Drabek",
+                    "image_path": "/actors/218316.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Rokita",
+                "person": {
+                    "first_name": "Piotr",
+                    "last_name": "Machalica",
+                    "image_path": "/actors/358501.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Spiker radiowy",
+                "person": {
+                    "first_name": "Piotr",
+                    "last_name": "Cywiński",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Spec IT",
+                "person": {
+                    "first_name": "Michał",
+                    "last_name": "Bagiński",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dubler rąk Boruty",
+                "person": {
+                    "first_name": "Bartosz",
+                    "last_name": "Krasicki",
+                    "image_path": null
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Tomasz",
+                    "last_name": "Bagiński"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Błażej",
+                    "last_name": "Dzikowski"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Marian",
+                    "last_name": "Prokop"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Atanas",
+                    "last_name": "Valkov"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Wojciech",
+                    "last_name": "Jagiełło"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Marta",
+                    "last_name": "Wiśniewska"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Jeremi",
+                    "last_name": "Brodnicki"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Michał",
+                    "last_name": "Misiński"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Katarzyna",
+                    "last_name": "Lewińska"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Piotr",
+                    "last_name": "Sikora"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Jarosław",
+                    "last_name": "Sawko"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Katarzyna",
+                    "last_name": "Fukacz-Cebula"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Aleksandra",
+                    "last_name": "Sulej"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Mirella",
+                    "last_name": "Zaradkiewicz"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Marcin",
+                    "last_name": "Dyczak"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Anna",
+                    "last_name": "Iller"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Marcin",
+                    "last_name": "Kasiński"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Kacper",
+                    "last_name": "Habisiak"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Radosław",
+                    "last_name": "Ochnio"
+                },
+                "job": null
+            }
+        ]
+    }
+]

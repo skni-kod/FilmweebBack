@@ -1,0 +1,4683 @@
+[
+    {
+        "medium": {
+            "title": "Leon zawodowiec",
+            "original_title": "Léon",
+            "release_date": "1994-9-14",
+            "overview": "Płatny morderca ratuje dwunastoletnią dziewczynkę, której rodzina została zabita przez skorumpowanych policjantów.",
+            "duration": 110,
+            "type": "movie",
+            "image_path": "/media/leon_zawodowiec.jpg"
+        },
+        "genre": [
+            {
+                "name": "Dramat"
+            },
+            {
+                "name": "Kryminał"
+            }
+        ],
+        "production_companies": {
+            "name": "Gaumont"
+        },
+        "countries": [
+            {
+                "name": "Francja",
+                "code": "FR"
+            },
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Léon",
+                "person": {
+                    "first_name": "Jean",
+                    "last_name": "Reno",
+                    "image_path": "/actors/449736.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Norman Stansfield",
+                "person": {
+                    "first_name": "Gary",
+                    "last_name": "Oldman",
+                    "image_path": "/actors/449688.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Matylda",
+                "person": {
+                    "first_name": "Natalie",
+                    "last_name": "Portman",
+                    "image_path": "/actors/449937.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Tony",
+                "person": {
+                    "first_name": "Danny",
+                    "last_name": "Aiello",
+                    "image_path": "/actors/450960.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Malky",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Appel",
+                    "image_path": "/actors/365936.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Człowiek Stansfielda",
+                "person": {
+                    "first_name": "Willie",
+                    "last_name": "Blood",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Człowiek Stansfielda",
+                "person": {
+                    "first_name": "Don",
+                    "last_name": "Creech",
+                    "image_path": "/actors/320685.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Człowiek Stansfielda",
+                "person": {
+                    "first_name": "Keith",
+                    "last_name": "Glascoe",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Człowiek Stansfielda",
+                "person": {
+                    "first_name": "Randolph",
+                    "last_name": "Scott",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Człowiek Stansfielda",
+                "person": {
+                    "first_name": "Matt",
+                    "last_name": "Matt",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ojciec Matyldy",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Badalucco",
+                    "image_path": "/actors/462858.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Matka Matyldy",
+                "person": {
+                    "first_name": "Ellen",
+                    "last_name": "Greene",
+                    "image_path": "/actors/466676.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Siostra Matyldy",
+                "person": {
+                    "first_name": "Elizabeth",
+                    "last_name": "Regen",
+                    "image_path": "/actors/375815.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Brat Matyldy",
+                "person": {
+                    "first_name": "Carl",
+                    "last_name": "Matusovich",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Grubas",
+                "person": {
+                    "first_name": "Frank",
+                    "last_name": "Senger",
+                    "image_path": "/actors/366543.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mickey",
+                "person": {
+                    "first_name": "Luc",
+                    "last_name": "Bernard",
+                    "image_path": "/actors/238263.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Kent",
+                    "last_name": "Broadhurst",
+                    "image_path": "/actors/363413.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Manolo",
+                "person": {
+                    "first_name": "Adam",
+                    "last_name": "Busch",
+                    "image_path": "/actors/305341.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pauly",
+                "person": {
+                    "first_name": "Seth",
+                    "last_name": "Walker",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dyrektorka szkoły",
+                "person": {
+                    "first_name": "Betty",
+                    "last_name": "Miller",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Trevor",
+                    "last_name": "Walace",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Keith",
+                    "last_name": "Bullock",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Jeff",
+                    "last_name": "McBride",
+                    "image_path": "/actors/175410.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Taksówkarz Leona",
+                "person": {
+                    "first_name": "Stuart",
+                    "last_name": "Rudin",
+                    "image_path": "/actors/254934.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Taksówkarz Matyldy",
+                "person": {
+                    "first_name": "Abdul",
+                    "last_name": "Sharif",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reporter prasowy",
+                "person": {
+                    "first_name": "Fred",
+                    "last_name": "Fischer",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Staruszka",
+                "person": {
+                    "first_name": "Jessie",
+                    "last_name": "Keosian",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Biegacz",
+                "person": {
+                    "first_name": "Denis",
+                    "last_name": "Bellocq",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Recepcjonista",
+                "person": {
+                    "first_name": "George",
+                    "last_name": "Martin",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz grubasa",
+                "person": {
+                    "first_name": "Ed",
+                    "last_name": "Ventresca",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lekarz",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Vizard",
+                    "image_path": "/actors/395054.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dziewczyna",
+                "person": {
+                    "first_name": "Crystal",
+                    "last_name": "Blake",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Agent CIA",
+                "person": {
+                    "first_name": "Thomas",
+                    "last_name": "Delehanty",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szef z Chinatown",
+                "person": {
+                    "first_name": "Wallace",
+                    "last_name": "Wong",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Umundurowany strażnik",
+                "person": {
+                    "first_name": "Anthony",
+                    "last_name": "Ragland",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dzieciak z piłką",
+                "person": {
+                    "first_name": "Alex",
+                    "last_name": "Dezen",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szef dzieciaków",
+                "person": {
+                    "first_name": "Danny",
+                    "last_name": "Peled",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Johnny",
+                    "last_name": "Limo",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Strażnik",
+                "person": {
+                    "first_name": "Randy",
+                    "last_name": "Pearlstein",
+                    "image_path": "/actors/301348.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gliniarz",
+                "person": {
+                    "first_name": "Rocky",
+                    "last_name": "Hernandez",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Fahrner",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Thierry",
+                    "last_name": "Maurio",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Tony",
+                    "last_name": "Sauraye",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Steve",
+                    "last_name": "Gonnelo",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Linari",
+                    "image_path": "/actors/300886.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szef SWAT",
+                "person": {
+                    "first_name": "Geoffrey",
+                    "last_name": "Bateman",
+                    "image_path": "/actors/340009.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Strażnik w Wydziale do walki z narkotykami",
+                "person": {
+                    "first_name": "Sonny",
+                    "last_name": "Zito",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dzieciak z papierosem",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Mundra",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Klient",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "LaSardo",
+                    "image_path": "/actors/456905.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Fryzjer Tony'ego",
+                "person": {
+                    "first_name": "Mario",
+                    "last_name": "Todisco",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Boy hotelowy",
+                "person": {
+                    "first_name": "Mohammed",
+                    "last_name": "Rashid",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Boy hotelowy",
+                "person": {
+                    "first_name": "Amimul",
+                    "last_name": "Rolly",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Asystent bossa w Chinatown",
+                "person": {
+                    "first_name": "Cary",
+                    "last_name": "Wong",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Blondynka",
+                "person": {
+                    "first_name": "Maïwenn",
+                    "last_name": "Maïwenn",
+                    "image_path": "/actors/465830.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ochroniarz",
+                "person": {
+                    "first_name": "Daniel",
+                    "last_name": "Schenmetzler",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Człowiek Stansfielda",
+                "person": {
+                    "first_name": "Jernard",
+                    "last_name": "Burks",
+                    "image_path": "/actors/460141.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Michel",
+                    "last_name": "Montanary",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Samy",
+                    "last_name": "Naceri",
+                    "image_path": "/actors/451495.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Christophe",
+                    "last_name": "Gautier",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Junior",
+                    "last_name": "Almeida",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Gregg",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Herve",
+                    "last_name": "Husson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Didier",
+                    "last_name": "Legros",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Marc",
+                    "last_name": "Andréoni",
+                    "image_path": "/actors/357697.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Gilles",
+                    "last_name": "Kleber",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT",
+                "person": {
+                    "first_name": "Junior",
+                    "last_name": "Levis",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zakładnik SWAT",
+                "person": {
+                    "first_name": "Arsène",
+                    "last_name": "Jiroyan",
+                    "image_path": "/actors/289257.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz SWAT na schodach",
+                "person": {
+                    "first_name": "Joseph",
+                    "last_name": "Malerba",
+                    "image_path": "/actors/437573.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Tommy",
+                    "last_name": "Hollis",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Wywiadowca",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Justinius",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szef ochrony",
+                "person": {
+                    "first_name": "Eric",
+                    "last_name": "Challier",
+                    "image_path": "/actors/294189.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Tonto",
+                "person": {
+                    "first_name": "Lucius",
+                    "last_name": "Cherokee",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Biegający VIP",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Butler",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Raper w metrze",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Jr.",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ścigający dziewczynę",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Melissinos",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Jimmy, członek drużyny SWAT",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Wehrhahn",
+                    "image_path": "/actors/125320.2.jpg"
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Luc",
+                    "last_name": "Besson"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Luc",
+                    "last_name": "Besson"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Thierry",
+                    "last_name": "Arbogast"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Éric",
+                    "last_name": "Serra"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Sylvie",
+                    "last_name": "Landra"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Françoise",
+                    "last_name": "Benoît-Fresco"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Gerard",
+                    "last_name": "Drolon"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Carolyn",
+                    "last_name": "Cartwright"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Dan",
+                    "last_name": "Weil"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Magali",
+                    "last_name": "Guidasci"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Bernard",
+                    "last_name": "Grenet"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Garland"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Luc",
+                    "last_name": "Besson"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Claude",
+                    "last_name": "Besson"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Patrice",
+                    "last_name": "Ledoux"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Gérard",
+                    "last_name": "Lamps"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Pierre",
+                    "last_name": "Excoffier"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "François",
+                    "last_name": "Groult"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Salim",
+                    "last_name": "Amrani"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Christian",
+                    "last_name": "Gaudin"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Patricia",
+                    "last_name": "Girard"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Jean-Charles",
+                    "last_name": "Martel"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Bruno",
+                    "last_name": "Tarrière"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Siedem",
+            "original_title": "Se7en",
+            "release_date": "1995-9-15",
+            "overview": "Dwóch policjantów stara się złapać seryjnego mordercę wybierającego swoje ofiary według specjalnego klucza - siedmiu grzechów głównych.",
+            "duration": 127,
+            "type": "movie",
+            "image_path": "/media/siedem.jpg"
+        },
+        "genre": [
+            {
+                "name": "Kryminał"
+            },
+            {
+                "name": "Thriller"
+            }
+        ],
+        "production_companies": {
+            "name": "Cecchi Gori Pictures"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Somerset",
+                "person": {
+                    "first_name": "Morgan",
+                    "last_name": "Freeman",
+                    "image_path": "/actors/449860.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mills",
+                "person": {
+                    "first_name": "Brad",
+                    "last_name": "Pitt",
+                    "image_path": "/actors/449687.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Tracy",
+                "person": {
+                    "first_name": "Gwyneth",
+                    "last_name": "Paltrow",
+                    "image_path": "/actors/449955.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "John Doe",
+                "person": {
+                    "first_name": "Kevin",
+                    "last_name": "Spacey",
+                    "image_path": "/actors/449653.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw Taylor",
+                "person": {
+                    "first_name": "Daniel",
+                    "last_name": "Zacapa",
+                    "image_path": "/actors/320660.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Oficer Davis",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Cassini",
+                    "image_path": "/actors/326676.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ofiara obżarstwa",
+                "person": {
+                    "first_name": "Bob",
+                    "last_name": "Mack",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dr O'Neill",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Crombie",
+                    "image_path": "/actors/417276.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dr Santiago",
+                "person": {
+                    "first_name": "Reg",
+                    "last_name": "Cathey",
+                    "image_path": "/actors/452726.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kapitan policji",
+                "person": {
+                    "first_name": "R.",
+                    "last_name": "Ermey",
+                    "image_path": "/actors/452434.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Robotnik przy drzwiach gabinetu Somerseta",
+                "person": {
+                    "first_name": "George",
+                    "last_name": "Christy",
+                    "image_path": "/actors/310051_1.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kierowca taksówki",
+                "person": {
+                    "first_name": "Endre",
+                    "last_name": "Hules",
+                    "image_path": "/actors/326677.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "George, nocny stróż w bibliotece",
+                "person": {
+                    "first_name": "Hawthorne",
+                    "last_name": "James",
+                    "image_path": "/actors/376914.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Strażnik w bibliotece",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Davidson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Strażnik w bibliotece",
+                "person": {
+                    "first_name": "Bob",
+                    "last_name": "Collins",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sanitariusz",
+                "person": {
+                    "first_name": "Paul",
+                    "last_name": "Eckstein",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mark Swarr",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Schiff",
+                    "image_path": "/actors/452812.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw Sara",
+                "person": {
+                    "first_name": "Emily",
+                    "last_name": "Wagner",
+                    "image_path": "/actors/259939.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Reporterka wiadomości",
+                "person": {
+                    "first_name": "Dominique",
+                    "last_name": "Jennings",
+                    "image_path": "/actors/84345.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Reporterka wiadomości",
+                "person": {
+                    "first_name": "Charline",
+                    "last_name": "Su",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Talbot",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Roundtree",
+                    "image_path": "/actors/466358.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Eli Gould (ofiara chciwości)",
+                "person": {
+                    "first_name": "Gene",
+                    "last_name": "Borkan",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szalony mężczyzna w salonie masażu",
+                "person": {
+                    "first_name": "Leland",
+                    "last_name": "Orser",
+                    "image_path": "/actors/451955.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dozorca biblioteki",
+                "person": {
+                    "first_name": "Jimmy",
+                    "last_name": "Hartsell",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjantka za biurkiem",
+                "person": {
+                    "first_name": "Shannon",
+                    "last_name": "Wilcox",
+                    "image_path": "/actors/299022.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Biegły sądowy",
+                "person": {
+                    "first_name": "Allan",
+                    "last_name": "Kolman",
+                    "image_path": "/actors/203193.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Prezenterka telewizyjna",
+                "person": {
+                    "first_name": "Beverly",
+                    "last_name": "Burke",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Technik od odcisków palców",
+                "person": {
+                    "first_name": "Mario",
+                    "last_name": "Donato",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Technik od odcisków palców",
+                "person": {
+                    "first_name": "Alfonso",
+                    "last_name": "Freeman",
+                    "image_path": "/actors/177740.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bezdomna kobieta",
+                "person": {
+                    "first_name": "Pamala",
+                    "last_name": "Tyson",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mężczyzna w salonie masażu",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Massee",
+                    "image_path": "/actors/454120.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Snajper w helikopterze",
+                "person": {
+                    "first_name": "Duffy",
+                    "last_name": "Gaver",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ofiara dumy",
+                "person": {
+                    "first_name": "Heidi",
+                    "last_name": "Schanz",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Spocony policjant w salonie masażu",
+                "person": {
+                    "first_name": "Lexie",
+                    "last_name": "Bigham",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ofiara nieczystości",
+                "person": {
+                    "first_name": "Cat",
+                    "last_name": "Mueller",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Policjant w salonie masażu",
+                "person": {
+                    "first_name": "Ron",
+                    "last_name": "Blair",
+                    "image_path": "/actors/303472.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant w salonie masażu",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Correia",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Trup",
+                "person": {
+                    "first_name": "Andrew",
+                    "last_name": "Walker",
+                    "image_path": "/actors/451286.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dziki Bill",
+                "person": {
+                    "first_name": "Martin",
+                    "last_name": "Serene",
+                    "image_path": "/actors/312496.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "California",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "McGinley",
+                    "image_path": "/actors/451017.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pilot helikoptera",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Deeth",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pilot helikoptera",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Santin",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Operator numeru alarmowego",
+                "person": {
+                    "first_name": "Harris",
+                    "last_name": "Savides",
+                    "image_path": "/actors/341948.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Lennie",
+                    "last_name": "Loftin",
+                    "image_path": "/actors/343592_1.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dr Beardsley",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Portnow",
+                    "image_path": "/actors/332221_1.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Victor, ofiara lenistwa",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "MacKay",
+                    "image_path": "/actors/373142.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pani Gould",
+                "person": {
+                    "first_name": "Julie",
+                    "last_name": "Araskog",
+                    "image_path": "/actors/424051.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kurier",
+                "person": {
+                    "first_name": "Richmond",
+                    "last_name": "Arquette",
+                    "image_path": "/actors/459268.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pilot helikoptera SWAT",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Tamburro",
+                    "image_path": "/actors/140827.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sierżant na służbie",
+                "person": {
+                    "first_name": "Brian",
+                    "last_name": "Evers",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Operatorka numeru alarmowego",
+                "person": {
+                    "first_name": "Rachel",
+                    "last_name": "Flanagan",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Członek ekipy SWAT",
+                "person": {
+                    "first_name": "Bob",
+                    "last_name": "Stephenson",
+                    "image_path": "/actors/464170.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policyjna portrecistka",
+                "person": {
+                    "first_name": "Sarah",
+                    "last_name": "Reinhardt",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Sanitariusz",
+                "person": {
+                    "first_name": "Evan",
+                    "last_name": "Mirand",
+                    "image_path": "/actors/289909.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ofiara pożądania",
+                "person": {
+                    "first_name": "Jennifer",
+                    "last_name": "Mueller",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Dutton",
+                    "image_path": "/actors/451388.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Oficer SWAT w Los Angeles",
+                "person": {
+                    "first_name": "Gregory",
+                    "last_name": "Fennell",
+                    "image_path": "/actors/301907.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gruby facet z FBI",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Junior",
+                    "image_path": "/actors/451801.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant oddziału SWAT",
+                "person": {
+                    "first_name": "Harrison",
+                    "last_name": "White",
+                    "image_path": "/actors/301251.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Człowiek w bibliotece",
+                "person": {
+                    "first_name": "Arthur",
+                    "last_name": "Max",
+                    "image_path": "/actors/461229.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna z kuponem",
+                "person": {
+                    "first_name": "Tudor",
+                    "last_name": "Sherrard",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Wokalista w orkiestrze / Emcee",
+                "person": {
+                    "first_name": "Pui",
+                    "last_name": "Lee",
+                    "image_path": "/actors/271090.2.jpg"
+                },
+                "gender": "female"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Fincher"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Andrew",
+                    "last_name": "Walker"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Darius",
+                    "last_name": "Khondji"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Howard",
+                    "last_name": "Shore"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Francis-Bruce"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Gary",
+                    "last_name": "Wissner"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Clay",
+                    "last_name": "Griffith"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Arthur",
+                    "last_name": "Max"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Kaplan"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Gerrity"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Michele",
+                    "last_name": "Platt"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Dan",
+                    "last_name": "Kolsrud"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Anne",
+                    "last_name": "Kopelson"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Phyllis",
+                    "last_name": "Carlyle"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Arnold",
+                    "last_name": "Kopelson"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Gianni",
+                    "last_name": "Nunnari"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Lynn",
+                    "last_name": "Harris"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Stephen",
+                    "last_name": "Brown"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Saperstein"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Nana",
+                    "last_name": "Greenwald"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Sanford",
+                    "last_name": "Panitch"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Patrick",
+                    "last_name": "Dodd"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Abrahamsen"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Willie",
+                    "last_name": "Burton"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Ren",
+                    "last_name": "Klyce"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Rick",
+                    "last_name": "Hart"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Thomas",
+                    "last_name": "O'Connell"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Litt"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Elliot",
+                    "last_name": "Tyson"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Philip",
+                    "last_name": "Rogers"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Behle"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Jack",
+                    "last_name": "Keller"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Sherlock Holmes",
+            "original_title": "Sherlock Holmes",
+            "release_date": "2009-12-14",
+            "overview": "Najsłynniejszy detektyw Sherlock Holmes z nieodłącznym przyjacielem dr. Watsonem szukają sprawcy rytualnych morderstw.",
+            "duration": 128,
+            "type": "movie",
+            "image_path": "/media/sherlock_holmes.jpg"
+        },
+        "genre": [
+            {
+                "name": "Kryminał"
+            },
+            {
+                "name": "Przygodowy"
+            }
+        ],
+        "production_companies": {
+            "name": "Warner Bros. (przedstawia)"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            },
+            {
+                "name": "Niemcy",
+                "code": "DE"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Sherlock Holmes",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Jr.",
+                    "image_path": "/actors/449654.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dr John Watson",
+                "person": {
+                    "first_name": "Jude",
+                    "last_name": "Law",
+                    "image_path": "/actors/449877.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Irene Adler",
+                "person": {
+                    "first_name": "Rachel",
+                    "last_name": "McAdams",
+                    "image_path": "/actors/449947.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Lord Blackwood",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Strong",
+                    "image_path": "/actors/450231.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lord Coward",
+                "person": {
+                    "first_name": "Hans",
+                    "last_name": "Matheson",
+                    "image_path": "/actors/351939.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dredger",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Maillet",
+                    "image_path": "/actors/454913.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "McMurdo",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Garrick",
+                    "image_path": "/actors/248075.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kapitan Tanner",
+                "person": {
+                    "first_name": "Clive",
+                    "last_name": "Russell",
+                    "image_path": "/actors/455498.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pani Hudson",
+                "person": {
+                    "first_name": "Geraldine",
+                    "last_name": "James",
+                    "image_path": "/actors/452584.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kapitan Philips",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Stephens",
+                    "image_path": "/actors/248091.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reordan",
+                "person": {
+                    "first_name": "Oran",
+                    "last_name": "Gurel",
+                    "image_path": "/actors/321228.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mary Morstan",
+                "person": {
+                    "first_name": "Kelly",
+                    "last_name": "Reilly",
+                    "image_path": "/actors/450327.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ambasador John Standish",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Hope",
+                    "image_path": "/actors/334297.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sir Thomas Rotheram",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Fox",
+                    "image_path": "/actors/456193.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Posterunkowy Clark",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Houston",
+                    "image_path": "/actors/346204.2.jpg"
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Guy",
+                    "last_name": "Ritchie"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Johnson"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Simon",
+                    "last_name": "Kinberg"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Anthony",
+                    "last_name": "Peckham"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Philippe",
+                    "last_name": "Rousselot"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Hans",
+                    "last_name": "Zimmer"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Johnson"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "Lionel",
+                    "last_name": "Wigram"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "Arthur",
+                    "last_name": "Doyle"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Herbert"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Nick",
+                    "last_name": "Gottschalk"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Foster"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Matthew",
+                    "last_name": "Gray"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Sarah",
+                    "last_name": "Greenwood"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Katie",
+                    "last_name": "Spencer"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Jenny",
+                    "last_name": "Beavan"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Tadross"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Dana",
+                    "last_name": "Goldberg"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Lauren",
+                    "last_name": "Meek"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Eskelsen"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Steve",
+                    "last_name": "Clark-Hall"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Joel",
+                    "last_name": "Silver"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Lionel",
+                    "last_name": "Wigram"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Bruce",
+                    "last_name": "Berman"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Dan",
+                    "last_name": "Lin"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Susan",
+                    "last_name": "Downey"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Mather"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Ron",
+                    "last_name": "Bartlett"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Alan",
+                    "last_name": "Meyerson"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Doug",
+                    "last_name": "Hemphill"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Jamie",
+                    "last_name": "Roden"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Taylor"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Nick",
+                    "last_name": "Foley"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Beauxregard",
+                    "last_name": "Neylon"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Appleby"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Fentum"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Casali"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Paterson"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Antony",
+                    "last_name": "Bayman"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Chris",
+                    "last_name": "Munro"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Infiltracja",
+            "original_title": "The Departed",
+            "release_date": "2006-9-26",
+            "overview": "Tajny policjant w szeregach grupy przestępczej i informator mafii w bostońskiej jednostce dochodzeniowej toczą ze sobą śmiertelną rozgrywkę.",
+            "duration": 152,
+            "type": "movie",
+            "image_path": "/media/infiltracja.jpg"
+        },
+        "genre": [
+            {
+                "name": "Kryminał"
+            }
+        ],
+        "production_companies": {
+            "name": "Warner Bros. (przedstawia)"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            },
+            {
+                "name": "Hongkong",
+                "code": "HK"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Billy Costigan",
+                "person": {
+                    "first_name": "Leonardo",
+                    "last_name": "DiCaprio",
+                    "image_path": "/actors/449647.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Colin Sullivan",
+                "person": {
+                    "first_name": "Matt",
+                    "last_name": "Damon",
+                    "image_path": "/actors/449986.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Frank Costello",
+                "person": {
+                    "first_name": "Jack",
+                    "last_name": "Nicholson",
+                    "image_path": "/actors/449648.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sierżant sztabowy Sean Dignam",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Wahlberg",
+                    "image_path": "/actors/449987.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kapitan Oliver Charles Queenan",
+                "person": {
+                    "first_name": "Martin",
+                    "last_name": "Sheen",
+                    "image_path": "/actors/450460.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dr Madolyn Madden",
+                "person": {
+                    "first_name": "Vera",
+                    "last_name": "Farmiga",
+                    "image_path": "/actors/450038.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Policjant Brown",
+                "person": {
+                    "first_name": "Anthony",
+                    "last_name": "Anderson",
+                    "image_path": "/actors/457676.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Arnold \"Frenchy\" French",
+                "person": {
+                    "first_name": "Ray",
+                    "last_name": "Winstone",
+                    "image_path": "/actors/450883.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kapitan George Ellerby",
+                "person": {
+                    "first_name": "Alec",
+                    "last_name": "Baldwin",
+                    "image_path": "/actors/450778.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Właściciel Luncheonette",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Rue",
+                    "image_path": "/actors/326846.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz policji stanowej",
+                "person": {
+                    "first_name": "Kenneth",
+                    "last_name": "Stoddard",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kelner w Alley",
+                "person": {
+                    "first_name": "Tony",
+                    "last_name": "Yee",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Donegan - kadet szkoły policyjnej",
+                "person": {
+                    "first_name": "Dion",
+                    "last_name": "Baia",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw z oddziału Colina",
+                "person": {
+                    "first_name": "Kevin",
+                    "last_name": "McCarthy",
+                    "image_path": "/actors/197482.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta w barze",
+                "person": {
+                    "first_name": "Audrie",
+                    "last_name": "Neenan",
+                    "image_path": "/actors/284203.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Detektyw z oddziału Colina",
+                "person": {
+                    "first_name": "Chris",
+                    "last_name": "Fischer",
+                    "image_path": "/actors/197483.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta w barze",
+                "person": {
+                    "first_name": "Dorothy",
+                    "last_name": "Lyman",
+                    "image_path": "/actors/197484.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Nowy facet",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Patrick",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zgraja Costello'a",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Byron",
+                    "image_path": "/actors/197497.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zgraja Costello'a",
+                "person": {
+                    "first_name": "Dennis",
+                    "last_name": "Lynch",
+                    "image_path": "/actors/197495.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw",
+                "person": {
+                    "first_name": "Terry",
+                    "last_name": "Serpico",
+                    "image_path": "/actors/461303.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw",
+                "person": {
+                    "first_name": "Jay",
+                    "last_name": "Giannone",
+                    "image_path": "/actors/244228.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zgraja Costello'a",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Lee",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw",
+                "person": {
+                    "first_name": "Brian",
+                    "last_name": "Haley",
+                    "image_path": "/actors/463092.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sekretarka Queenana",
+                "person": {
+                    "first_name": "Nellie",
+                    "last_name": "Sciutto",
+                    "image_path": "/actors/252956.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Agent nieruchomości",
+                "person": {
+                    "first_name": "J.C.",
+                    "last_name": "MacKenzie",
+                    "image_path": "/actors/454121.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Członeg gangu pana Frencha",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Conley",
+                    "image_path": "/actors/373007.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Agent FBI Lazio",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Wahlberg",
+                    "image_path": "/actors/405050.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Fitzy",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "O'Hara",
+                    "image_path": "/actors/457025.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gwen",
+                "person": {
+                    "first_name": "Kristen",
+                    "last_name": "Dalton",
+                    "image_path": "/actors/338041.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Carmen",
+                "person": {
+                    "first_name": "Amanda",
+                    "last_name": "Lynch",
+                    "image_path": "/actors/155746.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Gangster z Providence",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Cenatiempo",
+                    "image_path": "/actors/462696.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młodszy ksiądz",
+                "person": {
+                    "first_name": "Larry",
+                    "last_name": "Mitchell",
+                    "image_path": "/actors/302441.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mieszkaniec Crack House",
+                "person": {
+                    "first_name": "Craig",
+                    "last_name": "Castaldo",
+                    "image_path": "/actors/187151.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Fischer",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody mężczyzna na lotnisku",
+                "person": {
+                    "first_name": "Alex",
+                    "last_name": "Morris",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mała dziewczynka na lotnisku",
+                "person": {
+                    "first_name": "Francesca",
+                    "last_name": "Scorsese",
+                    "image_path": "/actors/466281.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Instruktor na egzaminie",
+                "person": {
+                    "first_name": "Chance",
+                    "last_name": "Kelly",
+                    "image_path": "/actors/374221.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Prezenter wiadomości",
+                "person": {
+                    "first_name": "Frank",
+                    "last_name": "Mallicoat",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Narkoman",
+                "person": {
+                    "first_name": "Johnny",
+                    "last_name": "Cicco",
+                    "image_path": "/actors/433648.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ksiądz na pogrzebie Billy'ego",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Farrer",
+                    "image_path": "/actors/298058.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Jimmy Pappas",
+                "person": {
+                    "first_name": "Paris",
+                    "last_name": "Karounos",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Matka Billy'ego",
+                "person": {
+                    "first_name": "Paula",
+                    "last_name": "DeMers",
+                    "image_path": "/actors/217207.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Pani Kennefick",
+                "person": {
+                    "first_name": "Peg",
+                    "last_name": "Holzemer",
+                    "image_path": "/actors/401833.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mężczyzna zabity przez Frencha",
+                "person": {
+                    "first_name": "Douglas",
+                    "last_name": "Crosby",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Darlene, sekretarka",
+                "person": {
+                    "first_name": "Tracey",
+                    "last_name": "Paleo",
+                    "image_path": "/actors/197492.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Technik policyjny",
+                "person": {
+                    "first_name": "Anthony",
+                    "last_name": "Estrella",
+                    "image_path": "/actors/197489.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ostrożny gangster",
+                "person": {
+                    "first_name": "Armen",
+                    "last_name": "Garo",
+                    "image_path": "/actors/407647.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kuzyn Sean",
+                "person": {
+                    "first_name": "Kevin",
+                    "last_name": "Corrigan",
+                    "image_path": "/actors/455761.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Napadający na bank",
+                "person": {
+                    "first_name": "Joseph",
+                    "last_name": "Riccobene",
+                    "image_path": "/actors/254134.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw",
+                "person": {
+                    "first_name": "Billy",
+                    "last_name": "Smith",
+                    "image_path": "/actors/197485.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pakiństański właściciel",
+                "person": {
+                    "first_name": "Gurdeep",
+                    "last_name": "Singh",
+                    "image_path": "/actors/259651.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Technik policyjny z komórką",
+                "person": {
+                    "first_name": "Andrew",
+                    "last_name": "Breving",
+                    "image_path": "/actors/197490.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szef Triady",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Chan",
+                    "image_path": "/actors/416601.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Tłumacz",
+                "person": {
+                    "first_name": "Lyman",
+                    "last_name": "Chen",
+                    "image_path": "/actors/462424.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Delahunt",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Rolston",
+                    "image_path": "/actors/452776.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna w barze",
+                "person": {
+                    "first_name": "Brian",
+                    "last_name": "Smyj",
+                    "image_path": "/actors/217208.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody Colin",
+                "person": {
+                    "first_name": "Conor",
+                    "last_name": "Donovan",
+                    "image_path": "/actors/358169.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Starszy ksiądz",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Severs",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant Barrigan",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Dale",
+                    "image_path": "/actors/452326.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ciotka Billy'ego",
+                "person": {
+                    "first_name": "Mary",
+                    "last_name": "Klug",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Chiński dostawca",
+                "person": {
+                    "first_name": "Victor",
+                    "last_name": "Chan",
+                    "image_path": "/actors/280219.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna w barze Costello'a",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Crafts",
+                    "image_path": "/actors/197498.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bukmacher w barze Costella",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "McConnell",
+                    "image_path": "/actors/417940.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw Lynn",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Polce",
+                    "image_path": "/actors/342645.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ksiądz z młodym Colinem",
+                "person": {
+                    "first_name": "Joseph",
+                    "last_name": "Reidy",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody Billy",
+                "person": {
+                    "first_name": "Zachary",
+                    "last_name": "Pauliks",
+                    "image_path": "/actors/197502.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Billy Costigan Sr",
+                "person": {
+                    "first_name": "Tom",
+                    "last_name": "Kemp",
+                    "image_path": "/actors/458416.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Siostra Maria Teresa",
+                "person": {
+                    "first_name": "Deborah",
+                    "last_name": "Carlson",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Lekarka",
+                "person": {
+                    "first_name": "Denece",
+                    "last_name": "Ryland",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Instruktor musztry",
+                "person": {
+                    "first_name": "Bo",
+                    "last_name": "Cleary",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Jimmy Bags",
+                "person": {
+                    "first_name": "Mick",
+                    "last_name": "O'Rourke",
+                    "image_path": "/actors/358184.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Stracona kobieta",
+                "person": {
+                    "first_name": "Jill",
+                    "last_name": "Brown",
+                    "image_path": "/actors/156557.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Bukmacher dręczony przez Frencha",
+                "person": {
+                    "first_name": "Patrick",
+                    "last_name": "Coppola",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta w operze",
+                "person": {
+                    "first_name": "Sallie",
+                    "last_name": "Toussaint",
+                    "image_path": "/actors/197493.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Żona Frencha",
+                "person": {
+                    "first_name": "Sarah",
+                    "last_name": "Fearon",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mężczyzna z chińskiego rządu",
+                "person": {
+                    "first_name": "Henry",
+                    "last_name": "Yuk",
+                    "image_path": "/actors/437438.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Więzień",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Welch",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Naczelnik",
+                "person": {
+                    "first_name": "Thomas",
+                    "last_name": "Duffy",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Barman w Brasserie",
+                "person": {
+                    "first_name": "Shay",
+                    "last_name": "Duffin",
+                    "image_path": "/actors/425555.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gliniarz w mecie",
+                "person": {
+                    "first_name": "Francis",
+                    "last_name": "Hughes",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Nowy facet",
+                "person": {
+                    "first_name": "Paddy",
+                    "last_name": "Curran",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta z psem",
+                "person": {
+                    "first_name": "Emma",
+                    "last_name": "Koskoff",
+                    "image_path": "/actors/461909.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Gliniarz w mecie",
+                "person": {
+                    "first_name": "Daniel",
+                    "last_name": "Jr.",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Funkcjonariusz policji stanowej",
+                "person": {
+                    "first_name": "Jeffrey",
+                    "last_name": "Winter",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Wujek Edward",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Hughes",
+                    "image_path": "/actors/372463.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Jim",
+                    "last_name": "Evans",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Instruktor użytku broni palnej w Akademii",
+                "person": {
+                    "first_name": "Lawrence",
+                    "last_name": "Steele",
+                    "image_path": "/actors/261946.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kierowca samochodu w pościgu",
+                "person": {
+                    "first_name": "Desiree",
+                    "last_name": "Connolly",
+                    "image_path": "/actors/252012.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Funkcjonariusz na miejscu zbrodni",
+                "person": {
+                    "first_name": "Jeffrey",
+                    "last_name": "Corazzini",
+                    "image_path": "/actors/246463.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Rodzic kadeta",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Myers",
+                    "image_path": "/actors/412403.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reporter",
+                "person": {
+                    "first_name": "Osmani",
+                    "last_name": "Rodriguez",
+                    "image_path": "/actors/203987.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Oficer nauki sądowej",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Somers",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Rodzic kadeta",
+                "person": {
+                    "first_name": "Gail",
+                    "last_name": "Yudain",
+                    "image_path": "/actors/235577.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kelner w Alley",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "Wong",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dygnitarz policji bostonskiej",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Anderson",
+                    "image_path": "/actors/309437.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Tajny agent z wydziału narkotykowego",
+                "person": {
+                    "first_name": "Andrew",
+                    "last_name": "Aninsman",
+                    "image_path": "/actors/103314.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Członek triady",
+                "person": {
+                    "first_name": "Takumi",
+                    "last_name": "Bando",
+                    "image_path": "/actors/263975.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kadet",
+                "person": {
+                    "first_name": "Vincent",
+                    "last_name": "Bivona",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reporter",
+                "person": {
+                    "first_name": "Eric",
+                    "last_name": "Borgman",
+                    "image_path": "/actors/203439.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szef policji bostonońskiej",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Boston",
+                    "image_path": "/actors/250138.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta biznesu",
+                "person": {
+                    "first_name": "Shana",
+                    "last_name": "Carr",
+                    "image_path": "/actors/203547.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Członek gangu",
+                "person": {
+                    "first_name": "Chris",
+                    "last_name": "Chinn",
+                    "image_path": "/actors/341731.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Biznesmen",
+                "person": {
+                    "first_name": "Vic",
+                    "last_name": "Clay",
+                    "image_path": "/actors/415267.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant bostońskiej policji",
+                "person": {
+                    "first_name": "Ed",
+                    "last_name": "Cuffe",
+                    "image_path": "/actors/341893.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Farrell",
+                    "image_path": "/actors/341640.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pieszy / Biznesmen",
+                "person": {
+                    "first_name": "Shawn",
+                    "last_name": "Fogarty",
+                    "image_path": null
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Martin",
+                    "last_name": "Scorsese"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "William",
+                    "last_name": "Monahan"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Felix",
+                    "last_name": "Chong"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Alan",
+                    "last_name": "Mak"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Ballhaus"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Howard",
+                    "last_name": "Shore"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Thelma",
+                    "last_name": "Schoonmaker"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Kristi",
+                    "last_name": "Zea"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Teresa",
+                    "last_name": "Carriker-Thayer"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Nicholas",
+                    "last_name": "Lundy"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Leslie",
+                    "last_name": "Rollins"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Thayer"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Marion",
+                    "last_name": "Kolsby"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Sandy",
+                    "last_name": "Powell"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Aguilar"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Rick",
+                    "last_name": "Schwartz"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "G.",
+                    "last_name": "Brown"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Doug",
+                    "last_name": "Davison"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Jennifer",
+                    "last_name": "Aniston"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Graham",
+                    "last_name": "King"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Brad",
+                    "last_name": "Grey"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Roy",
+                    "last_name": "Lee"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Brad",
+                    "last_name": "Pitt"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Gianni",
+                    "last_name": "Nunnari"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Martin",
+                    "last_name": "Scorsese"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Gianni",
+                    "last_name": "Nunnari"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Kristin",
+                    "last_name": "Hahn"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Douglas",
+                    "last_name": "Murray"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Kevin",
+                    "last_name": "Jette"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Tom",
+                    "last_name": "Fleischman"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Lawrence",
+                    "last_name": "Manchester"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Eugene",
+                    "last_name": "Gearty"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Philip",
+                    "last_name": "Stockton"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Andrew",
+                    "last_name": "Morgado"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Danny",
+                    "last_name": "Michael"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Lawrence",
+                    "last_name": "Herman"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Bret",
+                    "last_name": "Johnson"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Dziewczyna z tatuażem",
+            "original_title": "The Girl with the Dragon Tattoo",
+            "release_date": "2011-12-12",
+            "overview": "Ekranizacja powieści Stiega Larssona. Dziennikarz oskarżony o zniesławienie otrzymuje zlecenie zbadania zaginięcia przed 40 laty 16-letniej Harriet Vanger.",
+            "duration": 158,
+            "type": "movie",
+            "image_path": "/media/dziewczyna_z_tatuażem.jpg"
+        },
+        "genre": [
+            {
+                "name": "Kryminał"
+            },
+            {
+                "name": "Thriller"
+            }
+        ],
+        "production_companies": {
+            "name": "Columbia Pictures (przedstawia)"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            },
+            {
+                "name": "Szwecja",
+                "code": "SE"
+            },
+            {
+                "name": "Norwegia",
+                "code": "NO"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Mikael Blomkvist",
+                "person": {
+                    "first_name": "Daniel",
+                    "last_name": "Craig",
+                    "image_path": "/actors/449879.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lisbeth Salander",
+                "person": {
+                    "first_name": "Rooney",
+                    "last_name": "Mara",
+                    "image_path": "/actors/450053.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Henrik Vanger",
+                "person": {
+                    "first_name": "Christopher",
+                    "last_name": "Plummer",
+                    "image_path": "/actors/449953.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Martin Vanger",
+                "person": {
+                    "first_name": "Stellan",
+                    "last_name": "Skarsgård",
+                    "image_path": "/actors/450298.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dirch Frode",
+                "person": {
+                    "first_name": "Steven",
+                    "last_name": "Berkoff",
+                    "image_path": "/actors/454581.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Erika Berger",
+                "person": {
+                    "first_name": "Robin",
+                    "last_name": "Wright",
+                    "image_path": "/actors/450052.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Nils Bjurman",
+                "person": {
+                    "first_name": "Yorick",
+                    "last_name": "Wageningen",
+                    "image_path": "/actors/461947.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Anita Vanger",
+                "person": {
+                    "first_name": "Joely",
+                    "last_name": "Richardson",
+                    "image_path": "/actors/450465.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Cecilia Vanger",
+                "person": {
+                    "first_name": "Geraldine",
+                    "last_name": "James",
+                    "image_path": "/actors/452584.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Dragan Armansky",
+                "person": {
+                    "first_name": "Goran",
+                    "last_name": "Višnjić",
+                    "image_path": "/actors/454679.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw Morell",
+                "person": {
+                    "first_name": "Donald",
+                    "last_name": "Sumpter",
+                    "image_path": "/actors/451393.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Wennerström",
+                "person": {
+                    "first_name": "Ulf",
+                    "last_name": "Friberg",
+                    "image_path": "/actors/393247.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Holger Palmgren",
+                "person": {
+                    "first_name": "Bengt",
+                    "last_name": "Carlsson",
+                    "image_path": "/actors/362838_1.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Harald",
+                "person": {
+                    "first_name": "Per",
+                    "last_name": "Myrberg",
+                    "image_path": "/actors/278642.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Plague",
+                "person": {
+                    "first_name": "Tony",
+                    "last_name": "Way",
+                    "image_path": "/actors/455731.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pernilla",
+                "person": {
+                    "first_name": "Josefin",
+                    "last_name": "Asplund",
+                    "image_path": "/actors/298047.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Anna",
+                "person": {
+                    "first_name": "Eva",
+                    "last_name": "Fritjofson",
+                    "image_path": "/actors/306709.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Harriet",
+                "person": {
+                    "first_name": "Moa",
+                    "last_name": "Garpendal",
+                    "image_path": "/actors/298057.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Młoda Anna",
+                "person": {
+                    "first_name": "Maya",
+                    "last_name": "Hansson-Bergqvist",
+                    "image_path": "/actors/312427.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Młoda Cecilia",
+                "person": {
+                    "first_name": "Sarah",
+                    "last_name": "Appelberg",
+                    "image_path": "/actors/306797.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Młody Henrik",
+                "person": {
+                    "first_name": "Julian",
+                    "last_name": "Sands",
+                    "image_path": "/actors/454056.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młoda Isabella",
+                "person": {
+                    "first_name": "Anna",
+                    "last_name": "Björk",
+                    "image_path": "/actors/74228.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Młody Harald",
+                "person": {
+                    "first_name": "Gustaf",
+                    "last_name": "Hammarsten",
+                    "image_path": "/actors/460182.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody Martin",
+                "person": {
+                    "first_name": "Simon",
+                    "last_name": "Reithner",
+                    "image_path": "/actors/437220.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody Morell",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Dencik",
+                    "image_path": "/actors/450834.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody Nilsson",
+                "person": {
+                    "first_name": "Marcus",
+                    "last_name": "Johansson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młoda Anita",
+                "person": {
+                    "first_name": "Mathilda",
+                    "last_name": "Essen",
+                    "image_path": "/actors/323869.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Młody Birger",
+                "person": {
+                    "first_name": "Mathias",
+                    "last_name": "Palmér",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Birger",
+                "person": {
+                    "first_name": "Martin",
+                    "last_name": "Jarvis",
+                    "image_path": "/actors/395635.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Isabella",
+                "person": {
+                    "first_name": "Inga",
+                    "last_name": "Landgré",
+                    "image_path": "/actors/157571.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Hussein",
+                "person": {
+                    "first_name": "Reza",
+                    "last_name": "Dehban",
+                    "image_path": "/actors/324021.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody Frode",
+                "person": {
+                    "first_name": "Anders",
+                    "last_name": "Berg",
+                    "image_path": "/actors/438479.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Nilsson",
+                "person": {
+                    "first_name": "Mats",
+                    "last_name": "Andersson",
+                    "image_path": "/actors/86044.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Doktor",
+                "person": {
+                    "first_name": "Anders",
+                    "last_name": "Jansson",
+                    "image_path": "/actors/323955.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gottfried",
+                "person": {
+                    "first_name": "Jürgen",
+                    "last_name": "Klein",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Technik w MacJesus",
+                "person": {
+                    "first_name": "Kalle",
+                    "last_name": "Josephson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Edytorka zdjęć",
+                "person": {
+                    "first_name": "Sandra",
+                    "last_name": "Andreis",
+                    "image_path": "/actors/419836.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Liv",
+                "person": {
+                    "first_name": "Arly",
+                    "last_name": "Jover",
+                    "image_path": "/actors/457710.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Tatuażysta",
+                "person": {
+                    "first_name": "Pierre",
+                    "last_name": "Östergren",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Prezenterka wiadomości",
+                "person": {
+                    "first_name": "Tess",
+                    "last_name": "Panzer",
+                    "image_path": "/actors/253978.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Greger",
+                "person": {
+                    "first_name": "Alastair",
+                    "last_name": "Duncan",
+                    "image_path": "/actors/281503.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Detektyw Isaksson",
+                "person": {
+                    "first_name": "Alan",
+                    "last_name": "Dale",
+                    "image_path": "/actors/453005.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pielęgniarka",
+                "person": {
+                    "first_name": "Julia",
+                    "last_name": "Rose",
+                    "image_path": "/actors/241123.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Sprzedawca sprzętu komputerowego",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Carlberg",
+                    "image_path": "/actors/331189.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Forsman",
+                "person": {
+                    "first_name": "Jan",
+                    "last_name": "Abramson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mildred",
+                "person": {
+                    "first_name": "Lena",
+                    "last_name": "Strömdahl",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Urzędnik techniczny",
+                "person": {
+                    "first_name": "Matthew",
+                    "last_name": "Wolf",
+                    "image_path": "/actors/455451.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lindgren",
+                "person": {
+                    "first_name": "Anne-Li",
+                    "last_name": "Norberg",
+                    "image_path": "/actors/318402.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Trinity",
+                "person": {
+                    "first_name": "Leo",
+                    "last_name": "Bill",
+                    "image_path": "/actors/464147.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Narkoman",
+                "person": {
+                    "first_name": "Marco",
+                    "last_name": "Albrecht",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reporterka u Vangera",
+                "person": {
+                    "first_name": "Martina",
+                    "last_name": "Lotun",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Przedstawicielka FSA",
+                "person": {
+                    "first_name": "Anna",
+                    "last_name": "Carlson",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Reporterka FSA",
+                "person": {
+                    "first_name": "Yvonne",
+                    "last_name": "Åstrand",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Prawnik Wennerströma",
+                "person": {
+                    "first_name": "Fredrik",
+                    "last_name": "Dolk",
+                    "image_path": "/actors/301612.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bankier",
+                "person": {
+                    "first_name": "Christian",
+                    "last_name": "Heller",
+                    "image_path": "/actors/281504.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bankier",
+                "person": {
+                    "first_name": "Werner",
+                    "last_name": "Biermeier",
+                    "image_path": "/actors/175091.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reporterka telewizyjna z Barbados",
+                "person": {
+                    "first_name": "Christine",
+                    "last_name": "Adams",
+                    "image_path": "/actors/457881.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Reporter telewizyjny z Zurychu",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Hottinger",
+                    "image_path": "/actors/281663.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reporterka telewizyjna z Hiszpanii",
+                "person": {
+                    "first_name": "Joyce",
+                    "last_name": "Giraud",
+                    "image_path": "/actors/343762_1.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Krawiec",
+                "person": {
+                    "first_name": "Bengt",
+                    "last_name": "Wallgren",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Miriam Wu",
+                "person": {
+                    "first_name": "Elodie",
+                    "last_name": "Yung",
+                    "image_path": "/actors/450356.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Reporterka",
+                "person": {
+                    "first_name": "Anna",
+                    "last_name": "Gunnarson",
+                    "image_path": "/actors/425665.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Reporter",
+                "person": {
+                    "first_name": "Andreas",
+                    "last_name": "Björklund",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Annika",
+                "person": {
+                    "first_name": "Embeth",
+                    "last_name": "Davidtz",
+                    "image_path": "/actors/451360.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Christer Malm",
+                "person": {
+                    "first_name": "Joel",
+                    "last_name": "Kinnaman",
+                    "image_path": "/actors/450998.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Magda Lovison",
+                "person": {
+                    "first_name": "Karen",
+                    "last_name": "Wright",
+                    "image_path": "/actors/261528_1.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ofiara \"Book of Death\"",
+                "person": {
+                    "first_name": "Leah",
+                    "last_name": "Shaw",
+                    "image_path": "/actors/297436.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Detektyw Udevalla",
+                "person": {
+                    "first_name": "George",
+                    "last_name": "Gerdes",
+                    "image_path": "/actors/197450.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Klientka baru",
+                "person": {
+                    "first_name": "Amanda",
+                    "last_name": "Dyar",
+                    "image_path": "/actors/299998.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Policjant z Karlstad",
+                "person": {
+                    "first_name": "Darri",
+                    "last_name": "Ingolfsson",
+                    "image_path": "/actors/266534_1.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mąż Anniki",
+                "person": {
+                    "first_name": "Alessandro",
+                    "last_name": "Piersimoni",
+                    "image_path": "/actors/281664.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ofiara morderstwa",
+                "person": {
+                    "first_name": "Jenifer",
+                    "last_name": "Brougham",
+                    "image_path": "/actors/253860.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Gość w szpitalu",
+                "person": {
+                    "first_name": "Laurence",
+                    "last_name": "Fuller",
+                    "image_path": "/actors/264509.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lars, prezenter szwedzkiej telewizji T4",
+                "person": {
+                    "first_name": "Henry",
+                    "last_name": "Hereford",
+                    "image_path": "/actors/466376.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Asyryjska imigrantka",
+                "person": {
+                    "first_name": "Yasmine",
+                    "last_name": "Vine",
+                    "image_path": "/actors/263573.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Stewardesa",
+                "person": {
+                    "first_name": "Sahlima",
+                    "last_name": "Sahlima",
+                    "image_path": "/actors/254769.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Hanzel",
+                "person": {
+                    "first_name": "Christopher",
+                    "last_name": "Maleki",
+                    "image_path": "/actors/388089.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Reporterka telewizyjna",
+                "person": {
+                    "first_name": "Annica",
+                    "last_name": "McCrudden",
+                    "image_path": "/actors/123724.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mari Holmberg",
+                "person": {
+                    "first_name": "Melissa",
+                    "last_name": "Ciesla",
+                    "image_path": "/actors/312952.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Prezenter wiadomości CNN",
+                "person": {
+                    "first_name": "Patrick",
+                    "last_name": "Holland",
+                    "image_path": "/actors/261638.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szwedzki policjant",
+                "person": {
+                    "first_name": "Ian",
+                    "last_name": "Kitzmiller",
+                    "image_path": "/actors/302304.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Liv 'Eva' Gustavsson, ofiara morderstwa",
+                "person": {
+                    "first_name": "Cate",
+                    "last_name": "Montgomery",
+                    "image_path": "/actors/256151.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Maltretowana kobieta",
+                "person": {
+                    "first_name": "Malin",
+                    "last_name": "Toverud",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ślusarz",
+                "person": {
+                    "first_name": "Mike",
+                    "last_name": "Zehr",
+                    "image_path": "/actors/346825.2.jpg"
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Fincher"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Steven",
+                    "last_name": "Zaillian"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Jeff",
+                    "last_name": "Cronenweth"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Trent",
+                    "last_name": "Reznor"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Atticus",
+                    "last_name": "Ross"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "\"Mężczyźni,",
+                    "last_name": "kobiet\""
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "Stieg",
+                    "last_name": "Larsson"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Angus",
+                    "last_name": "Wall"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Kirk",
+                    "last_name": "Baxter"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Donald",
+                    "last_name": "Burt"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "K.C.",
+                    "last_name": "Fox"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Steve",
+                    "last_name": "Arnold"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Mikael",
+                    "last_name": "Varhelyi"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Patrick",
+                    "last_name": "Rolfe"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Tom",
+                    "last_name": "Reta"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Pernilla",
+                    "last_name": "Olsson"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Linda",
+                    "last_name": "Janson"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Dawn",
+                    "last_name": "Swiderski"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Kajsa",
+                    "last_name": "Severin"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Frida",
+                    "last_name": "Arvidsson"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Adam",
+                    "last_name": "Davis"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Erik",
+                    "last_name": "Videgard"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Trish",
+                    "last_name": "Summerville"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Steven",
+                    "last_name": "Zaillian"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Scott",
+                    "last_name": "Rudin"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Ceán",
+                    "last_name": "Chaffin"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Ole",
+                    "last_name": "Søndberg"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Søren",
+                    "last_name": "Stærmose"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Ryan",
+                    "last_name": "Kavanaugh"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Anni",
+                    "last_name": "Fernandez"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Jim",
+                    "last_name": "Davidson"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Malte",
+                    "last_name": "Forssell"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Mikael",
+                    "last_name": "Wallen"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Berna",
+                    "last_name": "Levin"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Eli",
+                    "last_name": "Bush"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Ren",
+                    "last_name": "Klyce"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Michael",
+                    "last_name": "Semanick"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Chris",
+                    "last_name": "Munro"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Weingarten"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Doc",
+                    "last_name": "Kane"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "David",
+                    "last_name": "Parker"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Oleg",
+                    "last_name": "Kulchytskyi"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Bo",
+                    "last_name": "Persson"
+                },
+                "job": null
+            },
+            {
+                "department": "Dźwięk",
+                "person": {
+                    "first_name": "Rune",
+                    "last_name": "Palving"
+                },
+                "job": null
+            }
+        ]
+    }
+]
