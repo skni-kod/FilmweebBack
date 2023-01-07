@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->string('title', 64);
             $table->string('original_title', 64);
             $table->date('release_date');
-            $table->string('overview', 300);
+            $table->string('overview', 200);
             $table->double('duration');
             $table->enum('type', ['movie', 'serie']);
             $table->string('image_path', 128);
