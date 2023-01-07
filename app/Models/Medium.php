@@ -9,37 +9,45 @@ class Medium extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'original_title', 'release_date', 'overview', 'duration', 'type'];
+    protected $fillable = ['title', 'original_title', 'release_date', 'overview', 'duration', 'type', 'image_path'];
 
-    public function seasons(){
+    public function seasons()
+    {
         return $this->hasMany(Season::class);
     }
 
-    public function genres(){
+    public function genres()
+    {
         return $this->belongsToMany(Genre::class);
     }
 
-    public function countries(){
+    public function countries()
+    {
         return $this->belongsToMany(Country::class);
     }
 
-    public function keywords(){
+    public function keywords()
+    {
         return $this->belongsToMany(Keyword::class);
     }
 
-    public function casts(){
+    public function casts()
+    {
         return $this->hasMany(Cast::class);
     }
 
-    public function crews(){
+    public function crews()
+    {
         return $this->hasMany(Crew::class);
     }
 
-    public function lists(){
+    public function lists()
+    {
         return $this->belongsToMany(Medium_list::class);
     }
 
-    public function production_companies(){
+    public function production_companies()
+    {
         return $this->belongsToMany(ProductionCompany::class);
     }
 

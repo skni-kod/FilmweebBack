@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             DepartmentSeeder::class,
-            LanguageSeeder::class,
+//            LanguageSeeder::class,
             GenderSeeder::class,
             CountrySeeder::class,
             GenreSeeder::class,
