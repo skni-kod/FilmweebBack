@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MediumController;
+use App\Models\Medium;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +18,10 @@ use Illuminate\Support\Facades\Route;
 */
 Route::post('actors/{id}/addImage', [AdminController::class, 'addImage']);
 Route::get('person/{id}', [AdminController::class, 'getPerson']);
+
+Route::controller(MediumController::class)->group(function (){
+    Route::get('media/{id}', 'show');
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
