@@ -30,7 +30,6 @@ class MainSeeder extends Seeder
             $data = json_decode($jsonFile);
             foreach ($data as $x) {
                 //medium
-                error_log($x->medium->title);
                 $mediumData = get_object_vars($x->medium);
                 $mediumModel = Medium::firstOrCreate($mediumData);
 
@@ -59,7 +58,6 @@ class MainSeeder extends Seeder
                 //casts
                 $castsData = $x->casts;
                 foreach ($castsData as $cast) {
-                    error_log($cast->character);
                     $genderModel = Gender::firstOrCreate(["name" => $cast->gender]);
                     $personData = get_object_vars($cast->person);
                     $personModel = Person::firstOrCreate($personData);
