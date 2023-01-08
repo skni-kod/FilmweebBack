@@ -1,0 +1,2506 @@
+[
+    {
+        "medium": {
+            "title": "Metropolis",
+            "original_title": "Metropolis",
+            "release_date": "1927-1-10",
+            "overview": "Należący do nadrzędnej klasy myślicieli Freder odwiedza podziemia, gdzie żyją ciężko pracujący robotnicy. Zakochuje się w jednej z nich, Marii. ",
+            "duration": 153,
+            "type": "movie",
+            "image_path": "/media/metropolis.jpg"
+        },
+        "genre": [
+            {
+                "name": "Sci-Fi"
+            },
+            {
+                "name": "Niemy"
+            }
+        ],
+        "production_companies": {
+            "name": "Universum Film"
+        },
+        "countries": [
+            {
+                "name": "Niemcy",
+                "code": "DE"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Joh Fredersen",
+                "person": {
+                    "first_name": "Alfred",
+                    "last_name": "Abel",
+                    "image_path": "/actors/422353.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Freder, syn Joha",
+                "person": {
+                    "first_name": "Gustav",
+                    "last_name": "Fröhlich",
+                    "image_path": "/actors/422143.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Twórca / Robot Futura / Śmierć / Siedem grzechów głównych / Maria",
+                "person": {
+                    "first_name": "Brigitte",
+                    "last_name": "Helm",
+                    "image_path": "/actors/422360.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "C.A. Rotwang, wynalazca",
+                "person": {
+                    "first_name": "Rudolf",
+                    "last_name": "Klein-Rogge",
+                    "image_path": "/actors/351828.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szczupły mężczyzna",
+                "person": {
+                    "first_name": "Fritz",
+                    "last_name": "Rasp",
+                    "image_path": "/actors/422150.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Josaphat",
+                "person": {
+                    "first_name": "Theodor",
+                    "last_name": "Loos",
+                    "image_path": "/actors/422129.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Grot, strażnik serca maszyny",
+                "person": {
+                    "first_name": "Heinrich",
+                    "last_name": "George",
+                    "image_path": "/actors/422141.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "George 11811",
+                "person": {
+                    "first_name": "Erwin",
+                    "last_name": "Biswanger",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracująca kobieta",
+                "person": {
+                    "first_name": "Grete",
+                    "last_name": "Berger",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Syn w wiecznym ogrodzie",
+                "person": {
+                    "first_name": "Rolf",
+                    "last_name": "Goth",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta z wiecznego ogrodu",
+                "person": {
+                    "first_name": "Helen",
+                    "last_name": "Münchofen",
+                    "image_path": "/actors/154802.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Pracująca kobieta",
+                "person": {
+                    "first_name": "Helene",
+                    "last_name": "Weigel",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta z wiecznego ogrodu",
+                "person": {
+                    "first_name": "Hilde",
+                    "last_name": "Woitscheff",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta z wiecznego ogrodu",
+                "person": {
+                    "first_name": "Anny",
+                    "last_name": "Hintze",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Pracujący mężczyzna, który spowodował wybuch maszyny M",
+                "person": {
+                    "first_name": "Georg",
+                    "last_name": "John",
+                    "image_path": "/actors/423856.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracujący mężczyzna",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "Kuehle",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dama w samochodzie / Kobieta z wiecznego ogrodu",
+                "person": {
+                    "first_name": "Margarete",
+                    "last_name": "Lanner",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Pracująca kobieta",
+                "person": {
+                    "first_name": "Rose",
+                    "last_name": "Lichtenstein",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Marinus",
+                "person": {
+                    "first_name": "Hanns",
+                    "last_name": "Reich",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracujący mężczyzna",
+                "person": {
+                    "first_name": "Curt",
+                    "last_name": "Siodmak",
+                    "image_path": "/actors/467060.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracująca kobieta",
+                "person": {
+                    "first_name": "Henrietta",
+                    "last_name": "Siodmak",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Jan",
+                "person": {
+                    "first_name": "Olaf",
+                    "last_name": "Storm",
+                    "image_path": "/actors/445280.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracujący mężczyzna",
+                "person": {
+                    "first_name": "Erwin",
+                    "last_name": "Vater",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Przekonywujący wynalazca",
+                "person": {
+                    "first_name": "Fritz",
+                    "last_name": "Alberti",
+                    "image_path": "/actors/102854.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracująca kobieta",
+                "person": {
+                    "first_name": "Olly",
+                    "last_name": "Boeheim",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Pracujący mężczyzna",
+                "person": {
+                    "first_name": "Max",
+                    "last_name": "Dietze",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracująca kobieta",
+                "person": {
+                    "first_name": "Ellen",
+                    "last_name": "Frey",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta z wiecznego ogrodu",
+                "person": {
+                    "first_name": "Beatrice",
+                    "last_name": "Garga",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mistrz ceremonii",
+                "person": {
+                    "first_name": "Heinrich",
+                    "last_name": "Gotho",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracująca kobieta",
+                "person": {
+                    "first_name": "Dolly",
+                    "last_name": "Grey",
+                    "image_path": null
+                },
+                "gender": "female"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Fritz",
+                    "last_name": "Lang"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Fritz",
+                    "last_name": "Lang"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Thea",
+                    "last_name": "Harbou"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "Ruttmann"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Karl",
+                    "last_name": "Freund"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Günther",
+                    "last_name": "Rittau"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Abel",
+                    "last_name": "Korzeniowski"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Gottfried",
+                    "last_name": "Huppertz"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Ken",
+                    "last_name": "Winokur"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Wetfish",
+                    "last_name": "Wetfish"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Terry",
+                    "last_name": "Donahue"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Beth",
+                    "last_name": "Custer"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Bernd",
+                    "last_name": "Schultheis"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Caleb",
+                    "last_name": "Sampson"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Nik",
+                    "last_name": "Phelps"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Osborne"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Marriott"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Neil",
+                    "last_name": "Leonard"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Steve",
+                    "last_name": "Kirk"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Myles",
+                    "last_name": "Boisen"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Sheldon",
+                    "last_name": "Brown"
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "\"Metropolis\"",
+                    "last_name": "\"Metropolis\""
+                },
+                "job": null
+            },
+            {
+                "department": "Materiały do scenariusza",
+                "person": {
+                    "first_name": "Thea",
+                    "last_name": "Harbou"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Karl",
+                    "last_name": "Vollbrecht"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Otto",
+                    "last_name": "Hunte"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Erich",
+                    "last_name": "Kettelhut"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Aenne",
+                    "last_name": "Willkomm"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Erich",
+                    "last_name": "Pommer"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Gabinet doktora Caligari",
+            "original_title": "Das Cabinet des Dr. Caligari",
+            "release_date": "1920-2-26",
+            "overview": "W niewielkim niemieckim mieście dochodzi do serii zagadkowych morderstw. Przyjaciel jednej z ofiar odkrywa, że za wszystkim może stać wędrowny hipnotyzer. ",
+            "duration": 71,
+            "type": "movie",
+            "image_path": "/media/gabinet_doktora_caligari.jpg"
+        },
+        "genre": [
+            {
+                "name": "Horror"
+            },
+            {
+                "name": "Niemy"
+            }
+        ],
+        "production_companies": {
+            "name": "Decla-Bioscop AG"
+        },
+        "countries": [
+            {
+                "name": "Niemcy",
+                "code": "DE"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Dr Caligari",
+                "person": {
+                    "first_name": "Werner",
+                    "last_name": "Krauss",
+                    "image_path": "/actors/311766.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Cesare",
+                "person": {
+                    "first_name": "Conrad",
+                    "last_name": "Veidt",
+                    "image_path": "/actors/329337.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Jane Olsen",
+                "person": {
+                    "first_name": "Lil",
+                    "last_name": "Dagover",
+                    "image_path": "/actors/351597.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Francis",
+                "person": {
+                    "first_name": "Friedrich",
+                    "last_name": "Fehér",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Alan",
+                "person": {
+                    "first_name": "Hans",
+                    "last_name": "Twardowski",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dr Olsen",
+                "person": {
+                    "first_name": "Rudolf",
+                    "last_name": "Lettinger",
+                    "image_path": "/actors/351830.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Przestępca",
+                "person": {
+                    "first_name": "Rudolf",
+                    "last_name": "Klein-Rogge",
+                    "image_path": "/actors/351828.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gospodyni",
+                "person": {
+                    "first_name": "Elsa",
+                    "last_name": "Wagner",
+                    "image_path": "/actors/380530.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Morderca",
+                "person": {
+                    "first_name": "Ludwig",
+                    "last_name": "Rex",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Młody lekarz",
+                "person": {
+                    "first_name": "Henri",
+                    "last_name": "Peters-Arnolds",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Starszy mężczyzna na ławce",
+                "person": {
+                    "first_name": "Hans",
+                    "last_name": "Lanser-Rudolf",
+                    "image_path": null
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Wiene"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Carl",
+                    "last_name": "Mayer"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Hans",
+                    "last_name": "Janowitz"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Willy",
+                    "last_name": "Hameister"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Alfredo",
+                    "last_name": "Antonini"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "wersja",
+                    "last_name": "1987r."
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Marriott"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Giuseppe",
+                    "last_name": "Becce"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "wersja",
+                    "last_name": "1996r."
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Timothy",
+                    "last_name": "Brock"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Lothar",
+                    "last_name": "Prox"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "wersja",
+                    "last_name": "1993r."
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Rainer",
+                    "last_name": "Viertelboeck"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "Reimann"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "Röhrig"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Hermann",
+                    "last_name": "Warm"
+                },
+                "job": null
+            },
+            {
+                "department": "Kostiumy",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "Reimann"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Erich",
+                    "last_name": "Pommer"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Rudolf",
+                    "last_name": "Meinert"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Światła wielkiego miasta",
+            "original_title": "City Lights",
+            "release_date": "1931-1-30",
+            "overview": "Włóczęga Charlie jest gotowy do wszelkich poświęceń, by pomóc niewidomej kwiaciarce.",
+            "duration": 87,
+            "type": "movie",
+            "image_path": "/media/światła_wielkiego_miasta.jpg"
+        },
+        "genre": [
+            {
+                "name": "Dramat"
+            },
+            {
+                "name": "Komedia"
+            },
+            {
+                "name": "Romans"
+            },
+            {
+                "name": "Niemy"
+            }
+        ],
+        "production_companies": {
+            "name": "Charles Chaplin Productions"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Włóczęga Charlie",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin",
+                    "image_path": "/actors/452019.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Niewidoma kwiaciarka",
+                "person": {
+                    "first_name": "Virginia",
+                    "last_name": "Cherrill",
+                    "image_path": "/actors/426473.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ekscentryczny milioner",
+                "person": {
+                    "first_name": "Harry",
+                    "last_name": "Myers",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Babcia niewidomej dziewczyny",
+                "person": {
+                    "first_name": "Florence",
+                    "last_name": "Lee",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kamerdyner milionera",
+                "person": {
+                    "first_name": "Al",
+                    "last_name": "Garcia",
+                    "image_path": "/actors/426514.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bokser",
+                "person": {
+                    "first_name": "Hank",
+                    "last_name": "Mann",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Doktor",
+                "person": {
+                    "first_name": "T.S.",
+                    "last_name": "Alexander",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Znokautowany bokser",
+                "person": {
+                    "first_name": "Victor",
+                    "last_name": "Alexander",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Harry",
+                    "last_name": "Ayers",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bokser",
+                "person": {
+                    "first_name": "Tom",
+                    "last_name": "Dempsey",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Burmistrz / Sąsiad niewidomej kwiaciarki na dole",
+                "person": {
+                    "first_name": "Henry",
+                    "last_name": "Bergman",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sędzia bokserski",
+                "person": {
+                    "first_name": "Eddie",
+                    "last_name": "Baker",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta, która usiadła na cygarze",
+                "person": {
+                    "first_name": "Florence",
+                    "last_name": "Wix",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Włamywacz",
+                "person": {
+                    "first_name": "Joe",
+                    "last_name": "Meter",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Wysoki mężczyzna na przyjęciu",
+                "person": {
+                    "first_name": "Jack",
+                    "last_name": "Sutherland",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zwycięski bokser, później znokautowany",
+                "person": {
+                    "first_name": "Tony",
+                    "last_name": "Stabenau",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Chłopak sprzedający gazety",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Parrish",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kierownik firmy sprzątającej",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Donnelly",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Wytworny dżentelmen w kawiarni",
+                "person": {
+                    "first_name": "Stanhope",
+                    "last_name": "Wheatcroft",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna na rampie przed sklepem",
+                "person": {
+                    "first_name": "Tiny",
+                    "last_name": "Ward",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna w restauracji",
+                "person": {
+                    "first_name": "Mark",
+                    "last_name": "Strong",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statysta występujący w scenie walki bokserskiej",
+                "person": {
+                    "first_name": "Cy",
+                    "last_name": "Slocum",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna wyrzucający cygaro",
+                "person": {
+                    "first_name": "W.C.",
+                    "last_name": "Robinson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Rzeźbiarz",
+                "person": {
+                    "first_name": "Granville",
+                    "last_name": "Redmond",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bezdomny, który schyla się po cygaro",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Rand",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta w restauracji",
+                "person": {
+                    "first_name": "Mrs.",
+                    "last_name": "Pope",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta na ulicy",
+                "person": {
+                    "first_name": "Margaret",
+                    "last_name": "Oliver",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Sprzedawczyni w kwiaciarni",
+                "person": {
+                    "first_name": "Mrs.",
+                    "last_name": "Hyams",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta występujący w scenie walki bokserskiej",
+                "person": {
+                    "first_name": "Joseph",
+                    "last_name": "Herrick",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statysta występujący w scenie walki bokserskiej",
+                "person": {
+                    "first_name": "Ad",
+                    "last_name": "Herman",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Inspektor policji",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Graves",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna na ulicy",
+                "person": {
+                    "first_name": "Milton",
+                    "last_name": "Gowman",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta siedząca przy lewej części stolika w restauracji",
+                "person": {
+                    "first_name": "Mrs.",
+                    "last_name": "Garcia",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Tancerka",
+                "person": {
+                    "first_name": "Marie",
+                    "last_name": "Cooper",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta siedząca przy środku stolika w restauracji",
+                "person": {
+                    "first_name": "Betty",
+                    "last_name": "Blair",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta w restauracji",
+                "person": {
+                    "first_name": "Jeanne",
+                    "last_name": "Carpenter",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mężczyzna w płaszczu i kapeluszu",
+                "person": {
+                    "first_name": "Peter",
+                    "last_name": "Diego",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta w restauracji",
+                "person": {
+                    "first_name": "Jean",
+                    "last_name": "Harlow",
+                    "image_path": "/actors/460701.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Statysta występujący w scenie walki bokserskiej",
+                "person": {
+                    "first_name": "Jack",
+                    "last_name": "Alexander",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Zamiatający ulice / Włamywacz",
+                "person": {
+                    "first_name": "Albert",
+                    "last_name": "Austin",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Łysy gość na przyjęciu",
+                "person": {
+                    "first_name": "Buster",
+                    "last_name": "Brodie",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Chłopak sprzedający gazety",
+                "person": {
+                    "first_name": "Ray",
+                    "last_name": "Erlenborn",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna na ulicy",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Hammond",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Bokser",
+                "person": {
+                    "first_name": "Willie",
+                    "last_name": "Keeler",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statysta występujący w scenie walki bokserskiej",
+                "person": {
+                    "first_name": "A.B.",
+                    "last_name": "Lane",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Eddie Mason / Bokser",
+                "person": {
+                    "first_name": "Eddie",
+                    "last_name": "McAuliffe",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Drugi",
+                "person": {
+                    "first_name": "Emmett",
+                    "last_name": "Wagner",
+                    "image_path": null
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Harry",
+                    "last_name": "Clive"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Harry",
+                    "last_name": "Crocker"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Roland",
+                    "last_name": "Totheroh"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Gordon",
+                    "last_name": "Pollock"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Willard",
+                    "last_name": "Nico"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Hall"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Alfred",
+                    "last_name": "Reeves"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Brzdąc",
+            "original_title": "The Kid",
+            "release_date": "1921-1-21",
+            "overview": "Włóczęga Charlie znajduje noworodka i postanawia się nim zaopiekować. Pięć lat później bohaterów łączy trwała więź. ",
+            "duration": 68,
+            "type": "movie",
+            "image_path": "/media/brzdąc.jpg"
+        },
+        "genre": [
+            {
+                "name": "Dramat"
+            },
+            {
+                "name": "Komedia"
+            },
+            {
+                "name": "Niemy"
+            }
+        ],
+        "production_companies": {
+            "name": "Charles Chaplin Productions"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Włóczęga",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin",
+                    "image_path": "/actors/452019.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Brzdąc",
+                "person": {
+                    "first_name": "Jackie",
+                    "last_name": "Coogan",
+                    "image_path": "/actors/160616.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Matka",
+                "person": {
+                    "first_name": "Edna",
+                    "last_name": "Purviance",
+                    "image_path": "/actors/78995.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Mężczyzna",
+                "person": {
+                    "first_name": "Carl",
+                    "last_name": "Miller",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "Tom",
+                    "last_name": "Wilson",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szef policji",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "McKinnon",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna w przytułku",
+                "person": {
+                    "first_name": "Albert",
+                    "last_name": "Austin",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Twardy gliniarz",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "Lynch",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Chłopiec",
+                "person": {
+                    "first_name": "Raymond",
+                    "last_name": "Lee",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lekarz",
+                "person": {
+                    "first_name": "Jules",
+                    "last_name": "Hanft",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statystka w scenie z nieba",
+                "person": {
+                    "first_name": "Esther",
+                    "last_name": "Ralston",
+                    "image_path": "/actors/67983.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Asystent",
+                "person": {
+                    "first_name": "F.",
+                    "last_name": "Blinn",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Urzędnik",
+                "person": {
+                    "first_name": "Frank",
+                    "last_name": "Campeau",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pokojówka",
+                "person": {
+                    "first_name": "Kathleen",
+                    "last_name": "Kay",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Policjant",
+                "person": {
+                    "first_name": "S.D.",
+                    "last_name": "Wilcox",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Druhna",
+                "person": {
+                    "first_name": "Elsie",
+                    "last_name": "Sindora",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Druhna",
+                "person": {
+                    "first_name": "Flora",
+                    "last_name": "Howard",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Przyjaciel",
+                "person": {
+                    "first_name": "Granville",
+                    "last_name": "Redmond",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pokojówka Edny",
+                "person": {
+                    "first_name": "May",
+                    "last_name": "White",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Nadzorca przytułku",
+                "person": {
+                    "first_name": "Henry",
+                    "last_name": "Bergman",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dręczyciel",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Reisner",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Flirtujący anioł",
+                "person": {
+                    "first_name": "Lita",
+                    "last_name": "Grey",
+                    "image_path": "/actors/157997.2.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Dziecko w wózku",
+                "person": {
+                    "first_name": "Baby",
+                    "last_name": "Wilson",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Pielęgniarka",
+                "person": {
+                    "first_name": "Nellie",
+                    "last_name": "Baker",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kieszonkowiec / Gość / Diabeł",
+                "person": {
+                    "first_name": "Jack",
+                    "last_name": "Sr.",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Duchowny",
+                "person": {
+                    "first_name": "Edgar",
+                    "last_name": "Sherrod",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Panna młoda",
+                "person": {
+                    "first_name": "Beulah",
+                    "last_name": "Bains",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Pan młody",
+                "person": {
+                    "first_name": "Robert",
+                    "last_name": "Dunbar",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Matka panny młodej",
+                "person": {
+                    "first_name": "Kitty",
+                    "last_name": "Bradbury",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Ojciec panny młodej",
+                "person": {
+                    "first_name": "Rupert",
+                    "last_name": "Franklin",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statystka w niebie",
+                "person": {
+                    "first_name": "Bliss",
+                    "last_name": "Chevalier",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Statystka w niebie",
+                "person": {
+                    "first_name": "Frances",
+                    "last_name": "Cochran",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka w alejce",
+                "person": {
+                    "first_name": "Elsie",
+                    "last_name": "Codd",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Lillian Crane",
+                "person": {
+                    "first_name": "Estelle",
+                    "last_name": "Cook",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Lillian Crane",
+                "person": {
+                    "first_name": "Lillian",
+                    "last_name": "Crane",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Menel",
+                "person": {
+                    "first_name": "Dan",
+                    "last_name": "Dillon",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta na weselu",
+                "person": {
+                    "first_name": "Philip",
+                    "last_name": "D'Oench",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka na weselu",
+                "person": {
+                    "first_name": "Florette",
+                    "last_name": "Faulkner",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka w niebie",
+                "person": {
+                    "first_name": "Sadie",
+                    "last_name": "Gordon",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Statysta",
+                "person": {
+                    "first_name": "Frank",
+                    "last_name": "Hale",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka na weselu",
+                "person": {
+                    "first_name": "Martha",
+                    "last_name": "Hall",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Brzdąc jako niemowlę",
+                "person": {
+                    "first_name": "Baby",
+                    "last_name": "Hathaway",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka w alejce",
+                "person": {
+                    "first_name": "Louise",
+                    "last_name": "Hathaway",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta",
+                "person": {
+                    "first_name": "Ed",
+                    "last_name": "Hunt",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statystka w niebie",
+                "person": {
+                    "first_name": "Lulu",
+                    "last_name": "Jenks",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka na weselu",
+                "person": {
+                    "first_name": "Irene",
+                    "last_name": "Jennings",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka na weselu",
+                "person": {
+                    "first_name": "Grace",
+                    "last_name": "Keller",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka na weselu",
+                "person": {
+                    "first_name": "Sarah",
+                    "last_name": "Kernan",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Statysta na weselu",
+                "person": {
+                    "first_name": "V.",
+                    "last_name": "Madison",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta",
+                "person": {
+                    "first_name": "Clyde",
+                    "last_name": "McAtee",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statystka w niebie",
+                "person": {
+                    "first_name": "Ethel",
+                    "last_name": "O'Neil",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta w niebie",
+                "person": {
+                    "first_name": "Lew",
+                    "last_name": "Parker",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statysta na weselu",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Pierce",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka w niebie",
+                "person": {
+                    "first_name": "Laura",
+                    "last_name": "Pollard",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta na weselu",
+                "person": {
+                    "first_name": "Evans",
+                    "last_name": "Quirk",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta w niebie",
+                "person": {
+                    "first_name": "Henry",
+                    "last_name": "Roser",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Statysta na weselu",
+                "person": {
+                    "first_name": "J.B.",
+                    "last_name": "Russell",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statysta",
+                "person": {
+                    "first_name": "George",
+                    "last_name": "Sheldon",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Gwałtowna kobieta",
+                "person": {
+                    "first_name": "Minnie",
+                    "last_name": "Stearns",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka w alejce",
+                "person": {
+                    "first_name": "Mother",
+                    "last_name": "Vinot",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Kobieta z wózkiem dziecięcym",
+                "person": {
+                    "first_name": "Edith",
+                    "last_name": "Wilson",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka w alejce",
+                "person": {
+                    "first_name": "Amanda",
+                    "last_name": "Yanez",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Statysta w alejce",
+                "person": {
+                    "first_name": "Baby",
+                    "last_name": "Yanez",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            },
+            {
+                "character": "Statystka na weselu",
+                "person": {
+                    "first_name": "Elsie",
+                    "last_name": "Young",
+                    "image_path": null
+                },
+                "gender": "nieokreślona"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Roland",
+                    "last_name": "Totheroh"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Jack",
+                    "last_name": "Wilson"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Hall"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            }
+        ]
+    },
+    {
+        "medium": {
+            "title": "Dzisiejsze czasy",
+            "original_title": "Modern Times",
+            "release_date": "1936-2-5",
+            "overview": "Wycieńczony nerwowo robotnik trafia do szpitala psychiatrycznego. Po wyjściu z niego prowokuje uliczną demonstrację. ",
+            "duration": 87,
+            "type": "movie",
+            "image_path": "/media/dzisiejsze_czasy.jpg"
+        },
+        "genre": [
+            {
+                "name": "Komedia"
+            },
+            {
+                "name": "Niemy"
+            }
+        ],
+        "production_companies": {
+            "name": "Charles Chaplin Productions"
+        },
+        "countries": [
+            {
+                "name": "USA",
+                "code": "US"
+            }
+        ],
+        "casts": [
+            {
+                "character": "Robotnik",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin",
+                    "image_path": "/actors/452019.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Dziewczyna",
+                "person": {
+                    "first_name": "Paulette",
+                    "last_name": "Goddard",
+                    "image_path": "/actors/466780.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Właściciel kawiarni",
+                "person": {
+                    "first_name": "Henry",
+                    "last_name": "Bergman",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Duży Bill",
+                "person": {
+                    "first_name": "Tiny",
+                    "last_name": "Sandford",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mechanik",
+                "person": {
+                    "first_name": "Chester",
+                    "last_name": "Conklin",
+                    "image_path": "/actors/112889.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Włamywacz",
+                "person": {
+                    "first_name": "Hank",
+                    "last_name": "Mann",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Ojciec dziewczyny",
+                "person": {
+                    "first_name": "Stanley",
+                    "last_name": "Blystone",
+                    "image_path": "/actors/318126_1.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Prezes Electro Steel Corp.",
+                "person": {
+                    "first_name": "Al",
+                    "last_name": "Garcia",
+                    "image_path": "/actors/426514.3.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Współwięzień",
+                "person": {
+                    "first_name": "Richard",
+                    "last_name": "Alexander",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pastor",
+                "person": {
+                    "first_name": "Cecil",
+                    "last_name": "Reynolds",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Żona pastora",
+                "person": {
+                    "first_name": "Mira",
+                    "last_name": "McKinney",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "J. Widdecombe Billows",
+                "person": {
+                    "first_name": "Murdock",
+                    "last_name": "MacQuarrie",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Oficer ds. młodocianych",
+                "person": {
+                    "first_name": "Wilfred",
+                    "last_name": "Lucas",
+                    "image_path": "/actors/291813.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Szeryf Couler",
+                "person": {
+                    "first_name": "Edward",
+                    "last_name": "LeSaint",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Główny kelner w kawiarni",
+                "person": {
+                    "first_name": "Fred",
+                    "last_name": "Malatesta",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Operator turbiny",
+                "person": {
+                    "first_name": "Sammy",
+                    "last_name": "Stein",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kobieta z zapiętym biustem",
+                "person": {
+                    "first_name": "Juana",
+                    "last_name": "Sutton",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Asystent Billowsa",
+                "person": {
+                    "first_name": "Ted",
+                    "last_name": "Oliver",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Siostra dziewczyny",
+                "person": {
+                    "first_name": "Gloria",
+                    "last_name": "DeHaven",
+                    "image_path": "/actors/411121.3.jpg"
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Cichy asystent Billowsa",
+                "person": {
+                    "first_name": "Norman",
+                    "last_name": "Ainsley",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Robotnik",
+                "person": {
+                    "first_name": "Bobby",
+                    "last_name": "Barber",
+                    "image_path": "/actors/300911.2.jpg"
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Pracownik linii montażowej obok Dużego Billa",
+                "person": {
+                    "first_name": "Heinie",
+                    "last_name": "Conklin",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Stoczniowiec",
+                "person": {
+                    "first_name": "Frank",
+                    "last_name": "Hagney",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Robotnik",
+                "person": {
+                    "first_name": "Chuck",
+                    "last_name": "Hamilton",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant z radiowozu",
+                "person": {
+                    "first_name": "Pat",
+                    "last_name": "Harmon",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Sfrustrowany klient kawiarni",
+                "person": {
+                    "first_name": "Lloyd",
+                    "last_name": "Ingraham",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Brygadzista linii montażowej",
+                "person": {
+                    "first_name": "Walter",
+                    "last_name": "James",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Lekarz",
+                "person": {
+                    "first_name": "Edward",
+                    "last_name": "Kimball",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Robotnik",
+                "person": {
+                    "first_name": "Jack",
+                    "last_name": "Low",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Siostra dziewczyny",
+                "person": {
+                    "first_name": "Gloria",
+                    "last_name": "Delson",
+                    "image_path": null
+                },
+                "gender": "female"
+            },
+            {
+                "character": "Sprzedawca papierosów",
+                "person": {
+                    "first_name": "Buddy",
+                    "last_name": "Messinger",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Policjant w radiowozie",
+                "person": {
+                    "first_name": "Bruce",
+                    "last_name": "Mitchell",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Skazaniec",
+                "person": {
+                    "first_name": "Frank",
+                    "last_name": "Moran",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Mężczyzna w kolejce",
+                "person": {
+                    "first_name": "James",
+                    "last_name": "Morton",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Włamywacz",
+                "person": {
+                    "first_name": "Louis",
+                    "last_name": "Natheaux",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kierownik sklepu",
+                "person": {
+                    "first_name": "J.C.",
+                    "last_name": "Nugent",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Cygan w wozie policyjnym",
+                "person": {
+                    "first_name": "Russ",
+                    "last_name": "Powell",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Kelner",
+                "person": {
+                    "first_name": "John",
+                    "last_name": "Rand",
+                    "image_path": null
+                },
+                "gender": "male"
+            },
+            {
+                "character": "Robotnik",
+                "person": {
+                    "first_name": "Harry",
+                    "last_name": "Wilson",
+                    "image_path": null
+                },
+                "gender": "male"
+            }
+        ],
+        "crews": [
+            {
+                "department": "Reżyser",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenariusz",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Roland",
+                    "last_name": "Totheroh"
+                },
+                "job": null
+            },
+            {
+                "department": "Zdjęcia",
+                "person": {
+                    "first_name": "Ira",
+                    "last_name": "Morgan"
+                },
+                "job": null
+            },
+            {
+                "department": "Muzyka",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            },
+            {
+                "department": "Montaż",
+                "person": {
+                    "first_name": "Willard",
+                    "last_name": "Nico"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "Charles",
+                    "last_name": "Hall"
+                },
+                "job": null
+            },
+            {
+                "department": "Scenografia",
+                "person": {
+                    "first_name": "J.",
+                    "last_name": "Spencer"
+                },
+                "job": null
+            },
+            {
+                "department": "Produkcja",
+                "person": {
+                    "first_name": "Charlie",
+                    "last_name": "Chaplin"
+                },
+                "job": null
+            }
+        ]
+    }
+]

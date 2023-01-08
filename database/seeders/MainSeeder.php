@@ -24,12 +24,13 @@ class MainSeeder extends Seeder
      */
     public function run()
     {
-        $jsonFiles = ['/data/drama-media.json', '/data/romance-media.json', '/data/thriller-media.json'];
+        $jsonFiles = ['/data/media/action-media.json', '/data/media/adventure-media.json', '/data/media/animation-media.json', '/data/media/biographical-media.json', '/data/media/comedy-media.json', '/data/media/detective-story-media.json', '/data/media/documentary-media.json', '/data/media/drama-media.json', '/data/media/family-media.json', '/data/media/fantasy-media.json', '/data/media/horror-media.json', '/data/media/melodrama-media.json', '/data/media/romance-media.json', '/data/media/sci-fi-media.json', '/data/media/short-media.json', '/data/media/silent-media.json', '/data/media/thriller-media.json'];
         foreach ($jsonFiles as $path) {
             $jsonFile = file_get_contents(__DIR__ . $path);
             $data = json_decode($jsonFile);
             foreach ($data as $x) {
                 //medium
+                error_log($x->medium->title);
                 $mediumData = get_object_vars($x->medium);
                 $mediumModel = Medium::firstOrCreate($mediumData);
 
@@ -58,7 +59,8 @@ class MainSeeder extends Seeder
                 //casts
                 $castsData = $x->casts;
                 foreach ($castsData as $cast) {
-                    $genderModel = Gender::where('name', $cast->gender)->first();
+                    error_log($cast->character);
+                    $genderModel = Gender::firstOrCreate(["name" => $cast->gender]);
                     $personData = get_object_vars($cast->person);
                     $personModel = Person::firstOrCreate($personData);
                     $castData = array(
