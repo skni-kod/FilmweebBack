@@ -16,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
 Route::post('actors/{id}/addImage', [AdminController::class, 'addImage']);
 Route::get('person/{id}', [AdminController::class, 'getPerson']);
 
-Route::controller(MediumController::class)->group(function (){
+Route::controller(MediumController::class)->group(function () {
     Route::get('media/{id}', 'show');
 });
 
