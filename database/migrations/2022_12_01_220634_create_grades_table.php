@@ -16,8 +16,8 @@ return new class extends Migration {
             $table->id();
             $table->unsignedBigInteger('medium_id');
             $table->unsignedBigInteger('user_id');
-            $table->double('content', 3, 1);
-            $table->float('rating');
+            $table->string('content', 200);
+            $table->float('rating', 1, 1);
             $table->timestamps();
 
             $table->foreign('medium_id')->references('id')->on('media')->onDelete('cascade');
