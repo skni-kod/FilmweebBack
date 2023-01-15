@@ -2,14 +2,30 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Medium extends Model
 {
     use HasFactory;
 
     protected $fillable = ['title', 'original_title', 'release_date', 'overview', 'duration', 'type', 'image_path'];
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = ['avg_grade'];
+
+    protected function avgGrade(): Attribute
+    {
+        return new Attribute(
+            get: fn() => $this->grades()->average('rating')
+        );
+    }
 
     public function seasons()
     {
@@ -57,5 +73,10 @@ class Medium extends Model
     public function images()
     {
         return $this->hasMany(MediumImage::class);
+    }
+
+    public function grades()
+    {
+        return $this->hasMany(Grade::class);
     }
 }

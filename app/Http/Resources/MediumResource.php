@@ -10,7 +10,7 @@ class MediumResource extends JsonResource
     /**
      * Transform the resource into an array.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
      */
     public function toArray($request)
@@ -25,6 +25,7 @@ class MediumResource extends JsonResource
             'duration' => $this->duration,
             'type' => $this->type,
             'image_path' => $this->image_path ? Storage::url($this->image_path) : $this->image_path,
+            'avg_grade' => $this->avg_grade,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at
         ];
