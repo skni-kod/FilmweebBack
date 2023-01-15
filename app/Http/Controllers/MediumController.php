@@ -81,6 +81,7 @@ class MediumController extends BaseController
     public function show($id)
     {
         $medium = $this->mediumService->findById($id);
+        $medium->append('avg_grade')->toArray();
         if ($medium instanceof Medium) {
             return $this->sendResponse(new MediumResource($medium), 'Medium retrieved successfully.');
         } else {
