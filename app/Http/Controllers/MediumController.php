@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Resources\MediumResource;
 use App\Models\Medium;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Services\MediumService;
 
@@ -87,6 +88,18 @@ class MediumController extends BaseController
         } else {
             return $this->sendError($medium);
         }
+    }
+
+    public function getTopRated()
+    {
+        $date = Carbon::now()->subDays(7);
+        $media = Medium::withAvg(['grades' => function ($query) use ($date) {
+            $query->where('created_at', '>=', $date);
+        }], 'rating')->orderBy('grades_avg_rating', 'desc')->get()->toArray();
+//        $media = Medium::withAvg(['grades'=>function($query){
+//            $query->where('rating', '<>');
+//        }], 'rating')->get();
+        return response()->json($media);
     }
 
     /**

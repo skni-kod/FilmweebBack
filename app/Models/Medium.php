@@ -18,14 +18,17 @@ class Medium extends Model
      *
      * @var array
      */
-    protected $appends = ['avg_grade'];
+    //  protected $appends = ['avg_grade'];
 
-    protected function avgGrade(): Attribute
-    {
-        return new Attribute(
-            get: fn() => $this->grades()->average('rating')
-        );
-    }
+//    protected function avgGrade(): Attribute
+//    {
+//        $medium = Medium::withAvg('grades', 'rating')->get();
+//        $data = $medium[1]->grades_avg_rating;
+//        return new Attribute(
+//            get: fn() => $data
+////            get: fn() => $this->grades()->average('rating')
+//        );
+//    }
 
     public function seasons()
     {
