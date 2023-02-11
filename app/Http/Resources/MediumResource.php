@@ -24,9 +24,7 @@ class MediumResource extends JsonResource
             'overview' => $this->overview,
             'duration' => $this->duration,
             'type' => $this->type,
-            //'image_path' => $this->image_path ? Storage::url($this->image_path) : $this->image_path,
-            'image_path' => $this->image_path,
-            'avg_grade' => $this->avg_grade,
+            'image_path' => $this->image_path ? Storage::disk('google')->url($this->image_path) : $this->image_path,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at
         ];
