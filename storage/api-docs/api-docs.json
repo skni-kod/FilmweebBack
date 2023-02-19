@@ -53,6 +53,30 @@
                     }
                 }
             }
+        },
+        "/media/top": {
+            "get": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Get top rated films from last week",
+                "description": "Returns media data",
+                "operationId": "getTopRated",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
         }
     },
     "tags": [
