@@ -21,6 +21,7 @@ Route::post('actors/{id}/addImage', [AdminController::class, 'addImage']);
 Route::get('person/{id}', [AdminController::class, 'getPerson']);
 
 Route::controller(MediumController::class)->group(function () {
+    Route::get('media/top', 'getTopRated');
     Route::get('media/{id}', 'show');
 });
 
