@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\CastCollection;
+use App\Http\Resources\MediaCollection;
+use App\Http\Resources\MediumCollection;
 use App\Http\Resources\MediumResource;
 use App\Models\Grade;
 use App\Models\Medium;
@@ -28,7 +31,8 @@ class MediumController extends BaseController
      */
     public function index()
     {
-        //
+        $media = Medium::all()->random(15);
+        return $this->sendResponse(new MediumCollection($media), 'Medium retrieved successfully.');
     }
 
     /**
@@ -94,12 +98,6 @@ class MediumController extends BaseController
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    /**
      * @OA\Get(
      *      path="/media/top",
      *      operationId="getTopRated",
@@ -132,6 +130,13 @@ class MediumController extends BaseController
             $medium->image_path = $medium->image_path ? Storage::disk('google')->url($medium->image_path) : $medium->image_path;
         }
         return $this->sendResponse($media, 'Media retrieved successfully.');
+    }
+
+    public function getCasts($id)
+    {
+        $medium = $this->mediumService->findById($id);
+        $casts = $medium->casts;
+        return $this->sendResponse(new CastCollection($casts), 'Media retrieved successfully.');
     }
 
     /**

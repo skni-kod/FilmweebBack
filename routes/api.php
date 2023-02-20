@@ -21,8 +21,10 @@ Route::post('actors/{id}/addImage', [AdminController::class, 'addImage']);
 Route::get('person/{id}', [AdminController::class, 'getPerson']);
 
 Route::controller(MediumController::class)->group(function () {
+    Route::get('media', 'index');
     Route::get('media/top', 'getTopRated');
     Route::get('media/{id}', 'show');
+    Route::get('media/{id}/casts', 'getCasts');
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
