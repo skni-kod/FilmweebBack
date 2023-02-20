@@ -127,7 +127,7 @@ class MediumController extends BaseController
     public function getTopRated()
     {
         $date = Carbon::now()->subDays(7);
-        $media = DB::table('media')->select('media.*', DB::raw('AVG(grades.rating) as avg_rating'))->leftJoin('grades', 'media.id', '=', 'grad`es.medium_id')->where('grades.created_at', '>=', $date)->havingRaw('AVG(grades.rating) is not null')->groupBy('media.id')->get();
+        $media = DB::table('media')->select('media.*', DB::raw('AVG(grades.rating) as avg_rating'))->leftJoin('grades', 'media.id', '=', 'grades.medium_id')->where('grades.created_at', '>=', $date)->havingRaw('AVG(grades.rating) is not null')->groupBy('media.id')->get();
         foreach ($media as $medium) {
             $medium->image_path = $medium->image_path ? Storage::disk('google')->url($medium->image_path) : $medium->image_path;
         }
