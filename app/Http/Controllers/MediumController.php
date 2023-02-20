@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\CastCollection;
-use App\Http\Resources\MediaCollection;
 use App\Http\Resources\MediumCollection;
 use App\Http\Resources\MediumResource;
-use App\Models\Grade;
 use App\Models\Medium;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -28,6 +26,31 @@ class MediumController extends BaseController
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     */
+    /**
+     * @OA\Get(
+     *      path="/media",
+     *      operationId="index",
+     *      tags={"Media"},
+     *      summary="Get 15 random media",
+     *      description="Returns media data",
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *       ),
+     *      @OA\Response(
+     *          response=400,
+     *          description="Bad Request"
+     *      ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthenticated",
+     *      ),
+     *      @OA\Response(
+     *          response=403,
+     *          description="Forbidden"
+     *      )
+     * )
      */
     public function index()
     {
@@ -132,11 +155,45 @@ class MediumController extends BaseController
         return $this->sendResponse($media, 'Media retrieved successfully.');
     }
 
+    /**
+     * @OA\Get(
+     *      path="media/{id}/casts",
+     *      operationId="getCasts",
+     *      tags={"Media"},
+     *      summary="Get casts of particular medium",
+     *      description="Returns casts data",
+     *     @OA\Parameter(
+     *          name="id",
+     *          description="Medium id",
+     *          required=true,
+     *          in="path",
+     *          @OA\Schema(
+     *              type="integer"
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Successful operation",
+     *       ),
+     *      @OA\Response(
+     *          response=400,
+     *          description="Bad Request"
+     *      ),
+     *      @OA\Response(
+     *          response=401,
+     *          description="Unauthenticated",
+     *      ),
+     *      @OA\Response(
+     *          response=403,
+     *          description="Forbidden"
+     *      )
+     * )
+     */
     public function getCasts($id)
     {
         $medium = $this->mediumService->findById($id);
         $casts = $medium->casts;
-        return $this->sendResponse(new CastCollection($casts), 'Media retrieved successfully.');
+        return $this->sendResponse(new CastCollection($casts), 'Casts retrieved successfully.');
     }
 
     /**

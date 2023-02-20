@@ -14,15 +14,14 @@ class CastResource extends JsonResource
      */
     public function toArray($request)
     {
-        //return parent::toArray($request);
         return [
             'id' => $this->id,
             'medium_id' => $this->medium_id,
             'person_id' => $this->person_id,
             'gender_id' => $this->gender_id,
             'character' => $this->character,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
+            'created_at' => $this->created_at->format('d-m-Y'),
+            'updated_at' => $this->updated_at->format('d-m-Y'),
         ];
     }
 }

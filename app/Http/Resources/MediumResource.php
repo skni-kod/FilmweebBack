@@ -15,7 +15,6 @@ class MediumResource extends JsonResource
      */
     public function toArray($request)
     {
-        // return parent::toArray($request);
         return [
             'id' => $this->id,
             'title' => $this->title,
@@ -26,8 +25,8 @@ class MediumResource extends JsonResource
             'type' => $this->type,
             'image_path' => $this->image_path ? Storage::disk('google')->url($this->image_path) : $this->image_path,
             'avg_rating' => ($this->avg_grade) ? ($this->avg_grade) : null,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at
+            'created_at' => $this->created_at->format('d-m-Y'),
+            'updated_at' => $this->updated_at->format('d-m-Y')
         ];
     }
 }
