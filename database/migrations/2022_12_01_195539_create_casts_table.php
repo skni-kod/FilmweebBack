@@ -19,7 +19,6 @@ return new class extends Migration
             $table->unsignedBigInteger('person_id');
             $table->unsignedBigInteger('gender_id');
             $table->string('character',100);
-            $table->enum('priority',['low','medium','high']);
             $table->timestamps();
             $table->foreign('medium_id')->references('id')->on('media')->onDelete('cascade');
             $table->foreign('person_id')->references('id')->on('people')->onDelete('cascade');

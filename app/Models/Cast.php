@@ -9,7 +9,7 @@ class Cast extends Model
 {
     use HasFactory;
 
-    protected $fillable=['medium_id','person_id','gender_id','character','priority'];
+    protected $fillable=['medium_id','person_id','gender_id','character'];
 
     public function medium(){
         return $this->belongsTo(Medium::class);

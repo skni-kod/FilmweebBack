@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('put', function () {
+    \Illuminate\Support\Facades\Storage::disk('google')->put('test.txt', 'Hello World');
+    return 'File was saved to Google Drive';
+});
