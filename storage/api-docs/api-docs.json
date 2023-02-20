@@ -19,6 +19,30 @@
         }
     ],
     "paths": {
+        "/media": {
+            "get": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Get 15 random media",
+                "description": "Returns media data",
+                "operationId": "index",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
         "/media/{id}": {
             "get": {
                 "tags": [
@@ -62,6 +86,41 @@
                 "summary": "Get top rated films from last week",
                 "description": "Returns media data",
                 "operationId": "getTopRated",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "media/{id}/casts": {
+            "get": {
+                "tags": [
+                    "Media"
+                ],
+                "summary": "Get casts of particular medium",
+                "description": "Returns casts data",
+                "operationId": "getCasts",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Medium id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Successful operation"
