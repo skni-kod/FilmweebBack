@@ -2,7 +2,6 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Person;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class CastResource extends JsonResource
