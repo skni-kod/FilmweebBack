@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Person;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class CastResource extends JsonResource
@@ -17,7 +18,7 @@ class CastResource extends JsonResource
         return [
             'id' => $this->id,
             'medium_id' => $this->medium_id,
-            'person_id' => $this->person_id,
+            'person_data' => new PersonResource(Person::findOrFail($this->id)),
             'gender_id' => $this->gender_id,
             'character' => $this->character,
             'created_at' => $this->created_at->format('d-m-Y'),
