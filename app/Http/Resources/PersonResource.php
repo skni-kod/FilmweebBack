@@ -21,8 +21,8 @@ class PersonResource extends JsonResource
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,
             'image_path' => $this->image_path ? Storage::disk('google')->url($this->image_path) : $this->image_path,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at
+            'created_at' => $this->created_at->format('d-m-Y'),
+            'updated_at' => $this->updated_at->format('d-m-Y')
         ];
     }
 }

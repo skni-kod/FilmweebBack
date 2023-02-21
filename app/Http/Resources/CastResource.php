@@ -18,8 +18,8 @@ class CastResource extends JsonResource
         return [
             'id' => $this->id,
             'medium_id' => $this->medium_id,
-            'person_data' => new PersonResource(Person::findOrFail($this->id)),
-            'gender_id' => $this->gender_id,
+            'person_data' => new PersonResource($this->person),
+            'gender_id' => $this->gender,
             'character' => $this->character,
             'created_at' => $this->created_at->format('d-m-Y'),
             'updated_at' => $this->updated_at->format('d-m-Y'),
