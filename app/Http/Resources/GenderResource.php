@@ -2,10 +2,9 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Person;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CastResource extends JsonResource
+class GenderResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -17,10 +16,7 @@ class CastResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'medium_id' => $this->medium_id,
-            'person' => new PersonResource($this->person),
-            'gender' => new GenderResource($this->gender),
-            'character' => $this->character,
+            'name' => $this->name,
             'created_at' => $this->created_at->format('d-m-Y'),
             'updated_at' => $this->updated_at->format('d-m-Y'),
         ];
