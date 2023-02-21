@@ -24,6 +24,7 @@ services:
       POSTGRES_USER: '${DB_USERNAME}'
       POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
     container_name: filmweeb-db-prod
+    restart: unless-stopped
     volumes:
       - 'filmweeb-prod-db:/var/lib/postgresql/data'
       - './vendor/laravel/sail/database/pgsql/create-testing-database.sql:/docker-entrypoint-initdb.d/10-create-testing-database.sql'
