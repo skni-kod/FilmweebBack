@@ -3,7 +3,6 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\ResourceCollection;
-use Illuminate\Support\Facades\Storage;
 
 class MediumCollection extends ResourceCollection
 {
