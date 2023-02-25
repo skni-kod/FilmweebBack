@@ -71,4 +71,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(User::class, 'friend_user', 'user_id', 'friend_id');
     }
+
+    public function providers()
+    {
+        return $this->hasMany(Provider::class, 'user_id', 'id');
+    }
 }

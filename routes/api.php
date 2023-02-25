@@ -24,6 +24,8 @@ Route::get('person/{id}', [AdminController::class, 'getPerson']);
 Route::controller(AuthController::class)->group(function () {
     Route::post('/register', 'register');
     Route::post('/login', 'login');
+    Route::get('/login/{provider}/redirect', 'redirectToProvider');
+    Route::get('/login/{provider}/callback', 'handleProviderCallback');
 });
 Route::controller(MediumController::class)->group(function () {
     Route::get('media', 'index');
