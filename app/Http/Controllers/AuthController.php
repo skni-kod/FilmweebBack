@@ -8,6 +8,7 @@ use App\Http\Resources\UserResource;
 use App\Models\User;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Socialite\Facades\Socialite;
 use Symfony\Component\HttpFoundation\Response;
@@ -28,13 +29,14 @@ class AuthController extends BaseController
 
     public function login(LoginRequest $request)
     {
-        if (!$token = auth()->attempt($request->validated())) {
+        if (!Auth::attempt($request->validated())) {
             $this->sendError('Unauthorized', null, Response::HTTP_UNAUTHORIZED);
         }
+        $user = $request->user();
 
         return $this->sendResponse([
-            'user' => new UserResource(auth()->user()),
-            'token' => $token,
+            'user' => new UserResource($user),
+            'token' => $user->createToken('token-filmweeb')->plainTextToken
         ], 'User successfully login');
     }
 
@@ -69,9 +71,7 @@ class AuthController extends BaseController
         try {
             $user = Socialite::driver($provider)->stateless()->user();
         } catch (ClientException $exception) {
-            return $this->sendError([
-                'error' => 'Invalid credentials provided.'
-            ], null, Response::HTTP_UNPROCESSABLE_ENTITY);
+            return $this->sendError('Invalid credentials provided.', null, Response::HTTP_UNPROCESSABLE_ENTITY);
         }
 
         $userCreated = User::firstOrCreate(
