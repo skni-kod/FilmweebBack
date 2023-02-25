@@ -42,27 +42,38 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function lists(){
+    public function lists()
+    {
         return $this->hasMany(Medium_list::class);
     }
 
-    public function reviews(){
+    public function reviews()
+    {
         return $this->hasMany(Review::class);
     }
 
-    public function comments(){
+    public function comments()
+    {
         return $this->hasMany(Comment::class);
     }
 
-    public function grades(){
+    public function grades()
+    {
         return $this->hasMany(Grade::class);
     }
 
-    public function roles(){
+    public function roles()
+    {
         return $this->belongsToMany(Role::class);
     }
 
-    public function friends(){
+    public function friends()
+    {
         return $this->belongsToMany(User::class, 'friend_user', 'user_id', 'friend_id');
+    }
+
+    public function providers()
+    {
+        return $this->hasMany(Provider::class, 'user_id', 'id');
     }
 }
