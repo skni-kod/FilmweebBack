@@ -53,7 +53,7 @@ class AuthController extends BaseController
             return $validated;
         }
 
-        return Socialite::driver($provider)->stateless()->redirect();
+        return Socialite::driver($provider)->stateless()->redirect()->getTargetUrl();
     }
 
     /**
