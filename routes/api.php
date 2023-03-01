@@ -3,7 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MediumController;
-use App\Models\Medium;
+use App\Http\Controllers\PersonController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -33,7 +33,9 @@ Route::controller(MediumController::class)->group(function () {
     Route::get('media/{id}', 'show');
     Route::get('media/{id}/casts', 'getCasts');
 });
-
+Route::controller(PersonController::class)->group(function () {
+    Route::get('person/{id}', 'show');
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
