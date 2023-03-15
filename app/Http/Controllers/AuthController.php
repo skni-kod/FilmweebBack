@@ -26,7 +26,31 @@ class AuthController extends BaseController
             'token' => $user->createToken('token-filmweeb')->plainTextToken
         ], 'User successfully registered', Response::HTTP_CREATED);
     }
-
+    /**
+     * @OA\Post(
+     * path="/login",
+     * summary="Sign in",
+     * description="Login by email, password",
+     * operationId="login",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass user credentials",
+     *    @OA\JsonContent(
+     *       required={"user","password"},
+     *       @OA\Property(property="user", type="string", format="email", example="foo_user"),
+     *       @OA\Property(property="password", type="string", format="password", example="PassWord12345"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=422,
+     *    description="Wrong credentials response",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Sorry, wrong email address or password. Please try again")
+     *        )
+     *     )
+     * )
+     */
     public function login(LoginRequest $request)
     {
         if (!Auth::attempt($request->validated())) {

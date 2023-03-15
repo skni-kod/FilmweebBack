@@ -25,11 +25,6 @@ use Illuminate\Routing\Controller as BaseController;
  *      url=L5_SWAGGER_CONST_HOST,
  *      description="Filmweeb API Server"
  * )
- *
- * @OA\Tag(
- *     name="Filmweeb",
- *     description="API Endpoints of Filmweeb"
- * )
  */
 class Controller extends BaseController
 {
