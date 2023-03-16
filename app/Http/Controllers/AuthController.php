@@ -15,6 +15,39 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AuthController extends BaseController
 {
+    /**
+     * @OA\Post(
+     * path="/register",
+     * summary="Sign up",
+     * description="Register by email, password",
+     * operationId="register",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass user credentials",
+     *    @OA\JsonContent(
+     *       required={"user","email","password"},
+     *       @OA\Property(property="user", type="string", format="string", example="foo_user"),
+     *       @OA\Property(property="email", type="string", format="email", example="abc@abc.pl"),
+     *       @OA\Property(property="password", type="string", format="password", example="PassWord12345"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=201,
+     *    description="User created",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Use has been created.")
+     *        )
+     *     ),
+     * @OA\Response(
+     *    response=422,
+     *    description="Wrong credentials response",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Password does not match.")
+     *        )
+     *     )
+     * )
+     */
     public function register(RegisterRequest $request)
     {
         $requestData = $request->validated();
@@ -26,6 +59,7 @@ class AuthController extends BaseController
             'token' => $user->createToken('token-filmweeb')->plainTextToken
         ], 'User successfully registered', Response::HTTP_CREATED);
     }
+
     /**
      * @OA\Post(
      * path="/login",
@@ -70,6 +104,30 @@ class AuthController extends BaseController
      * @param $provider
      * @return JsonResponse
      */
+    /**
+     * @OA\Get (
+     * path="/login/{provider}/redirect",
+     * summary="Sign in",
+     * description="URL from provider, get access token",
+     * operationId="providerAccess",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass provider name",
+     *    @OA\JsonContent(
+     *       required={"provider name"},
+     *       @OA\Property(property="provider_name", type="string", example="github"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=422,
+     *    description="Wrong credentials response",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Sorry, wrong email address or password. Please try again")
+     *        )
+     *     )
+     * )
+     */
     public function redirectToProvider($provider)
     {
         $validated = $this->validateProvider($provider);
@@ -85,6 +143,30 @@ class AuthController extends BaseController
      *
      * @param $provider
      * @return JsonResponse
+     */
+    /**
+     * @OA\Get (
+     * path="/login/{provider}/callback",
+     * summary="Handle provider callback",
+     * description="Get provider response and handle it",
+     * operationId="handleCallback",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass provider name",
+     *    @OA\JsonContent(
+     *       required={"provider name"},
+     *       @OA\Property(property="provider_name", type="string", example="github"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=422,
+     *    description="Wrong credentials response",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Sorry, wrong email address or password. Please try again")
+     *        )
+     *     )
+     * )
      */
     public function handleProviderCallback($provider)
     {
