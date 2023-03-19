@@ -76,22 +76,6 @@
                                 }
                             }
                         }
-                    },
-                    "422": {
-                        "description": "Wrong credentials response",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "properties": {
-                                        "message": {
-                                            "type": "string",
-                                            "example": "Password does not match."
-                                        }
-                                    },
-                                    "type": "object"
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -253,6 +237,22 @@
                                         "message": {
                                             "type": "string",
                                             "example": "Success"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Unprocessable entity",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Unable to handle provider login"
                                         }
                                     },
                                     "type": "object"

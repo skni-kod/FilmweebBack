@@ -165,7 +165,7 @@ class AuthController extends BaseController
      *    @OA\JsonContent(
      *       @OA\Property(property="message", type="string", example="Success")
      *        )
-     *     )
+     *     ),
      * @OA\Response(
      *    response=422,
      *    description="Unprocessable entity",
