@@ -132,6 +132,22 @@
                     }
                 },
                 "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Logged in successfully"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
                     "422": {
                         "description": "Wrong credentials response",
                         "content": {
@@ -156,8 +172,8 @@
                 "tags": [
                     "Authentication"
                 ],
-                "summary": "Sign in",
-                "description": "URL from provider, get access token",
+                "summary": "Redirect",
+                "description": "Redirect to provider page to login using its provider",
                 "operationId": "providerAccess",
                 "requestBody": {
                     "description": "Pass provider name",
@@ -180,15 +196,15 @@
                     }
                 },
                 "responses": {
-                    "422": {
-                        "description": "Wrong credentials response",
+                    "200": {
+                        "description": "Success",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "properties": {
                                         "message": {
                                             "type": "string",
-                                            "example": "Sorry, wrong email address or password. Please try again"
+                                            "example": "Successfully redirected to provider page"
                                         }
                                     },
                                     "type": "object"
@@ -228,15 +244,15 @@
                     }
                 },
                 "responses": {
-                    "422": {
-                        "description": "Wrong credentials response",
+                    "200": {
+                        "description": "Success",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "properties": {
                                         "message": {
                                             "type": "string",
-                                            "example": "Sorry, wrong email address or password. Please try again"
+                                            "example": "Success"
                                         }
                                     },
                                     "type": "object"

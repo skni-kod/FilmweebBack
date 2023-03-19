@@ -77,6 +77,13 @@ class AuthController extends BaseController
      *    ),
      * ),
      * @OA\Response(
+     *    response=200,
+     *    description="Success",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Logged in successfully")
+     *        )
+     *     ),
+     * @OA\Response(
      *    response=422,
      *    description="Wrong credentials response",
      *    @OA\JsonContent(
@@ -107,8 +114,8 @@ class AuthController extends BaseController
     /**
      * @OA\Get (
      * path="/login/{provider}/redirect",
-     * summary="Sign in",
-     * description="URL from provider, get access token",
+     * summary="Redirect",
+     * description="Redirect to provider page to login using its provider",
      * operationId="providerAccess",
      * tags={"Authentication"},
      * @OA\RequestBody(
@@ -120,10 +127,10 @@ class AuthController extends BaseController
      *    ),
      * ),
      * @OA\Response(
-     *    response=422,
-     *    description="Wrong credentials response",
+     *    response=200,
+     *    description="Success",
      *    @OA\JsonContent(
-     *       @OA\Property(property="message", type="string", example="Sorry, wrong email address or password. Please try again")
+     *       @OA\Property(property="message", type="string", example="Successfully redirected to provider page")
      *        )
      *     )
      * )
@@ -160,10 +167,10 @@ class AuthController extends BaseController
      *    ),
      * ),
      * @OA\Response(
-     *    response=422,
-     *    description="Wrong credentials response",
+     *    response=200,
+     *    description="Success",
      *    @OA\JsonContent(
-     *       @OA\Property(property="message", type="string", example="Sorry, wrong email address or password. Please try again")
+     *       @OA\Property(property="message", type="string", example="Success")
      *        )
      *     )
      * )
