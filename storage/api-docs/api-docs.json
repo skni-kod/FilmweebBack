@@ -148,8 +148,8 @@
                             }
                         }
                     },
-                    "422": {
-                        "description": "Wrong credentials response",
+                    "401": {
+                        "description": "Unauthorized",
                         "content": {
                             "application/json": {
                                 "schema": {

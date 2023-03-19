@@ -84,8 +84,8 @@ class AuthController extends BaseController
      *        )
      *     ),
      * @OA\Response(
-     *    response=422,
-     *    description="Wrong credentials response",
+     *    response=401,
+     *    description="Unauthorized",
      *    @OA\JsonContent(
      *       @OA\Property(property="message", type="string", example="Sorry, wrong email address or password. Please try again")
      *        )
