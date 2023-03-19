@@ -38,13 +38,6 @@ class AuthController extends BaseController
      *    @OA\JsonContent(
      *       @OA\Property(property="message", type="string", example="Use has been created.")
      *        )
-     *     ),
-     * @OA\Response(
-     *    response=422,
-     *    description="Wrong credentials response",
-     *    @OA\JsonContent(
-     *       @OA\Property(property="message", type="string", example="Password does not match.")
-     *        )
      *     )
      * )
      */
@@ -171,6 +164,13 @@ class AuthController extends BaseController
      *    description="Success",
      *    @OA\JsonContent(
      *       @OA\Property(property="message", type="string", example="Success")
+     *        )
+     *     )
+     * @OA\Response(
+     *    response=422,
+     *    description="Unprocessable entity",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Unable to handle provider login")
      *        )
      *     )
      * )
