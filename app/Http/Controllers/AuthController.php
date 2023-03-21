@@ -33,7 +33,7 @@ class AuthController extends BaseController
      *    ),
      * ),
      * @OA\Response(
-     *    response=200,
+     *    response=201,
      *    description="User created",
      *    @OA\JsonContent(
      *       @OA\Property(property="message", type="string", example="Use has been created.")
