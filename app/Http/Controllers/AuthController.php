@@ -33,7 +33,7 @@ class AuthController extends BaseController
      *    ),
      * ),
      * @OA\Response(
-     *    response=201,
+     *    response=200,
      *    description="User created",
      *    @OA\JsonContent(
      *       @OA\Property(property="message", type="string", example="Use has been created.")
@@ -124,6 +124,13 @@ class AuthController extends BaseController
      *    description="Success",
      *    @OA\JsonContent(
      *       @OA\Property(property="message", type="string", example="Successfully redirected to provider page")
+     *        )
+     *     ),
+     * @OA\Response(
+     *    response=422,
+     *    description="Unprocessable entity",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Unable to redirect to provider")
      *        )
      *     )
      * )

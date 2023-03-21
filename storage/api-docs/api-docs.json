@@ -61,7 +61,7 @@
                     }
                 },
                 "responses": {
-                    "201": {
+                    "200": {
                         "description": "User created",
                         "content": {
                             "application/json": {
@@ -189,6 +189,22 @@
                                         "message": {
                                             "type": "string",
                                             "example": "Successfully redirected to provider page"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Unprocessable entity",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Unable to redirect to provider"
                                         }
                                     },
                                     "type": "object"
