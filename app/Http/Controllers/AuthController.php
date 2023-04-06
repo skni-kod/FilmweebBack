@@ -15,6 +15,32 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AuthController extends BaseController
 {
+    /**
+     * @OA\Post(
+     * path="/register",
+     * summary="Sign up",
+     * description="Register by email, password",
+     * operationId="register",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass user credentials",
+     *    @OA\JsonContent(
+     *       required={"user","email","password"},
+     *       @OA\Property(property="user", type="string", format="string", example="foo_user"),
+     *       @OA\Property(property="email", type="string", format="email", example="abc@abc.pl"),
+     *       @OA\Property(property="password", type="string", format="password", example="PassWord12345"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=201,
+     *    description="User created",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Use has been created.")
+     *        )
+     *     )
+     * )
+     */
     public function register(RegisterRequest $request)
     {
         $requestData = $request->validated();
@@ -27,6 +53,38 @@ class AuthController extends BaseController
         ], 'User successfully registered', Response::HTTP_CREATED);
     }
 
+    /**
+     * @OA\Post(
+     * path="/login",
+     * summary="Sign in",
+     * description="Login by email, password",
+     * operationId="login",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass user credentials",
+     *    @OA\JsonContent(
+     *       required={"user","password"},
+     *       @OA\Property(property="user", type="string", format="email", example="foo_user"),
+     *       @OA\Property(property="password", type="string", format="password", example="PassWord12345"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=200,
+     *    description="Success",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Logged in successfully")
+     *        )
+     *     ),
+     * @OA\Response(
+     *    response=401,
+     *    description="Unauthorized",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Sorry, wrong email address or password. Please try again")
+     *        )
+     *     )
+     * )
+     */
     public function login(LoginRequest $request)
     {
         if (!Auth::attempt($request->validated())) {
@@ -46,6 +104,37 @@ class AuthController extends BaseController
      * @param $provider
      * @return JsonResponse
      */
+    /**
+     * @OA\Get (
+     * path="/login/{provider}/redirect",
+     * summary="Redirect",
+     * description="Redirect to provider page to login using its provider",
+     * operationId="providerAccess",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass provider name",
+     *    @OA\JsonContent(
+     *       required={"provider name"},
+     *       @OA\Property(property="provider_name", type="string", example="github"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=200,
+     *    description="Success",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Successfully redirected to provider page")
+     *        )
+     *     ),
+     * @OA\Response(
+     *    response=422,
+     *    description="Unprocessable entity",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Unable to redirect to provider")
+     *        )
+     *     )
+     * )
+     */
     public function redirectToProvider($provider)
     {
         $validated = $this->validateProvider($provider);
@@ -61,6 +150,37 @@ class AuthController extends BaseController
      *
      * @param $provider
      * @return JsonResponse
+     */
+    /**
+     * @OA\Get (
+     * path="/login/{provider}/callback",
+     * summary="Handle provider callback",
+     * description="Get provider response and handle it",
+     * operationId="handleCallback",
+     * tags={"Authentication"},
+     * @OA\RequestBody(
+     *    required=true,
+     *    description="Pass provider name",
+     *    @OA\JsonContent(
+     *       required={"provider name"},
+     *       @OA\Property(property="provider_name", type="string", example="github"),
+     *    ),
+     * ),
+     * @OA\Response(
+     *    response=200,
+     *    description="Success",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Success")
+     *        )
+     *     ),
+     * @OA\Response(
+     *    response=422,
+     *    description="Unprocessable entity",
+     *    @OA\JsonContent(
+     *       @OA\Property(property="message", type="string", example="Unable to handle provider login")
+     *        )
+     *     )
+     * )
      */
     public function handleProviderCallback($provider)
     {
