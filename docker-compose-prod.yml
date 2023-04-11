@@ -20,7 +20,7 @@ services:
       - filmweeb
 
   nginx-back:
-    image: nginx:stable-alpine
+    image: kni.prz.edu.pl:9443/library/filmweeb-back-nginx:latest
     container_name: filmweeb-nginx-back
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
