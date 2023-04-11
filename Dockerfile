@@ -1,36 +1,35 @@
-FROM php:8.1-fpm
+FROM php:8.1-fpm-alpine
 
-# Arguments defined in docker-compose.yml
-ARG user
-ARG uid
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    git \
-    curl \
+RUN apk update && apk add --no-cache \
+    postgresql-dev \
+    oniguruma-dev \
     libpng-dev \
-    libonig-dev \
-    libxml2-dev \
-    zip \
-    unzip \
-    postgresql postgresql-contrib \
-    libpq-dev
-
-# Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+    libjpeg-turbo-dev \
+    libwebp-dev \
+    libzip-dev
 
 # Install PHP extensions
-RUN docker-php-ext-install pdo_pgsql mbstring exif pcntl bcmath gd > /dev/null
+RUN docker-php-ext-configure gd --with-jpeg --with-webp
+RUN docker-php-ext-install pdo_pgsql mbstring exif pcntl bcmath gd
 
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-# Create system user to run Composer and Artisan Commands
-RUN useradd -G www-data,root -u $uid -d /home/$user $user
-RUN mkdir -p /home/$user/.composer && \
-    chown -R $user:$user /home/$user
-
+ENV COMPOSER_CACHE_DIR /tmp/cache
 # Set working directory
-WORKDIR /var/www
+WORKDIR /var/www/html
 
-USER $user
+# Copy existing application directory contents
+COPY . /var/www/html
+
+# Install any needed packages specified in requirements.txt
+RUN --mount=type=cache,target=/tmp/cache composer install
+
+RUN php artisan config:clear && php artisan config:cache && php artisan optimize && php artisan key:generate
+
+RUN chown -R www-data:www-data /var/www/html \
+    && chown -R www-data:www-data /var/www/html/storage \
+    && chmod -R 775 /var/www/html/storage \
+    && chown -R www-data:www-data /var/www/html/bootstrap/cache \
+    && chmod -R 775 /var/www/html/bootstrap/cache
+
+
