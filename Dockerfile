@@ -1,4 +1,8 @@
-FROM php:8.1-fpm-alpine
+FROM php:8.2-fpm-alpine
+
+ENV USERNAME=www-data
+ENV USER_UID=1000
+ENV USER_GID=$USER_UID
 
 RUN apk update && apk add --no-cache \
     postgresql-dev \
@@ -9,8 +13,8 @@ RUN apk update && apk add --no-cache \
     libzip-dev
 
 # Install PHP extensions
-RUN docker-php-ext-configure gd --with-jpeg --with-webp
-RUN docker-php-ext-install pdo_pgsql mbstring exif pcntl bcmath gd
+RUN docker-php-ext-configure gd --with-jpeg --with-webp \
+    && docker-php-ext-install pdo_pgsql mbstring exif pcntl bcmath gd
 
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -24,12 +28,18 @@ COPY . /var/www/html
 # Install any needed packages specified in requirements.txt
 RUN --mount=type=cache,target=/tmp/cache composer install
 
-RUN php artisan config:clear && php artisan config:cache && php artisan optimize && php artisan key:generate
+RUN php artisan config:clear \
+    && php artisan config:cache \
+    && php artisan key:generate \
+    && php artisan optimize 
 
-RUN chown -R www-data:www-data /var/www/html \
+# Create the user
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && chown -R www-data:www-data /var/www/html \
     && chown -R www-data:www-data /var/www/html/storage \
     && chmod -R 775 /var/www/html/storage \
     && chown -R www-data:www-data /var/www/html/bootstrap/cache \
     && chmod -R 775 /var/www/html/bootstrap/cache
 
-
+USER www-data
