@@ -1,9 +1,5 @@
 FROM php:8.1-fpm-alpine
 
-ENV USERNAME=www-data
-ENV USER_UID=1000
-ENV USER_GID=$USER_UID
-
 RUN apk update && apk add --no-cache \
     postgresql-dev \
     oniguruma-dev \
@@ -33,10 +29,7 @@ RUN php artisan config:clear \
     && php artisan key:generate \
     && php artisan optimize 
 
-# Create the user
-RUN addgroup -g $USER_GID $USERNAME \
-    && adduser -u $USER_UID -G $USERNAME -D $USERNAME \
-    && chown -R www-data:www-data /var/www/html \
+RUN chown -R www-data:www-data /var/www/html \
     && chown -R www-data:www-data /var/www/html/storage \
     && chmod -R 775 /var/www/html/storage \
     && chown -R www-data:www-data /var/www/html/bootstrap/cache \
