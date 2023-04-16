@@ -34,8 +34,8 @@ RUN php artisan config:clear \
     && php artisan optimize 
 
 # Create the user
-RUN groupadd --gid $USER_GID $USERNAME \
-    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+RUN addgroup -g $USER_GID $USERNAME \
+    && adduser -u $USER_UID -G $USERNAME -D $USERNAME \
     && chown -R www-data:www-data /var/www/html \
     && chown -R www-data:www-data /var/www/html/storage \
     && chmod -R 775 /var/www/html/storage \
