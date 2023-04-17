@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   php:
-    image: kni.prz.edu.pl:9443/library/filmweeb-back:latest
+    image: harbor.skni.edu.pl/library/filmweeb-back:latest
     container_name: filmweeb-php
     networks:
       - filmweeb
@@ -20,12 +20,12 @@ services:
       - filmweeb
 
   nginx-back:
-    image: kni.prz.edu.pl:9443/library/filmweeb-back-nginx:latest
+    image: harbor.skni.edu.pl/library/filmweeb-back-nginx:latest
     container_name: filmweeb-nginx-back
     networks:
       - filmweeb
     ports:
-      - 47450:80
+      - 20001:80
     depends_on:
       - php
 
