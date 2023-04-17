@@ -1,11 +1,10 @@
 pipeline{
     agent none
     environment {
-        REGISTRY = 'http://core:8080/'
-        REGISTRY_GLOBAL = 'https://kni.prz.edu.pl:9443'
+        REGISTRY = 'harbor.skni.edu.pl/'
         DOCKER_REGISTRY_CREDENTIALS_ID = 'harbor'
-        IMAGE_BACK = 'core:8080/library/filmweeb-back'
-        IMAGE_NGINX = 'core:8080/library/filmweeb-back-nginx'
+        IMAGE_BACK = 'harbor.skni.edu.pl/library/filmweeb-back'
+        IMAGE_NGINX = 'harbor.skni.edu.pl/library/filmweeb-back-nginx'
     }
     stages{
         stage('Sonar'){
@@ -61,7 +60,7 @@ pipeline{
             }
             steps{
                     sh """
-                    sed -i 's|"url": "http://localhost/api"|"url": "https://kni.prz.edu.pl:47450/api"|' storage/api-docs/api-docs.json
+                    sed -i 's|"url": "http://localhost/api"|"url": "https://filmweeb.skni.edu.pl/api"|' storage/api-docs/api-docs.json
                     docker build -t $IMAGE_BACK:$BUILD_ID .
                     docker build -f Dockerfile-nginx -t $IMAGE_NGINX:$BUILD_ID .
                     """
@@ -118,11 +117,11 @@ pipeline{
                 withCredentials([usernamePassword(credentialsId: 'harbor', passwordVariable: 'passwd', usernameVariable: 'username')]) {
                     unstash 'compose'
                     sh """
-                        docker login -u $username -p $passwd  ${env.REGISTRY_GLOBAL}
+                        docker login -u $username -p $passwd  ${env.REGISTRY}
                         docker compose -f docker-compose-prod.yml pull
                         docker compose -f docker-compose-prod.yml up -d --force-recreate
                         docker compose -f docker-compose-prod.yml exec -it php php artisan migrate
-                        docker logout ${env.REGISTRY_GLOBAL}
+                        docker logout ${env.REGISTRY}
                     """
                 }
             }
