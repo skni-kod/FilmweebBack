@@ -6,6 +6,7 @@ services:
     container_name: filmweeb-php
     networks:
       - filmweeb
+    restart: always
 
   db:
     image: postgres:14-alpine
@@ -18,6 +19,7 @@ services:
       - dbdata:/var/lib/postgresql/data
     networks:
       - filmweeb
+    restart: always
 
   nginx-back:
     image: harbor.skni.edu.pl/library/filmweeb-back-nginx:latest
@@ -28,6 +30,7 @@ services:
       - 20001:80
     depends_on:
       - php
+    restart: always
 
 
 volumes:
