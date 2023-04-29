@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+  php:
+    image: harbor.skni.edu.pl/library/filmweeb-back:latest
+    container_name: filmweeb-php
+    networks:
+      - filmweeb
+    restart: always
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14-alpine
+    container_name: filmweeb-db
+    environment:
+      POSTGRES_DB: filmweeb
+      POSTGRES_USER: filmweeb
+      POSTGRES_PASSWORD: filmweeb
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    networks:
+      - filmweeb
+    restart: always
+
+  nginx-back:
+    image: harbor.skni.edu.pl/library/filmweeb-back-nginx:latest
+    container_name: filmweeb-nginx-back
+    networks:
+      - filmweeb
+    ports:
+      - 20001:80
+    depends_on:
+      - php
+    restart: always
+
+
+volumes:
+  dbdata:
+
+networks:
+  filmweeb:
+
