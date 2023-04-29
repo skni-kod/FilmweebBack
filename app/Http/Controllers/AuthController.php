@@ -91,11 +91,10 @@ class AuthController extends BaseController
             $this->sendError('Unauthorized', null, Response::HTTP_UNAUTHORIZED);
         }
         $user = $request->user();
-
+        $cookie = cookie('sanctum', $user->createToken('token-filmweeb')->plainTextToken, 60 * 24);
         return $this->sendResponse([
             'user' => new UserResource($user),
-            'token' => $user->createToken('token-filmweeb')->plainTextToken
-        ], 'User successfully login');
+        ], 'User successfully login')->withCookie($cookie);
     }
 
     /**
