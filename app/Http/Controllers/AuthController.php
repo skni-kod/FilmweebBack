@@ -212,12 +212,11 @@ class AuthController extends BaseController
                 'avatar' => $user->getAvatar()
             ]
         );
-        $token = $userCreated->createToken('token-filmweeb')->plainTextToken;
+        $cookie = cookie('sanctum', $userCreated->createToken('token-filmweeb')->plainTextToken, 60 * 24);
 
         return $this->sendResponse([
             'user' => new UserResource($userCreated),
-            'token' => $token
-        ], 'User login successful by ' . $provider);
+        ], 'User login successful by ' . $provider)->withCookie($cookie);
     }
 
     /**
