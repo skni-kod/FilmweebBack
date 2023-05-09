@@ -121,11 +121,11 @@ pipeline{
                     sh """
 		    mv k8s/* .
 		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
-		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f php-daemonset.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f php-service.yaml	
+		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
 		    """
                 }
             }
