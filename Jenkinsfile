@@ -64,7 +64,7 @@ pipeline{
                     docker build -t $IMAGE_BACK:$BUILD_ID .
                     docker build -f Dockerfile-nginx -t $IMAGE_NGINX:$BUILD_ID .
                     """
-                    stash name: 'kubernetes', includes: 'k8s'
+                    stash name: 'kubernetes', includes: 'k8s/**'
             }
         }
         stage('Scan image') {
@@ -119,6 +119,7 @@ pipeline{
             steps{
                 withCredentials([file(credentialsId: 'k8s-kubeconfig', variable: 'CONFIG')]) {
                     sh """
+		    mv k8s/* .
 		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
