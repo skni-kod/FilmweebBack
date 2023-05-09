@@ -27,6 +27,6 @@ spec:
             cpu: 200m
             memory: 200Mi
       imagePullSecrets:
-      - name: registry-credentials
+      - name: regcred
       restartPolicy: Always
 
