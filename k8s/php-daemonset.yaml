@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: filmweeb-php
+  namespace: filmweeb
+  labels:
+    app: filmweeb-php
+spec:
+  selector:
+    matchLabels:
+      app: filmweeb-php
+  template:
+    metadata:
+      labels:
+        app: filmweeb-php
+    spec:
+      containers:
+      - name: filmweeb-php
+        image: harbor.skni.edu.pl/library/filmweeb-back:latest
+        ports:
+        - containerPort: 9000
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 200m
+            memory: 200Mi
+      imagePullSecrets:
+      - name: registry-credentials
+      restartPolicy: Always
+

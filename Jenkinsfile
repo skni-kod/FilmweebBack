@@ -64,7 +64,7 @@ pipeline{
                     docker build -t $IMAGE_BACK:$BUILD_ID .
                     docker build -f Dockerfile-nginx -t $IMAGE_NGINX:$BUILD_ID .
                     """
-                    stash name: 'compose', includes: 'docker-compose-prod.yml'
+                    stash name: 'kubernetes', includes: 'k8s'
             }
         }
         stage('Scan image') {
@@ -109,20 +109,22 @@ pipeline{
             }
         }
         stage('Deploy'){
-            agent{
-                label 'slave'
-            }
+	    agent {
+	        docker {
+	            image 'bitnami/kubectl:latest'
+	            args "--entrypoint=''"
+	        }
+	    }
             steps{
-                deleteDir()
-                withCredentials([usernamePassword(credentialsId: 'harbor', passwordVariable: 'passwd', usernameVariable: 'username')]) {
-                    unstash 'compose'
+                withCredentials([file(credentialsId: 'k8s-kubeconfig', variable: 'CONFIG')]) {
                     sh """
-                        docker login -u $username -p $passwd  ${env.REGISTRY}
-                        docker compose -f docker-compose-prod.yml pull
-                        docker compose -f docker-compose-prod.yml up -d --force-recreate
-                        docker compose -f docker-compose-prod.yml exec -it php php artisan migrate
-                        docker logout ${env.REGISTRY}
-                    """
+		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
+		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
+		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
+		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
+		    kubectl --kubeconfig=$CONFIG apply -f php-daemonset.yaml
+		    kubectl --kubeconfig=$CONFIG apply -f php-service.yaml	
+		    """
                 }
             }
         }

@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: filmweeb-nginx
+  namespace: filmweeb
+  labels:
+    app: filmweeb-nginx
+spec:
+  selector:
+    matchLabels:
+      app: filmweeb-nginx
+  template:
+    metadata:
+      labels:
+        app: filmweeb-nginx
+    spec:
+      containers:
+      - name: filmweeb-nginx
+        image: harbor.skni.edu.pl/library/filmweeb-back-nginx:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 200m
+            memory: 200Mi
+      imagePullSecrets:
+      - name: registry-credentials
+      restartPolicy: Always
+
