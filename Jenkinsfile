@@ -46,12 +46,12 @@ pipeline{
                 label 'host'
             }
             steps {
-                sh 'curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/html.tpl > html.tpl'
                 // Scan all vuln levels
                 sh 'mkdir -p reports'
-                sh 'trivy filesystem --ignore-unfixed --vuln-type os,library --format template --template "@html.tpl" -o reports/php.html .'
+                sh 'trivy filesystem --ignore-unfixed --vuln-type os,library --format json -o reports/php.json .'
                 // Scan again and fail on CRITICAL vulns
                 sh 'trivy filesystem --ignore-unfixed --vuln-type os,library --exit-code 1 --severity CRITICAL .'
+		archiveArtifacts 'reports/php.json'
             }
         }
         stage('Build Back'){
@@ -64,7 +64,6 @@ pipeline{
                     docker build -t $IMAGE_BACK:$BUILD_ID .
                     docker build -f Dockerfile-nginx -t $IMAGE_NGINX:$BUILD_ID .
                     """
-                    stash name: 'compose', includes: 'docker-compose-prod.yml'
             }
         }
         stage('Scan image') {
@@ -73,17 +72,10 @@ pipeline{
             }
             steps {
                 sh 'mkdir -p reports'
-                sh 'trivy image --format template --template "@html.tpl" -o reports/image.html $IMAGE_BACK:$BUILD_ID '
+                sh 'trivy image --format json -o reports/image.json $IMAGE_BACK:$BUILD_ID '
                 // Scan again and fail on CRITICAL vulns
-                sh 'trivy image --exit-code 1 --severity CRITICAL  $IMAGE_BACK:$BUILD_ID'
-                publishHTML([allowMissing: true, 
-                    alwaysLinkToLastBuild: true, 
-                    keepAll: true, 
-                    reportDir: 'reports', 
-                    reportFiles: 'php.html, image.html', 
-                    reportName: 'Trivy Scan',
-                    reportTitles: 'Trivy Scan'
-                ])
+                sh 'trivy image --exit-code 1 --severity CRITICAL  $IMAGE_BACK:$BUILD_ID '
+		        archiveArtifacts 'reports/image.json'
             }
         }
         stage('Push to registry - back'){
@@ -108,21 +100,37 @@ pipeline{
                 }
             }
         }
-        stage('Deploy'){
+        stage('Update k8s config') {
             agent{
-                label 'slave'
+                label 'host'
             }
+            steps {
+		sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back-nginx:latest|harbor.skni.edu.pl/library/filmweeb-back-nginx:${BUILD_ID}|g" k8s/nginx-daemonset.yaml'
+        	sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back:latest|harbor.skni.edu.pl/library/filmweeb-back:${BUILD_ID}|g" k8s/php-daemonset.yaml'
+        	sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back:latest|harbor.skni.edu.pl/library/filmweeb-back:${BUILD_ID}|g" k8s/db-migration-job.yaml'
+                stash name: 'kubernetes', includes: 'k8s/**'
+            }
+        }
+        stage('Deploy'){
+	    agent {
+	        docker {
+	            image 'bitnami/kubectl:latest'
+	            args "--entrypoint=''"
+	        }
+	    }
             steps{
-                deleteDir()
-                withCredentials([usernamePassword(credentialsId: 'harbor', passwordVariable: 'passwd', usernameVariable: 'username')]) {
-                    unstash 'compose'
-                    sh """
-                        docker login -u $username -p $passwd  ${env.REGISTRY}
-                        docker compose -f docker-compose-prod.yml pull
-                        docker compose -f docker-compose-prod.yml up -d --force-recreate
-                        docker compose -f docker-compose-prod.yml exec -it php php artisan migrate
-                        docker logout ${env.REGISTRY}
-                    """
+		        unstash 'kubernetes'
+                withCredentials([file(credentialsId: 'k8s-kubeconfig', variable: 'CONFIG')]) {
+                        sh """
+        	    		    mv k8s/* .
+                            kubectl --kubeconfig=$CONFIG delete job --ignore-not-found=true -n filmweeb filmweeb-migration
+        	    		    kubectl --kubeconfig=$CONFIG apply -f db-migration-job.yaml
+        	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
+        	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
+        	    		    kubectl --kubeconfig=$CONFIG apply -f php-daemonset.yaml
+        	    		    kubectl --kubeconfig=$CONFIG apply -f php-service.yaml	
+        	    		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
+                  		"""
                 }
             }
         }

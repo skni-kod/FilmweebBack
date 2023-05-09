@@ -9,3 +9,7 @@
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
+Jenkinsfile merge=ours
+nginx.conf merge=ours
+k8s/* merge=ours
+/config/cors.php  merge=ours
