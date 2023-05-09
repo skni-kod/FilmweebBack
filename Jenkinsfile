@@ -91,6 +91,7 @@ pipeline{
                 label 'host'
             }
             steps{
+		unstash 'kubernetes'
                 withCredentials([usernamePassword(credentialsId: 'harbor', passwordVariable: 'passwd', usernameVariable: 'username')]) {
                     sh """
                     docker login -u $username -p $passwd  ${env.REGISTRY}
