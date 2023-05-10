@@ -118,17 +118,20 @@ pipeline{
 	    }
             steps{
                 withCredentials([file(credentialsId: 'k8s-kubeconfig', variable: 'CONFIG')]) {
-                    sh """
-		    mv k8s/* .
-		    kubectl --kubeconfig=$CONFIG delete -f filmweeb-namespace.yaml
-		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
-		    kubectl --kubeconfig=$CONFIG apply -f db-migration-job.yaml
-		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
-		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
-		    kubectl --kubeconfig=$CONFIG apply -f php-daemonset.yaml
-		    kubectl --kubeconfig=$CONFIG apply -f php-service.yaml	
-		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
-		    """
+		    withCredentials([file(credentialsId: 'filmweeb-reg-cred', variable: 'REGCRED')]) {
+                        sh """
+	    		    mv k8s/* .
+	    		    kubectl --kubeconfig=$CONFIG delete -f filmweeb-namespace.yaml
+	    		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
+	    		    kubectl --kubeconfig=$CONFIG applu -f $REGCRED
+	    		    kubectl --kubeconfig=$CONFIG apply -f db-migration-job.yaml
+	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
+	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
+	    		    kubectl --kubeconfig=$CONFIG apply -f php-daemonset.yaml
+	    		    kubectl --kubeconfig=$CONFIG apply -f php-service.yaml	
+	    		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
+          		"""
+		    }
                 }
             }
         }
