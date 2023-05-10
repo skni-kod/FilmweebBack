@@ -123,7 +123,7 @@ pipeline{
 	    		    mv k8s/* .
 	    		    kubectl --kubeconfig=$CONFIG delete -f filmweeb-namespace.yaml
 	    		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
-	    		    kubectl --kubeconfig=$CONFIG applu -f $REGCRED
+	    		    kubectl --kubeconfig=$CONFIG apply -f $REGCRED
 	    		    kubectl --kubeconfig=$CONFIG apply -f db-migration-job.yaml
 	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
 	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
