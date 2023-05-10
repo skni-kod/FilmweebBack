@@ -121,6 +121,9 @@ pipeline{
                     sh """
 		    mv k8s/* .
 		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
+		    kubectl --kubeconfig=$CONFIG delete pods -n filmweeb -l app=filmweeb-php
+ 		    kubectl --kubeconfig=$CONFIG delete pods -n filmweeb -l app=filmweeb-nginx
+		    kubectl delete -f db-migration-job.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f db-migration-job.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
