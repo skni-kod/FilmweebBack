@@ -121,6 +121,7 @@ pipeline{
                     sh """
 		    mv k8s/* .
 		    kubectl --kubeconfig=$CONFIG apply -f filmweeb-namespace.yaml
+		    kubectl --kubeconfig=$CONFIG apply -f db-migration-job.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
 		    kubectl --kubeconfig=$CONFIG apply -f php-daemonset.yaml
