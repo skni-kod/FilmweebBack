@@ -105,8 +105,8 @@ pipeline{
                 label 'host'
             }
             steps {
-		sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back-nginx:latest|harbor.skni.edu.pl/library/filmweeb-back-nginx:${BUILD_ID}|g" k8s/nginx-daemonset.yaml'
-        	sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back:latest|harbor.skni.edu.pl/library/filmweeb-back:${BUILD_ID}|g" k8s/php-daemonset.yaml'
+		sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back-nginx:latest|harbor.skni.edu.pl/library/filmweeb-back-nginx:${BUILD_ID}|g" k8s/nginx-deployment.yaml'
+        	sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back:latest|harbor.skni.edu.pl/library/filmweeb-back:${BUILD_ID}|g" k8s/php-deployment.yaml'
         	sh 'sed -i "s|harbor.skni.edu.pl/library/filmweeb-back:latest|harbor.skni.edu.pl/library/filmweeb-back:${BUILD_ID}|g" k8s/db-migration-job.yaml'
                 stash name: 'kubernetes', includes: 'k8s/**'
             }
