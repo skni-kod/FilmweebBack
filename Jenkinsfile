@@ -125,9 +125,9 @@ pipeline{
         	    		    mv k8s/* .
                             kubectl --kubeconfig=$CONFIG delete job --ignore-not-found=true -n filmweeb filmweeb-migration
         	    		    kubectl --kubeconfig=$CONFIG apply -f db-migration-job.yaml
-        	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-daemonset.yaml
+        	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-deployment.yaml
         	    		    kubectl --kubeconfig=$CONFIG apply -f nginx-service.yaml
-        	    		    kubectl --kubeconfig=$CONFIG apply -f php-daemonset.yaml
+        	    		    kubectl --kubeconfig=$CONFIG apply -f php-deployment.yaml
         	    		    kubectl --kubeconfig=$CONFIG apply -f php-service.yaml	
         	    		    kubectl --kubeconfig=$CONFIG apply -f ingress.yaml
                   		"""
