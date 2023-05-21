@@ -25,8 +25,8 @@ COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ENV APP_ENV production
 RUN composer install
 # Change the PHP-FPM configuration
-RUN chown -R root:root /var/www/html/ && \
-    chown -R root:root /var/www/html/bootstrap/cache && \
+RUN chown -R www-data:www-data /var/www/html/ && \
+    chown -R www-data:www-data /var/www/html/bootstrap/cache && \
     chmod -R 755 /var/www/html/storage && \
     chmod -R 755 /var/www/html/bootstrap/cache
 
