@@ -7,7 +7,7 @@ RUN apk update && apk add --no-cache \
     libjpeg-turbo-dev \
     libwebp-dev \
     libzip-dev \
-    nginx
+    nginx supervisor
 
 # Install PHP extensions
 RUN docker-php-ext-configure gd --with-jpeg --with-webp \
@@ -22,6 +22,7 @@ WORKDIR /var/www/html
 # Copy existing application directory contents
 COPY . /var/www/html
 COPY ./nginx.conf /etc/nginx/http.d/default.conf
+COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ENV APP_ENV production
 # Install any needed packages specified in requirements.txt
 RUN --mount=type=cache,target=/tmp/cache composer install
