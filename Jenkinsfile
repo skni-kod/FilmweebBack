@@ -4,6 +4,8 @@ pipeline{
         REGISTRY = 'harbor.skni.edu.pl/'
         DOCKER_REGISTRY_CREDENTIALS_ID = 'harbor'
         IMAGE_BACK = 'harbor.skni.edu.pl/library/filmweeb-back'
+        RELEASE_NAME = 'filmweeb-back'
+        NAMESPACE = 'filmweeb'
     }
     stages{
         stage('Sonar'){
@@ -90,7 +92,7 @@ pipeline{
                         kubectl config set-credentials jenkins-robot --token=${MY_TOKEN}
                         kubectl config set-context mycontext --cluster=mycluster --user=jenkins-robot
                         kubectl config use-context mycontext
-                        helm upgrade --install --namespace filmweeb --set image.tag=${BUILD_ID} filmweeb ./helm
+                        helm upgrade --install --namespace $NAMESPACE --set image.tag=${BUILD_ID} $RELEASE_NAME ./helm
                     """
                     }
                 }
