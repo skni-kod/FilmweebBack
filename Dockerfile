@@ -25,8 +25,7 @@ COPY ./nginx.conf /etc/nginx/http.d/default.conf
 ENV APP_ENV production
 # Install any needed packages specified in requirements.txt
 RUN --mount=type=cache,target=/tmp/cache composer install
-RUN chown -R root:root /var/www/html/storage && \
-    chmod -R 775 /var/www/html/storage && \
-    chmod 775 entrypoint.sh
-
+RUN chown -R www-data:www-data /var/www/html/ && \
+    chmod -R 775 /var/www/html
+USER www-data
 CMD ./entrypoint.sh
