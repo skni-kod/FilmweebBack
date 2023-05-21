@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ .Values.name }}-migration
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-delete-policy": hook-succeeded,hook-failed,before-hook-creation
+spec:
+  template:
+    spec:
+      containers:
+      - name: migration
+        image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+        envFrom:
+        - secretRef:
+            name: {{ .Values.secretRef }}
+        command: ['sh', '-c', 'php artisan migrate --force']
+      restartPolicy: Never
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecret }}
+  backoffLimit: {{ .Values.job.backoffLimit }}
