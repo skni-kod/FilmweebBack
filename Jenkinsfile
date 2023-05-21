@@ -25,7 +25,7 @@ pipeline{
                             -Dsonar.host.url=$SONAR_SERVER \
                             -Dsonar.login=$TOKEN \
                             -Dsonar.sources=. \
-                            -Dsonar.exclusions=./helm/**/* \
+                            -Dsonar.exclusions=**/helm/**/* \
                             -Dsonar.sourceEncoding=UTF-8 \
                             -Dsonar.language=php \
                             -Dsonar.php.file.suffixes=.php

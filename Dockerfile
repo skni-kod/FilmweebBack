@@ -7,6 +7,8 @@ RUN apk update && apk add --no-cache \
     libjpeg-turbo-dev \
     libwebp-dev \
     libzip-dev \
+    postgresql-libs \
+    libpng \
     nginx supervisor
 
 # Install PHP extensions
