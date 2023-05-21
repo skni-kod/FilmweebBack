@@ -24,9 +24,7 @@ COPY ./nginx.conf /etc/nginx/http.d/default.conf
 COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ENV APP_ENV production
 RUN composer install
-RUN sed -i 's#;error_log = log/php-fpm.log#error_log = /var/log/php8.1-fpm.log#' /usr/local/etc/php-fpm.d/www.conf
-RUN mkdir -p /var/log/php && chown www-data:www-data /var/log/php
-RUN chown -R www-data:www-data /var/www/html/ && \
+RUN chown -R root:root /var/www/html/ && \
     chmod -R 775 /var/www/html
 
 CMD supervisord
