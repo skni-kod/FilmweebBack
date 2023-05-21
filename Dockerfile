@@ -7,7 +7,7 @@ RUN apk update && apk upgrade && apk add --no-cache \
     libjpeg-turbo-dev \
     libwebp-dev \
     libzip-dev \
-    nginx supervisor
+    nginx 
 
 # Install PHP extensions
 RUN docker-php-ext-configure gd --with-jpeg --with-webp \
@@ -21,7 +21,6 @@ WORKDIR /var/www/html
 # Copy existing application directory contents
 COPY . /var/www/html
 COPY ./nginx.conf /etc/nginx/http.d/default.conf
-COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ENV APP_ENV production
 RUN composer install
 # Change the PHP-FPM configuration
@@ -31,4 +30,4 @@ RUN chown -R www-data:www-data /var/www/html/ && \
     chmod -R 755 /var/www/html/bootstrap/cache && \
     chmod 775 entrypoint.sh
 
-CMD supervisord
+CMD ./entrypoint.sh

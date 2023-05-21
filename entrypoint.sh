@@ -2,10 +2,11 @@
 php artisan config:clear && \
 php artisan config:cache && \
 php artisan optimize && \
-php-fpm
+php-fpm & \
+/usr/sbin/nginx -g 'daemon off;'& 
 
-status=$?
-if [ $status -ne 0 ]; then
-    # If the program failed, exit with status 1
-    exit 1
-fi
+# Wait for any process to exit
+wait -n
+
+# Exit with status of process that exited first
+exit $?
