@@ -11,9 +11,9 @@ pipeline{
                 label 'sonar'
             }
             environment {
-                SCANNER_HOME = tool 'Scanner'
                 ORGANIZATION = "SKNI-KOD"
                 PROJECT_NAME = "filmweeb-back"
+                SONAR_SERVER = "https://sonar.skni.edu.pl"
             }
             steps{
                 container('sonarqube') {
