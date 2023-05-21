@@ -25,8 +25,7 @@ COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ENV APP_ENV production
 RUN composer install
 # Change the PHP-FPM configuration
-RUN sed -i 's#;error_log = log/php-fpm.log#error_log = /dev/stderr#' /usr/local/etc/php-fpm.d/www.conf
-RUN chown -R www-data:www-data /var/www/html/ && \
+RUN chown -R root:root /var/www/html/ && \
     chmod -R 775 /var/www/html
 
 CMD supervisord
