@@ -24,7 +24,9 @@ COPY ./nginx.conf /etc/nginx/http.d/default.conf
 COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ENV APP_ENV production
 RUN composer install
-RUN chown -R root:root /var/www/html/ && \
+# Change the PHP-FPM configuration
+RUN sed -i 's#;error_log = log/php-fpm.log#error_log = /dev/stderr#' /usr/local/etc/php-fpm.d/www.conf
+RUN chown -R www-data:www-data /var/www/html/ && \
     chmod -R 775 /var/www/html
 
 CMD supervisord
