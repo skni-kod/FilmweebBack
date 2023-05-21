@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ .Values.name }}-migration
+  namespace: {{ .Release.Namespace }}
+spec:
+  template:
+    spec:
+      containers:
+      - name: migration
+        image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+        command: ['sh', '-c', 'php artisan migrate']
+      restartPolicy: Never
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecret }}
+  backoffLimit: {{ .Values.job.backoffLimit }}

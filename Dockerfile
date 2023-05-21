@@ -6,7 +6,8 @@ RUN apk update && apk add --no-cache \
     libpng-dev \
     libjpeg-turbo-dev \
     libwebp-dev \
-    libzip-dev
+    libzip-dev \
+    nginx
 
 # Install PHP extensions
 RUN docker-php-ext-configure gd --with-jpeg --with-webp \
@@ -20,19 +21,9 @@ WORKDIR /var/www/html
 
 # Copy existing application directory contents
 COPY . /var/www/html
-
+COPY ./nginx.conf /etc/nginx/http.d/default.conf
+ENV APP_ENV production
 # Install any needed packages specified in requirements.txt
 RUN --mount=type=cache,target=/tmp/cache composer install
 
-RUN php artisan config:clear \
-    && php artisan config:cache \
-    && php artisan key:generate \
-    && php artisan optimize 
-
-RUN chown -R www-data:www-data /var/www/html \
-#    && chown -R www-data:www-data /var/www/html/storage \
-    && chmod -R 775 /var/www/html/storage \
-#    && chown -R www-data:www-data /var/www/html/bootstrap/cache \
-    && chmod -R 775 /var/www/html/bootstrap/cache
-
-USER www-data
+CMD ./entrypoint.sh

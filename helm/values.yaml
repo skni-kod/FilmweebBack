@@ -1,0 +1,28 @@
+---
+image:
+  name: harbor.skni.edu.pl/library/filmweeb-back
+  tag: latest
+name: filmweeb-back
+labels:
+  app: filmweeb-back
+replicaCount: 3
+strategy:
+  rollingUpdate:
+    maxUnavailable: 1
+    maxSurge: 1
+secretRef: filmweeb-back
+containerPort: 80
+resources:
+  requests:
+    cpu: 100m
+    memory: 100Mi
+  limits:
+    cpu: 200m
+    memory: 200Mi
+imagePullSecret: regcred
+ingress:
+  class: nginx
+  host: filmweeb.skni.edu.pl
+  path: /api
+job:
+  backoffLimit: 4
