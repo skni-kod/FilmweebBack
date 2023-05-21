@@ -1,4 +1,4 @@
-FROM php:8.1-fpm-alpine
+FROM harbor.skni.edu.pl/proxy/php:8.1-fpm-alpine
 
 RUN apk update && apk add --no-cache \
     postgresql-dev \
