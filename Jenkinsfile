@@ -3,7 +3,7 @@ pipeline{
     environment {
         REGISTRY = 'harbor.skni.edu.pl/'
         DOCKER_REGISTRY_CREDENTIALS_ID = 'harbor'
-        IMAGE_BACK = 'harbor.skni.edu.pl/library/filmweeb-back'
+        IMAGE = 'harbor.skni.edu.pl/library/filmweeb-back'
         RELEASE_NAME = 'filmweeb-back'
         NAMESPACE = 'filmweeb'
     }
