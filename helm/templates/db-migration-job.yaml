@@ -9,7 +9,7 @@ spec:
       containers:
       - name: migration
         image: {{ .Values.image.name }}:{{ .Values.image.tag }}
-        command: ['sh', '-c', 'php artisan migrate']
+        command: ['sh', '-c', 'php artisan migrate --force']
       restartPolicy: Never
       imagePullSecrets:
       - name: {{ .Values.imagePullSecret }}

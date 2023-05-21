@@ -25,5 +25,6 @@ COPY ./nginx.conf /etc/nginx/http.d/default.conf
 ENV APP_ENV production
 # Install any needed packages specified in requirements.txt
 RUN --mount=type=cache,target=/tmp/cache composer install
+RUN chmod 775 entrypoint.sh
 
 CMD ./entrypoint.sh
