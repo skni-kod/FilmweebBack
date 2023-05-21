@@ -2,4 +2,10 @@
 php artisan config:clear && \
 php artisan config:cache && \
 php artisan optimize && \
-/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+php-fpm
+
+status=$?
+if [ $status -ne 0 ]; then
+    # If the program failed, exit with status 1
+    exit 1
+fi
