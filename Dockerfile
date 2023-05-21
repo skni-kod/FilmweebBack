@@ -25,12 +25,11 @@ COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ENV APP_ENV production
 # Install any needed packages specified in requirements.txt
 RUN composer install
-RUN mkdir -p logs /var/lib/nginx/logs /var/lib/nginx/tmp/client_body && \
+RUN mkdir -p /var/lib/nginx/logs /var/lib/nginx/tmp/client_body && \
+    chmod -R 755 /var/lib/nginx/ && \
     chown -R www-data:www-data /var/lib/nginx && \
     chown -R www-data:www-data /var/www/html/ && \
-    chmod -R 775 /var/www/html && \
-    sed -i 's#error_log /var/log/nginx/error.log;#error_log /var/www/html/logs/error.log;#g' /etc/nginx/nginx.conf && \
-    sed -i 's#access_log /var/log/nginx/access.log;#access_log /var/www/html/logs/access.log;#g' /etc/nginx/nginx.conf
+    chmod -R 775 /var/www/html
 
 USER www-data
 CMD ./entrypoint.sh
