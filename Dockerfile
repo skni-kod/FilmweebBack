@@ -1,6 +1,6 @@
 FROM harbor.skni.edu.pl/proxy/php:8.1-fpm-alpine
 
-RUN apk update && apk add --no-cache \
+RUN apk update && apk upgrade && apk add --no-cache \
     postgresql-dev \
     oniguruma-dev \
     libpng-dev \
@@ -28,6 +28,7 @@ RUN composer install
 RUN chown -R www-data:www-data /var/www/html/ && \
     chown -R www-data:www-data /var/www/html/bootstrap/cache && \
     chmod -R 755 /var/www/html/storage && \
-    chmod -R 755 /var/www/html/bootstrap/cache
+    chmod -R 755 /var/www/html/bootstrap/cache && \
+    chmod 775 entrypoint.sh
 
 CMD supervisord
