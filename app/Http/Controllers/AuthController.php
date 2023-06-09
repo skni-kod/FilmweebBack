@@ -7,8 +7,10 @@ use App\Http\Requests\RegisterRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use GuzzleHttp\Exception\ClientException;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Socialite\Facades\Socialite;
 use Symfony\Component\HttpFoundation\Response;
@@ -95,6 +97,22 @@ class AuthController extends BaseController
         return $this->sendResponse([
             'user' => new UserResource($user),
         ], 'User successfully login')->withCookie($cookie);
+    }
+
+    /**
+     * Log the user out of the application.
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function logout(Request $request)
+    {
+        $request->user()->tokens()->delete();
+        $cookie = Cookie::forget('sanctum');
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return $this->sendResponse([], "User successfully logged out", Response::HTTP_OK)->withCookie($cookie
+        );
     }
 
     /**
@@ -212,12 +230,11 @@ class AuthController extends BaseController
                 'avatar' => $user->getAvatar()
             ]
         );
-        $token = $userCreated->createToken('token-filmweeb')->plainTextToken;
+        $cookie = cookie('sanctum', $userCreated->createToken('token-filmweeb')->plainTextToken, 60 * 24);
 
         return $this->sendResponse([
             'user' => new UserResource($userCreated),
-            'token' => $token
-        ], 'User login successful by ' . $provider);
+        ], 'User login successful by ' . $provider)->withCookie($cookie);
     }
 
     /**
